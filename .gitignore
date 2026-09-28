@@ -7,5 +7,6 @@ __pycache__/
 .coverage
 htmlcov/
 data/raw/*.csv
+data/phase2_raw/*
 artifacts/models/*.joblib
 artifacts/figures/demo-home.png

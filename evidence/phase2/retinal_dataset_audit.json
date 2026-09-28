@@ -1,0 +1,147 @@
+{
+  "source": {
+    "article": "https://doi.org/10.1371/journal.pbio.3003597",
+    "source_data": "https://doi.org/10.5281/zenodo.18198347",
+    "file": "Extended_Data_2.csv",
+    "sha256": "b73890e767f63e9cc464597444e5159429172312d6e4539adbf83f128663ff61",
+    "license": "CC-BY-4.0",
+    "redistribution": "Attribution required; raw source remains excluded from git because it is 382 MiB."
+  },
+  "hierarchy": {
+    "generalization_boundary": "experiment",
+    "independent_unit": "organoid well within experiment",
+    "observation": "one segmented bright-field image/morphometric row at a loop"
+  },
+  "counts": {
+    "rows": 114510,
+    "independent_experiments": 11,
+    "independent_organoids": 988,
+    "possible_time_points": 144,
+    "cadence_hours": 0.5,
+    "maximum_duration_hours": 72.0,
+    "full_144_observation_organoids": 381,
+    "organoids_below_72_observations": 189,
+    "organoids_below_12_observations": 85
+  },
+  "observation_count_quantiles": {
+    "minimum": 1,
+    "q01": 4.0,
+    "q05": 8.0,
+    "median": 142.0,
+    "maximum": 144
+  },
+  "integrity": {
+    "duplicate_experiment_well_loop_rows": 0,
+    "duplicate_file_names": 0,
+    "missing_RPE_final": 0,
+    "missing_Lens_final": 0,
+    "feature_missing_cells": {
+      "area": 0,
+      "axis_major_length": 0,
+      "axis_minor_length": 0,
+      "eccentricity": 0,
+      "equivalent_diameter_area": 0,
+      "extent": 0,
+      "feret_diameter_max": 0,
+      "intensity_mean": 0,
+      "intensity_std": 0,
+      "perimeter": 0,
+      "solidity": 0,
+      "circularity": 0,
+      "blur": 0,
+      "roi_contrast": 0,
+      "aspect_ratio": 0
+    }
+  },
+  "conditions_by_independent_unit": {
+    "0nM": 391,
+    "4nM": 221,
+    "1nM": 220,
+    "2nM": 156
+  },
+  "experiments": [
+    {
+      "experiment": "E001",
+      "independent_organoids": 80,
+      "RPE_positive": 80,
+      "Lens_positive": 80
+    },
+    {
+      "experiment": "E002",
+      "independent_organoids": 92,
+      "RPE_positive": 92,
+      "Lens_positive": 92
+    },
+    {
+      "experiment": "E004",
+      "independent_organoids": 96,
+      "RPE_positive": 96,
+      "Lens_positive": 96
+    },
+    {
+      "experiment": "E005",
+      "independent_organoids": 92,
+      "RPE_positive": 92,
+      "Lens_positive": 92
+    },
+    {
+      "experiment": "E006",
+      "independent_organoids": 95,
+      "RPE_positive": 95,
+      "Lens_positive": 95
+    },
+    {
+      "experiment": "E007",
+      "independent_organoids": 93,
+      "RPE_positive": 93,
+      "Lens_positive": 93
+    },
+    {
+      "experiment": "E008",
+      "independent_organoids": 91,
+      "RPE_positive": 91,
+      "Lens_positive": 91
+    },
+    {
+      "experiment": "E009",
+      "independent_organoids": 90,
+      "RPE_positive": 90,
+      "Lens_positive": 90
+    },
+    {
+      "experiment": "E010",
+      "independent_organoids": 92,
+      "RPE_positive": 92,
+      "Lens_positive": 92
+    },
+    {
+      "experiment": "E011",
+      "independent_organoids": 90,
+      "RPE_positive": 90,
+      "Lens_positive": 90
+    },
+    {
+      "experiment": "E012",
+      "independent_organoids": 77,
+      "RPE_positive": 77,
+      "Lens_positive": 77
+    }
+  ],
+  "endpoints": {
+    "RPE_Final": "whether the organoid has an RPE-positive final morphology label",
+    "Lens_Final": "whether the organoid has a lens-positive final morphology label"
+  },
+  "authors_split_design": "The authors distinguish within-training validation from a test set acquired in unrelated experiments. GATES does not reuse their image-classification split; it makes every complete experiment the held-out test boundary in turn.",
+  "leakage_channels_and_controls": [
+    "Repeated frames from one organoid: all frames remain within its experiment partition.",
+    "Experiment-specific acquisition and morphology: test experiment is excluded from all preprocessing, fitting, calibration, and OOD thresholds.",
+    "Observation availability can encode experiment: availability columns are excluded from predictor features.",
+    "Final labels repeat on every frame: used only as unit-level outcome and never as a predictor.",
+    "Well/file names can identify experiment: excluded from predictor features."
+  ],
+  "limitations": [
+    "The source table has 114,510 audited rows rather than every image cited in the paper, consistent with source-table filtering.",
+    "Trajectory completeness is highly variable and experiment-dependent.",
+    "RPE and lens prevalence differs sharply across experiments, including all-negative held-out experiments."
+  ]
+}

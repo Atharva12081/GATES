@@ -1,0 +1,59 @@
+{
+  "audit_date": "2026-09-29",
+  "selection_rule": "Prefer public longitudinal measurements with separable chips or experiments, a scientifically meaningful early-to-final endpoint, and honest group-held-out evaluation.",
+  "candidates": [
+    {
+      "name": "Lung-on-chip tuberculosis bacterial growth",
+      "url": "https://doi.org/10.5281/zenodo.4266198",
+      "license": "CC-BY-4.0",
+      "size_and_structure": "Approximately 27 GB growth-rate archive containing TIFF stacks, CSV, and MATLAB artifacts.",
+      "chips": "not established from lightweight metadata",
+      "independent_experiments": "not established from lightweight metadata",
+      "cadence_duration_endpoint": "Longitudinal bacterial growth is scientifically relevant, but stable chip IDs, experimental groups, and a predefined terminal endpoint require full archive/paper reconstruction.",
+      "group_evaluation_possible": "unknown",
+      "ingestion_effort": "high",
+      "expected_usefulness": "potentially high after provenance reconstruction",
+      "decision": "defer; do not manufacture independence from image stacks"
+    },
+    {
+      "name": "Bright-field organ-on-chip image quality dataset",
+      "url": "https://doi.org/10.5281/zenodo.10203721",
+      "license": "Zenodo metadata says CC-BY-4.0; associated article text should be reconciled before redistribution",
+      "size_and_structure": "3,072 unique images across 58 date prefixes; datasheet has cell type, seeding density, time after seeding, day, good/bad decision, and flow rate.",
+      "chips": "no chip identifier in datasheet",
+      "independent_experiments": "date prefixes are acquisition batches, not validated biological experiment IDs",
+      "cadence_duration_endpoint": "Only 828 rows have a non-missing time-after-seeding value (0, 1, or 2 h); the good/bad label is per image rather than a linked final chip endpoint.",
+      "group_evaluation_possible": "no, not without inventing unit linkage",
+      "ingestion_effort": "low for metadata, high and scientifically unjustified for longitudinal reconstruction",
+      "expected_usefulness": "useful for image-quality classification, not this stopping question",
+      "decision": "reject"
+    },
+    {
+      "name": "Organ-on-chip electrochemical impedance spectroscopy",
+      "url": "https://doi.org/10.5281/zenodo.17085953",
+      "license": "MIT",
+      "size_and_structure": "90 sequential spectra named CRU006-Device1-01 through CRU006-Device1-90 plus derived reports.",
+      "chips": 1,
+      "independent_experiments": 1,
+      "cadence_duration_endpoint": "Sequential measurements exist, but no independent-chip final biological endpoint is supplied.",
+      "group_evaluation_possible": "no",
+      "ingestion_effort": "low",
+      "expected_usefulness": "instrument demonstration only",
+      "decision": "reject"
+    },
+    {
+      "name": "OCT flowmetry for vessel-on-chip",
+      "url": "https://doi.org/10.5281/zenodo.14293638",
+      "license": "CC-BY-4.0",
+      "size_and_structure": "Four raw OCT scans of roughly 1.64 GB each.",
+      "chips": "single setup not documented as independent biological chips",
+      "independent_experiments": "insufficient",
+      "cadence_duration_endpoint": "Flow scans without a linked terminal biological endpoint.",
+      "group_evaluation_possible": "no",
+      "ingestion_effort": "high",
+      "expected_usefulness": "flow measurement validation, not early endpoint stopping",
+      "decision": "reject"
+    }
+  ],
+  "conclusion": "No audited direct organ-on-chip dataset currently supports a defensible group-held-out early-to-final stopping experiment. The tuberculosis dataset is the only plausible next candidate, but it must first establish chip identity, independent experimental groups, and a terminal endpoint. Direct OoC evidence is therefore a documented negative result for Phase 2, not a positive validation claim."
+}
