@@ -1,0 +1,15 @@
+{
+  "seed": 20260929,
+  "notes": {
+    "missing_20pct": "Randomly removes 20% of observations while retaining each unit's last row.",
+    "irregular_sampling": "Randomly removes 35% and jitters retained timestamps by up to 0.2 h.",
+    "measurement_noise_025sd": "Adds independent Gaussian feature noise at 0.25 pooled feature SD.",
+    "dropped_half_features": "Masks 8 of 15 features: ['area', 'axis_minor_length', 'equivalent_diameter_area', 'feret_diameter_max', 'intensity_std', 'solidity', 'blur', 'aspect_ratio'].",
+    "corrupt_early_10pct": "Adds signed 3-SD corruption through 24 h to 99 randomly selected units.",
+    "reduced_2h_cadence": "Retains measurements on a 2 h grid and each unit's last row.",
+    "altered_class_balance": "Retains all negatives and a random half of positives within every experiment.",
+    "alternate_seed": "Repeats the unchanged data with seed + 1.",
+    "decision_tree_predictor": "Replaces regularized logistic regression with a depth-4 decision tree.",
+    "natural_shift_and_ood": "The primary experiment-held-out matrix and OOD ablation supply the shifted-experiment and OOD-sample tests."
+  }
+}

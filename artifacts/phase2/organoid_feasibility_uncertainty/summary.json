@@ -1,0 +1,38 @@
+{
+  "snapshot": "gates-organoid-feasibility-v0",
+  "independent_biological_units": 21,
+  "independent_groups": 3,
+  "stopped_early": 20,
+  "incorrect_early": 2,
+  "EESR_exact_95": {
+    "estimate": 0.1,
+    "lower": 0.012348527170294804,
+    "upper": 0.3169827140190823,
+    "method": "Clopper-Pearson"
+  },
+  "observation_savings_all_group_bootstrap_95": {
+    "estimate": 0.5105820105820106,
+    "lower": 0.46031746031746035,
+    "upper": 0.5555555555555556,
+    "method": "percentile group bootstrap (3 groups; exploratory)"
+  },
+  "observation_savings_stopped_group_bootstrap_95": {
+    "estimate": 0.5361111111111111,
+    "lower": 0.5158730158730159,
+    "upper": 0.5555555555555556,
+    "method": "percentile group bootstrap (3 groups; exploratory)"
+  },
+  "decision_time_group_bootstrap_95": {
+    "estimate": 35.23809523809524,
+    "lower": 32.0,
+    "upper": 38.857142857142854,
+    "method": "percentile group bootstrap (3 groups; exploratory)"
+  },
+  "failure_sensitivity": {
+    "observed": 0.1,
+    "one_additional_failure": 0.15,
+    "two_additional_failures": 0.2
+  },
+  "claim": "empirical_only",
+  "warning": "Only three replicate groups exist; group-bootstrap intervals are exploratory."
+}

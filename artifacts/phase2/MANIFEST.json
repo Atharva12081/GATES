@@ -1,0 +1,442 @@
+{
+  "phase2_code_commit": "69b1b200c29ca42626fc4cdc7d32551c9524e8f9",
+  "feasibility_tag": "gates-organoid-feasibility-v0",
+  "protocol": "protocols/phase2_protocol.json",
+  "files": [
+    {
+      "path": "artifacts/phase2/PHASE2_REPORT.md",
+      "bytes": 8407,
+      "sha256": "418f93668b216e126848ee6d7b330f8afe16d8f806f29b5fcbf18cbd35945298"
+    },
+    {
+      "path": "artifacts/phase2/master_results.csv",
+      "bytes": 199694,
+      "sha256": "62b6bdf01ae1f4b83aaa227e548b4549550c0604a155d010f15cc52a429b2013"
+    },
+    {
+      "path": "artifacts/phase2/organoid_feasibility_uncertainty/fold_results.csv",
+      "bytes": 406,
+      "sha256": "e70e992edf46a841a6e52736168ad4386c3543262aafd55a29d22cc71ae786f3"
+    },
+    {
+      "path": "artifacts/phase2/organoid_feasibility_uncertainty/summary.json",
+      "bytes": 1208,
+      "sha256": "1a427a05dcaef4cb9897def2d86e5383b8e62cd220a423092fa9a695672712c5"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/aggregate_group_bootstrap_ci.csv",
+      "bytes": 7658,
+      "sha256": "f852679b7dc615968d3a9bc4bbc130746b1eecaaf8d6670c71aeda5d9e5e7ca5"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/aggregate_results.csv",
+      "bytes": 12143,
+      "sha256": "ce065c572a472ff0c7a69ba25e71ed925ebfa6b224042a84370f995ced547dc0"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/calibration_audit.csv",
+      "bytes": 54487,
+      "sha256": "7c130be04e0dd79ec5254f25217a308076b836fdaeff936c2248b14fa256b4f1"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/calibration_curve_24h.csv",
+      "bytes": 438,
+      "sha256": "8d51beee5da26f5b4ef51e44904aa078592e579cbf2e9a220a20ff13b0e03484"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/calibration_curve.png",
+      "bytes": 62812,
+      "sha256": "ff3a8536b426885dbe07c20976c4c3a49a1ea675def04c60dcab364d7c1b2b62"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/decision_time_distribution.png",
+      "bytes": 46413,
+      "sha256": "166b5115155105f25b0fd15f7616b6c29d6be5f61bc6ffc8bec2c62ebe84ae50"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/ood_score_vs_failure.png",
+      "bytes": 30531,
+      "sha256": "6a63c84610f7c69a85a8bf4c8f6c1e8c50a7904e8568062a8b573ae068b25084"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/per_held_out_experiment.png",
+      "bytes": 48483,
+      "sha256": "501a672230a70a165e24d4108cd4f2e900673b5094bb61047b7b1681a7c62d45"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/performance_vs_observation_time.png",
+      "bytes": 86485,
+      "sha256": "4dfc59401f3f4543ff5081c9713df471d825fccfcb4310f33cee79629d5e7492"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/representative_trajectories.png",
+      "bytes": 88132,
+      "sha256": "205c6a6ae97a86e4d722b9cf47ab303f5971866fb7a01313b4d3665ddb44f285"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/risk_vs_coverage.png",
+      "bytes": 95466,
+      "sha256": "fb5fd0b5d6263b8c0a974a5e5f98d7b924999277252072151ddae445c04afa7f"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/figures/risk_vs_observation_savings.png",
+      "bytes": 151607,
+      "sha256": "9063d1add74fcbe30a3c56fe42d31b75d58ed845aebfb38c561b62af09bd3e14"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/master_results.csv",
+      "bytes": 98239,
+      "sha256": "3d6eeb7737d4b97d913a0513c36888c7df57e302657a36d7e18f5daea736baf6"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/ood_ablation.csv",
+      "bytes": 801,
+      "sha256": "a649a5db00373f90b70d7bda4cd1620f4208783f212ec6eb81029b7cc00381c0"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/per_experiment_gates_005.csv",
+      "bytes": 2591,
+      "sha256": "74c8369f49d0ad7170482995f5f04a5de056654a99bb3018cc9904a0960c8f41"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/predictions_by_time.csv",
+      "bytes": 1720803,
+      "sha256": "81ee1afb1ffecb11decb42161f6d82848fdea02baee50288109e8379d3677c46"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/run_summary.json",
+      "bytes": 179,
+      "sha256": "eb7cc5463105a64a65a23a29a5e03d61c4073e6f42c751f1cc798f6e3a268044"
+    },
+    {
+      "path": "artifacts/phase2/retinal_lens_final/unit_decisions.csv",
+      "bytes": 3679745,
+      "sha256": "3c743b3da6eec7a96a9cb36509210b189946a4e860d9c89d730e17ba7448f10b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/aggregate_group_bootstrap_ci.csv",
+      "bytes": 7805,
+      "sha256": "01ee80507d14a5c7a864c56dd334c18bcec3070efb6e06e0c702e72f348ceb84"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/aggregate_results.csv",
+      "bytes": 12284,
+      "sha256": "9a9c5b40a2950c70203c9a1fce12f3a6a8b162cc73996fb98245a47693c28d9b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/calibration_audit.csv",
+      "bytes": 58324,
+      "sha256": "ef82f7a234f9638ca87017c96b2c72185ecc704b903fde3dbe38fdee3da05124"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/calibration_curve_24h.csv",
+      "bytes": 440,
+      "sha256": "89b0cdd761f840683e402e59437bf76a8fe842f996bfee0920c1b90f00f9725b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/calibration_curve.png",
+      "bytes": 62388,
+      "sha256": "805eb2efe90e381a0abc557d1651db7787233db5d9a9e161031111f8c8c22510"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/decision_time_distribution.png",
+      "bytes": 46809,
+      "sha256": "0d012b7998d381609e0746604130691a5a4171dfcbd6505bf8bd362433ccff65"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/ood_score_vs_failure.png",
+      "bytes": 32577,
+      "sha256": "3c6a96eba281816c87c09f7b5abb73575efd3b13367bbce2ecd7487e1c2f198f"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/per_held_out_experiment.png",
+      "bytes": 52164,
+      "sha256": "884b1bd466b9afd954b21486c29fca19028144f1f3597bdd5b0c18adf5cc429b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/performance_vs_observation_time.png",
+      "bytes": 81253,
+      "sha256": "160c9527173df4ee8c4e24894c6116d98d3d7c69956fce191316365c8d4a4066"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/representative_trajectories.png",
+      "bytes": 93904,
+      "sha256": "a0d4d39b5ccb512202c399f4a5d4c04a87296a9055bdb49ba400306f364166bd"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/risk_vs_coverage.png",
+      "bytes": 98413,
+      "sha256": "93b144ce03b73789d276e4ba7b9fc3f8394ca6a7865acb8718392a27773a98e4"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/figures/risk_vs_observation_savings.png",
+      "bytes": 175405,
+      "sha256": "06f6b951bf67c845fe2c475746dc517f74da0449c0e2579d2cae363b91d1cef2"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/master_results.csv",
+      "bytes": 101051,
+      "sha256": "45c6f8b2e27dee401c5575f68def553ae7e961bc0588a34892bf131b10df12d1"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/ood_ablation.csv",
+      "bytes": 793,
+      "sha256": "b53058b9d8dfa9a3c6edd1dd231a9af75dcd6e952c07e6b6cb6cbb179663efc1"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/per_experiment_gates_005.csv",
+      "bytes": 2834,
+      "sha256": "f5ccad4131241f990cc08057d8ec4b44b5050677cdabbe3af1d981f33546cd23"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/predictions_by_time.csv",
+      "bytes": 1838194,
+      "sha256": "09283703d272eff12f11d0bf1100defae19f31fae0a8cc1a09d2f8e24b487572"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/run_summary.json",
+      "bytes": 177,
+      "sha256": "30df26e392fca0d0c738637deab9c02d246eacf7d92c3ab13d0de3e7d1111385"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_final/unit_decisions.csv",
+      "bytes": 4034417,
+      "sha256": "be273deccdf516bd164b65396f3652b89ac9143d29c2e1a90969a1a0da4f7c96"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/altered_class_balance/aggregate_results.csv",
+      "bytes": 12319,
+      "sha256": "12f982a50b4d3b7b9e209c38d1bc1589eadfcf262d951d342e542ffaf4db7204"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/altered_class_balance/calibration_audit.csv",
+      "bytes": 58905,
+      "sha256": "0591fa703ab21701e41abe58f6997fc38eb7073a40bf43d2ee61b085a06892ff"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/altered_class_balance/master_results.csv",
+      "bytes": 100462,
+      "sha256": "38b4da3883112baa25f981a7f5d8f473feada6a65e9f81311ee7d96cc60e98b0"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/altered_class_balance/predictions_by_time.csv",
+      "bytes": 1486060,
+      "sha256": "83631b30409c819493371e14616b250c8c26041eb06e22913bcd78edb776ef61"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/altered_class_balance/unit_decisions.csv",
+      "bytes": 3246399,
+      "sha256": "c355fc400c7f15190b6d2d5b0abd1809329f9b9c64073114e389dd5b43dcebf9"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/alternate_seed/aggregate_results.csv",
+      "bytes": 12486,
+      "sha256": "bfede71a22e10440caab6e9cdd9f58d569af794b00a29c5978fc67f6d190d1f4"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/alternate_seed/calibration_audit.csv",
+      "bytes": 58355,
+      "sha256": "29a32def27b503d0124cc08bf817d50084caaf596b057ae3dcf693f7d9b6f45b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/alternate_seed/master_results.csv",
+      "bytes": 102115,
+      "sha256": "cb2b7c70707f9088adef5b03dc5b3cfaf0c841c50fd6ec8699d4685a28a2a481"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/alternate_seed/predictions_by_time.csv",
+      "bytes": 1838787,
+      "sha256": "fc2879cf110d8b1639bfd51ecc12af84967ad34ec43c1e8700c74e8e7148fe5d"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/alternate_seed/unit_decisions.csv",
+      "bytes": 4030098,
+      "sha256": "3544d2788bfbd9a9caa1b149cc93b870827344885463098be2302d746a5bf6aa"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/corrupt_early_10pct/aggregate_results.csv",
+      "bytes": 12184,
+      "sha256": "732f217b168a511085093a3ce60d1610d7cc5919b47cf0157f7ea3498e15bfca"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/corrupt_early_10pct/calibration_audit.csv",
+      "bytes": 54616,
+      "sha256": "2754b18e25e82b086547285d8685a56a0d339a3f2622948a38204758a56ebe1f"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/corrupt_early_10pct/master_results.csv",
+      "bytes": 99239,
+      "sha256": "bac31196901dc1d74e4c52533f3485f0d277ab83e57eb3fb54811729d484ca6d"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/corrupt_early_10pct/predictions_by_time.csv",
+      "bytes": 1664942,
+      "sha256": "0eb012d8155f28bda6b0aeaf1783fc27127ff17937792e022e72fe1c34aaff94"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/corrupt_early_10pct/unit_decisions.csv",
+      "bytes": 3919071,
+      "sha256": "1e7378c9f0813049d6b484062ba07d4f549d3835bf75cdfd9bef97e1b5c07eba"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/decision_tree_predictor/aggregate_results.csv",
+      "bytes": 12463,
+      "sha256": "7622a190b51378a142b0dde3123af060a655d9f877d4f4f0ccf78019a0b0df8c"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/decision_tree_predictor/calibration_audit.csv",
+      "bytes": 53445,
+      "sha256": "4fe486aa6ebe7ac705869d3378e1b0e7b47235b53f6f8b1e377806a7608a2a67"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/decision_tree_predictor/master_results.csv",
+      "bytes": 99472,
+      "sha256": "1a33e4ad59cec695798ff3a5da7036095ba01ee445d157ab11168cf7c9b147a3"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/decision_tree_predictor/predictions_by_time.csv",
+      "bytes": 1576092,
+      "sha256": "de19e64b28e1bbcb2e1e08c1c8f5bb2d8f943b59ffe1da28d654d94a2db10391"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/decision_tree_predictor/unit_decisions.csv",
+      "bytes": 3900945,
+      "sha256": "07ccf9d3f156f50fae9ea57a94dab2cef1dfc56b4fc0409bcb1479cdd9952924"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/dropped_half_features/aggregate_results.csv",
+      "bytes": 12318,
+      "sha256": "19495da72b4a59ff59b7c6daaeba056665c86b9ca1cb12d149c30340f6007e59"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/dropped_half_features/calibration_audit.csv",
+      "bytes": 57952,
+      "sha256": "fd87fb20aed0d6978d1af4eb300056c79692acc38f8a92c5dd1426c60e7ec7ae"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/dropped_half_features/master_results.csv",
+      "bytes": 99919,
+      "sha256": "618795584f31db6f1b7d7f873e09e5adccfe583284fae13a2f6a02753b4c7141"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/dropped_half_features/predictions_by_time.csv",
+      "bytes": 1828619,
+      "sha256": "6baedbb18d81c996f40517b3e88d182e850aa390bd028a146957a3e16c46be78"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/dropped_half_features/unit_decisions.csv",
+      "bytes": 3976041,
+      "sha256": "3e40d5b65709478ea7c4d0fa8ebae1783fa9c4265e97099fa75a8efe030311eb"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/irregular_sampling/aggregate_results.csv",
+      "bytes": 12359,
+      "sha256": "7448fadaad9f4e625218b6b9c874864fd0c0c7cd41dea36c8fb792b609bff725"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/irregular_sampling/calibration_audit.csv",
+      "bytes": 58118,
+      "sha256": "05c70278730db604162c1d616c7f1995ce5f38b89a0ff0de41814f3b8b0c79de"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/irregular_sampling/master_results.csv",
+      "bytes": 101380,
+      "sha256": "560a3f1e17a469757cfa263212e19a5f52df78a5193e2dc37821d390ba08924f"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/irregular_sampling/predictions_by_time.csv",
+      "bytes": 1910982,
+      "sha256": "e4f6ac1d2e93e755faff156d867f6f91188414fc82a079b025176a9d97b4035b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/irregular_sampling/unit_decisions.csv",
+      "bytes": 4033538,
+      "sha256": "9bc5d6f27762d023c1361401c2024e8420bbea71d7113ec9cfb31501097ce8e3"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/measurement_noise_025sd/aggregate_results.csv",
+      "bytes": 12223,
+      "sha256": "9abfe1556529232a202a553e2d4ea73bfac47dcd59858c07baacb471d695671a"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/measurement_noise_025sd/calibration_audit.csv",
+      "bytes": 57068,
+      "sha256": "a331017a23f64a9e3a9a4662c00e68d81e1e3029dd63ee89d87c3a372ca4641b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/measurement_noise_025sd/master_results.csv",
+      "bytes": 98916,
+      "sha256": "a4bedca3a2442823ddf625626a70a78069aee2d7b4efbbd2488b24c5d2389d58"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/measurement_noise_025sd/predictions_by_time.csv",
+      "bytes": 1790974,
+      "sha256": "37fc535d2578c2f22e6b5ee36013f3a9279f862552c75e651dade8b6369961fa"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/measurement_noise_025sd/unit_decisions.csv",
+      "bytes": 3971231,
+      "sha256": "be81211ab2ab7a9776a18588a64a847ab75ca008aa2b84614c3baa52a4693469"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/missing_20pct/aggregate_results.csv",
+      "bytes": 12292,
+      "sha256": "12427f9de872674f5cc43d5abb35ea7d8755322978fbe1edc815e6859a31da2a"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/missing_20pct/calibration_audit.csv",
+      "bytes": 58878,
+      "sha256": "e54063cc2a1bd33a079bdb850a0f7cc862348f83b42fbb5aa9a80e5dedd55dbf"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/missing_20pct/master_results.csv",
+      "bytes": 100749,
+      "sha256": "c5898c62d7f47cdcdc18f81a16fa90e0a431b62a5ad0f6bf4f3094ea008cdc2a"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/missing_20pct/predictions_by_time.csv",
+      "bytes": 1870035,
+      "sha256": "30a8bb168c76967e2d1c5bea7307627417a8e89cc603e760440d0e42e846646f"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/missing_20pct/unit_decisions.csv",
+      "bytes": 4028778,
+      "sha256": "ef550c6e8c8e9de4de9f1e381eab2e2adb6d11af7e4609b2d48f3254f8b83290"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/reduced_2h_cadence/aggregate_results.csv",
+      "bytes": 12299,
+      "sha256": "139d578179d9b8dd0ce7be536d988a1876d9d564b182c8aa03d5a653c811d038"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/reduced_2h_cadence/calibration_audit.csv",
+      "bytes": 58401,
+      "sha256": "e3b8ed0b6947d82c3daa719de9ca3fa8a50df644c4c32140b46bf4f767bdaf1e"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/reduced_2h_cadence/master_results.csv",
+      "bytes": 99682,
+      "sha256": "892a084b84c4dcf3e941b09b67d58be5bb918d691a267e8a3bcb75826fa28997"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/reduced_2h_cadence/predictions_by_time.csv",
+      "bytes": 1814908,
+      "sha256": "7c4173b58f2c639a3e535773e4e3da257f8af1396b7b2873b9c2a8ab6ec1dd6b"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/reduced_2h_cadence/unit_decisions.csv",
+      "bytes": 3979523,
+      "sha256": "ea409d5c5a91bfe62464d09c20f9bec967243681c2a9fa3658007e8f8409d1bf"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/stress_matrix.csv",
+      "bytes": 6756,
+      "sha256": "9020400f08ba7bf9da65e3d0ec934fb18bb71f7637ba399160db139e3abb20cc"
+    },
+    {
+      "path": "artifacts/phase2/retinal_rpe_stress/stress_protocol.json",
+      "bytes": 1142,
+      "sha256": "1eb4f5127bad79b0a413ddf92fa987e5a0d5f9144f6a271a39f1f1980b1adb43"
+    }
+  ]
+}
