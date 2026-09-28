@@ -1,0 +1,58 @@
+{
+  "audit_date": "2026-09-29",
+  "paper": {
+    "title": "mTIPs: Multimodal Time-Series Imaging and Prediction System for Early Differentiation of Retinal Organoids",
+    "doi": "10.1109/JBHI.2026.3668206",
+    "ieee_document_id": "11411936",
+    "pubmed_id": "41740113",
+    "supplement_doi": "10.1109/JBHI.2026.3668206/mm1",
+    "publication": "IEEE Journal of Biomedical and Health Informatics 30(9), 7614-7625 (2026)"
+  },
+  "searches": [
+    "IEEE Xplore article and Supplemental Items",
+    "IEEE DataPort title, topic, and author searches",
+    "Crossref, PubMed, OpenAlex, Semantic Scholar, and Unpaywall",
+    "GitHub repository and code search by DOI, title, acronym, and authors",
+    "author and institutional pages"
+  ],
+  "availability": {
+    "article_full_text": "institutional/member access required",
+    "supplement": "one official PDF exists but institutional/member access is required",
+    "dataset_record": null,
+    "dataset_doi_or_accession": null,
+    "downloadable": false,
+    "code_repository": null,
+    "dataset_license": null,
+    "approximate_download_size": null
+  },
+  "verified_facts": {
+    "biological_system": "hESC-derived retinal organoids",
+    "modalities": ["2-D bright-field microscopy", "3-D optical coherence tomography"],
+    "longitudinal": true,
+    "earliest_reported_prediction_day": 6,
+    "reported_abstract_performance": "AUROC greater than 0.8 at all reported time points"
+  },
+  "required_fields": {
+    "organoid_count": null,
+    "independent_batches": null,
+    "complete_time_points": null,
+    "sampling_cadence": null,
+    "operational_endpoint": null,
+    "early_prediction_target": "differentiation fate/quality, exact definition unavailable",
+    "endpoint_independent_of_early_features": null,
+    "group_identifiers": null,
+    "cell_line_identifiers": "hESC-derived; exact line structure unavailable",
+    "author_train_test_structure": null,
+    "repeated_unit_grouping_safe": null
+  },
+  "acceptance_requirements": {
+    "individual_longitudinal_units_identifiable": false,
+    "independent_groups_identifiable": false,
+    "meaningful_endpoint_operationally_defined": false,
+    "future_leakage_excluded": false,
+    "group_respecting_evaluation_possible": false
+  },
+  "decision": "unusable",
+  "external_validation_run": false,
+  "reason": "No accessible authoritative dataset record or schema establishes unit IDs, independent batches, endpoint construction, leakage safety, grouping, license, or download files."
+}

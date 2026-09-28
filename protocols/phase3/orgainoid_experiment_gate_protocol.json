@@ -1,0 +1,80 @@
+{
+  "protocol_id": "gates-phase3-orgainoid-retrospective-nested-v1",
+  "frozen_before_nested_gate_results": true,
+  "status_language": "post-hoc failure analysis followed by leakage-isolated nested retrospective cross-experiment evaluation",
+  "prospective_claim_prohibited": true,
+  "source_evidence": {
+    "phase2_tag": "gates-phase2-evidence-v1",
+    "dataset": "orgAInoid retinal morphometrics",
+    "endpoint": "RPE_Final",
+    "experiments": 11,
+    "independent_units": 988
+  },
+  "early_batch_window_hours": 12,
+  "causal_timing": "All experiment-gate statistics use observations and predictions available by 12 h. The gate is applied before unit-level decisions at 12 h or later.",
+  "outer_evaluation": {
+    "test": "one experiment",
+    "development": "the other ten experiments",
+    "separation": "Signal selection, orientation, normalization, and threshold use development experiments only.",
+    "rotations": "leave one experiment out across all 11 experiments"
+  },
+  "risk_targets": [0.05, 0.1],
+  "unsafe_experiment_event": "At least one erroneous early STOP by frozen Phase-2 full GATES at the evaluated risk target.",
+  "candidate_batch_signals": [
+    "two_sample_auc",
+    "standardized_mean_distance",
+    "rbf_mmd",
+    "energy_distance",
+    "unit_ood_mean",
+    "unit_ood_p95",
+    "unit_ood_fraction",
+    "prediction_entropy_mean",
+    "prediction_entropy_p90",
+    "ensemble_disagreement_mean",
+    "ensemble_disagreement_p90",
+    "ambiguous_prediction_fraction",
+    "predicted_positive_fraction",
+    "observation_count_mean",
+    "observation_count_cv",
+    "trajectory_slope_norm_mean",
+    "trajectory_slope_norm_p90"
+  ],
+  "candidate_signal_constraints": "No endpoint labels from the incoming experiment; no experiment IDs as predictors; fixed low-dimensional scalar summaries only.",
+  "gate_fitting": {
+    "signal_selection": "Within each outer fold, choose the single candidate signal with maximum development-experiment AUROC for the unsafe-event label. Orient values so larger means less trustworthy. Ties are resolved by the candidate order above.",
+    "threshold": "On development experiments only, choose the observed score cut that maximizes balanced accuracy; ties prefer fewer refused experiments and then the higher threshold.",
+    "states": ["ACCEPT_AUTOMATION", "REFUSE_EARLY_STOPPING"],
+    "refusal_action": "All units in the refused experiment continue to the 72 h full protocol and contribute zero observation savings.",
+    "restrict_state": "Not used because 11 experiments are insufficient to estimate two thresholds reliably."
+  },
+  "comparators": [
+    "gates_without_unit_ood",
+    "phase2_full_gates",
+    "phase2_full_gates_plus_experiment_gate"
+  ],
+  "failure_detection": {
+    "unit_event": "A frozen-policy early STOP whose predicted endpoint is incorrect.",
+    "unit_analysis_population": "units receiving an early STOP",
+    "experiment_event": "at least one erroneous early STOP in the experiment",
+    "metric": "AUROC with direction chosen on development data for nested gate use; descriptive full-sample AUROC is labelled post-hoc"
+  },
+  "decision_metrics": [
+    "EESR",
+    "FP_EESR",
+    "FN_EESR",
+    "coverage",
+    "abstention_rate",
+    "observation_savings",
+    "mean_decision_time",
+    "errors_prevented",
+    "units_deferred",
+    "coverage_lost",
+    "savings_lost"
+  ],
+  "confidence_intervals": {
+    "EESR": "two-sided 95% Clopper-Pearson",
+    "group_variation": "percentile bootstrap over the 11 experiments, 10000 draws, seed 20260929"
+  },
+  "seeds": [20260929],
+  "interpretation": "The gate was conceived after all 11 Phase-2 outcomes were observed. Outer separation limits direct outcome leakage during each fitted fold but cannot make the study prospective."
+}
