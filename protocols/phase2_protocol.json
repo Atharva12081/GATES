@@ -1,0 +1,78 @@
+{
+  "protocol_id": "gates-phase2-v1",
+  "frozen_before_flagship_test_evaluation": true,
+  "scientific_question": "Can a group-calibrated, shift-aware selective stopping policy save substantial longitudinal observation time on completely unseen biological experiments while maintaining low premature-decision error, and do group calibration and shift refusal materially improve safety relative to simpler stopping methods?",
+  "risk_targets": {
+    "primary_aspirational_eesr": 0.05,
+    "secondary_empirical_eesr": 0.10,
+    "selection_rule": "Targets are fixed before held-out experiment evaluation and will not be changed to improve the headline."
+  },
+  "endpoint_contract": {
+    "organoid_gemcitabine": {
+      "positive": "MTS viability below 0.5",
+      "negative": "MTS viability at or above 0.5",
+      "final_time_hours": 72
+    },
+    "retinal_organoid_rpe": {
+      "positive": "RPE_Final equals yes at the authors' final endpoint",
+      "negative": "RPE_Final equals no at the authors' final endpoint",
+      "final_time_hours": 72
+    },
+    "retinal_organoid_lens": {
+      "positive": "Lens_Final equals yes at the authors' final endpoint",
+      "negative": "Lens_Final equals no at the authors' final endpoint",
+      "final_time_hours": 72
+    }
+  },
+  "decision_contract": {
+    "erroneous_early_stop": "A STOP strictly before the final scheduled observation whose predicted endpoint differs from the final endpoint.",
+    "false_positive_early_stop": "An early STOP predicting the positive endpoint when the final endpoint is negative.",
+    "false_negative_early_stop": "An early STOP predicting the negative endpoint when the final endpoint is positive.",
+    "continue": "No terminal automated endpoint call has been made; acquire the next scheduled observation.",
+    "abstain": "The unit is outside the trusted regime; disable early automation and complete the full protocol."
+  },
+  "metric_definitions": {
+    "EESR": "incorrect early STOP decisions divided by all early STOP decisions",
+    "FP_EESR": "false-positive early STOP decisions divided by all early STOP decisions",
+    "FN_EESR": "false-negative early STOP decisions divided by all early STOP decisions",
+    "coverage": "units receiving an early STOP divided by all independent test units",
+    "abstention_rate": "units receiving ABSTAIN divided by all independent test units",
+    "observation_savings": "mean across all independent test units of the fraction of scheduled observations avoided; CONTINUE and ABSTAIN contribute zero savings",
+    "observation_savings_among_stopped": "mean fraction avoided among early STOP units only",
+    "decision_time": "first time of early STOP; final scheduled time for CONTINUE or ABSTAIN",
+    "independent_sample_size": "number of biological experimental units, never the number of frames"
+  },
+  "error_asymmetry": {
+    "retinal_organoid": "A false-negative early stop can discard an organoid that later forms the tissue of interest; a false-positive early stop can allocate downstream resources to an organoid that does not. Both are reported separately. No post-hoc weighting is used.",
+    "organoid_gemcitabine": "A false positive and false negative imply different endpoint calls but neither is assigned a post-hoc cost weight. Both are reported separately."
+  },
+  "generalization_boundary": {
+    "retinal_organoid": "experiment",
+    "organoid_gemcitabine": "replicate rotation, retained only as feasibility evidence",
+    "test_exclusion": [
+      "preprocessing statistics",
+      "representation selection",
+      "hyperparameters",
+      "model selection",
+      "risk thresholds",
+      "OOD thresholds",
+      "stopping rules",
+      "feature normalization",
+      "calibration"
+    ]
+  },
+  "method_ladder": [
+    "full_protocol",
+    "fixed_time",
+    "naive_confidence",
+    "calibrated_non_group",
+    "cbes_style",
+    "gates_without_ood",
+    "gates_full"
+  ],
+  "claim_policy": {
+    "formal_guarantee_requires": "The assumptions and finite-sample bound of the chosen calibration method must hold and its bound must pass the target.",
+    "default_language": "observed X percent EESR on held-out experiments at this operating point",
+    "clinical_claims_prohibited": true
+  }
+}
