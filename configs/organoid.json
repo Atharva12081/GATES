@@ -1,0 +1,11 @@
+{
+  "seed": 20260929,
+  "endpoint_threshold": 0.5,
+  "target_risk": 0.2,
+  "minimum_stop_time": 32,
+  "decision_times": [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72],
+  "train_fraction": 0.55,
+  "calibration_fraction": 0.2,
+  "ood_quantile": 0.95,
+  "bootstrap_samples": 500
+}

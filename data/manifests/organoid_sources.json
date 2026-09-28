@@ -1,0 +1,16 @@
+{
+  "dataset": "OrganoID gemcitabine time course",
+  "upstream_repository": "https://github.com/jono-m/OrganoID",
+  "upstream_revision": "master",
+  "files": {
+    "OrganoidMeasurements.csv": "https://raw.githubusercontent.com/jono-m/OrganoID/master/Publication/Figure3/OrganoidMeasurements.csv",
+    "PIMeasurements.csv": "https://raw.githubusercontent.com/jono-m/OrganoID/master/Publication/Figure3/PIMeasurements.csv",
+    "MTSAssay.csv": "https://raw.githubusercontent.com/jono-m/OrganoID/master/Publication/Figure3/MTSAssay.csv"
+  },
+  "license_note": "The upstream repository does not declare a GitHub-detected license. Verify reuse terms before public redistribution.",
+  "checksums": {
+    "OrganoidMeasurements.csv": "8db529daff334d28e40b24354f316bab1ab0e5d611f96c49ef70d9779ea55c21",
+    "PIMeasurements.csv": "c80e57b4ca58eef709338a8acee0194a785bd46bcf7fe7eb791cbf65ca4d6454",
+    "MTSAssay.csv": "c546f65b535c81cef003a15cb69a72bf2b9003394bc53e1e3ca76a740ae8658f"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "endpoint_units": 21,
+  "pi_units": 42,
+  "shared_units": 21,
+  "organoid_rows": 21469,
+  "pi_rows": 798,
+  "time_min": 0,
+  "time_max": 72,
+  "time_points": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    72
+  ],
+  "endpoint_missing": 0,
+  "duplicate_pi_rows": 0,
+  "replicates_per_dose": {
+    "0.0": 3,
+    "3.0": 3,
+    "10.0": 3,
+    "30.0": 3,
+    "100.0": 3,
+    "300.0": 3,
+    "1000.0": 3
+  }
+}

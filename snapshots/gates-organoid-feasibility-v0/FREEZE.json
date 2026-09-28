@@ -1,0 +1,90 @@
+{
+  "snapshot": "gates-organoid-feasibility-v0",
+  "status": "immutable feasibility snapshot",
+  "artifact_commit": "recorded by the annotated git tag gates-organoid-feasibility-v0",
+  "environment_lock": {
+    "path": "uv.lock",
+    "sha256": "40b5caa036b28f3715543fa1b96b2a50a72a6df20b61958171fbc93c2e4bcdc9"
+  },
+  "dataset": {
+    "name": "OrganoID gemcitabine time course",
+    "independent_units": 21,
+    "checksums": {
+      "MTSAssay.csv": "c546f65b535c81cef003a15cb69a72bf2b9003394bc53e1e3ca76a740ae8658f",
+      "OrganoidMeasurements.csv": "8db529daff334d28e40b24354f316bab1ab0e5d611f96c49ef70d9779ea55c21",
+      "PIMeasurements.csv": "c80e57b4ca58eef709338a8acee0194a785bd46bcf7fe7eb791cbf65ca4d6454"
+    }
+  },
+  "seed": 20260929,
+  "model": {
+    "type": "regularized logistic regression",
+    "C": 0.25,
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "preprocessing": ["median imputation with missingness indicators", "robust scaling"],
+    "features": ["last", "mean", "delta", "linear slope"],
+    "dose_feature_excluded": true
+  },
+  "calibration": {
+    "type": "time-specific selective confidence threshold",
+    "target_empirical_risk": 0.2,
+    "minimum_calibration_stops": 3,
+    "confidence_bound": "one-sided 95% Clopper Pearson upper bound",
+    "claim": "empirical_only"
+  },
+  "ood": {
+    "type": "standardized nearest-neighbor distance",
+    "training_distance_quantile": 0.95,
+    "margin_multiplier": 1.5
+  },
+  "decision": {
+    "minimum_stop_time_hours": 32,
+    "endpoint_threshold": 0.5,
+    "positive_endpoint": "MTS viability below 0.5",
+    "negative_endpoint": "MTS viability at or above 0.5",
+    "scheduled_times_hours": [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72]
+  },
+  "splits": [
+    {
+      "fold": 0,
+      "train_group": 0,
+      "calibration_group": 1,
+      "test_group": 2,
+      "train_units": ["dose=0|rep=0", "dose=3|rep=0", "dose=10|rep=0", "dose=30|rep=0", "dose=100|rep=0", "dose=300|rep=0", "dose=1000|rep=0"],
+      "calibration_units": ["dose=0|rep=1", "dose=3|rep=1", "dose=10|rep=1", "dose=30|rep=1", "dose=100|rep=1", "dose=300|rep=1", "dose=1000|rep=1"],
+      "test_units": ["dose=0|rep=2", "dose=3|rep=2", "dose=10|rep=2", "dose=30|rep=2", "dose=100|rep=2", "dose=300|rep=2", "dose=1000|rep=2"]
+    },
+    {
+      "fold": 1,
+      "train_group": 1,
+      "calibration_group": 2,
+      "test_group": 0,
+      "train_units": ["dose=0|rep=1", "dose=3|rep=1", "dose=10|rep=1", "dose=30|rep=1", "dose=100|rep=1", "dose=300|rep=1", "dose=1000|rep=1"],
+      "calibration_units": ["dose=0|rep=2", "dose=3|rep=2", "dose=10|rep=2", "dose=30|rep=2", "dose=100|rep=2", "dose=300|rep=2", "dose=1000|rep=2"],
+      "test_units": ["dose=0|rep=0", "dose=3|rep=0", "dose=10|rep=0", "dose=30|rep=0", "dose=100|rep=0", "dose=300|rep=0", "dose=1000|rep=0"]
+    },
+    {
+      "fold": 2,
+      "train_group": 2,
+      "calibration_group": 0,
+      "test_group": 1,
+      "train_units": ["dose=0|rep=2", "dose=3|rep=2", "dose=10|rep=2", "dose=30|rep=2", "dose=100|rep=2", "dose=300|rep=2", "dose=1000|rep=2"],
+      "calibration_units": ["dose=0|rep=0", "dose=3|rep=0", "dose=10|rep=0", "dose=30|rep=0", "dose=100|rep=0", "dose=300|rep=0", "dose=1000|rep=0"],
+      "test_units": ["dose=0|rep=1", "dose=3|rep=1", "dose=10|rep=1", "dose=30|rep=1", "dose=100|rep=1", "dose=300|rep=1", "dose=1000|rep=1"]
+    }
+  ],
+  "metric_definitions": {
+    "EESR": "incorrect STOP decisions divided by all STOP decisions",
+    "coverage": "units receiving STOP divided by all evaluated units",
+    "abstention_rate": "units receiving ABSTAIN divided by all evaluated units",
+    "observation_savings": "mean of one minus decision time divided by 72 among stopped units",
+    "decision_time": "first scheduled hour at which the selected terminal decision occurs"
+  },
+  "headline": {
+    "stopped": 20,
+    "evaluated": 21,
+    "EESR": 0.1,
+    "observation_savings": 0.5361111111111111,
+    "mean_decision_time_hours": 33.4
+  }
+}

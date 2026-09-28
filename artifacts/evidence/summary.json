@@ -1,0 +1,14 @@
+{
+  "eesr": 0.1,
+  "coverage": 0.9523809523809523,
+  "observation_savings": 0.5361111111111111,
+  "mean_decision_time": 33.4,
+  "stopped": 20.0,
+  "total": 21.0,
+  "target_risk": 0.2,
+  "minimum_stop_time": 32,
+  "endpoint_threshold": 0.5,
+  "calibration_claim": "empirical_only",
+  "independent_endpoint_units": 21,
+  "evaluation_design": "cyclic replicate holdout: train/calibrate/test"
+}
