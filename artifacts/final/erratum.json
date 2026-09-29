@@ -1,0 +1,37 @@
+{
+  "erratum_id": "gates-retinal-label-audit-2026-09-29",
+  "discovered_at": "2026-09-29T12:00:09+05:30",
+  "status": "corrected metadata only",
+  "supersedes_for_audit_metadata": "gates-science-freeze-v1",
+  "preserved_tag": "gates-science-freeze-v1",
+  "frozen_v1": {
+    "commit": "d701487df78595f835215b60523a95c154e0b16d",
+    "phase2_evidence_commit": "02ecb77976801b38228d4f09717b9f6593b7dc1d",
+    "manifest_sha256": "2def9352762ddfbb9735fb8c01e3e71d9cf4dd15cbc8b9bf83da97652cdb95d7",
+    "audit_sha256": "074192eb98219c1f5c2b6de819c8903018f6bc2031291c8fb27f10a62bfb3bcb"
+  },
+  "defect": {
+    "file": "scripts/audit_retinal_dataset.py",
+    "description": "Non-empty strings 'yes' and 'no' were converted with astype(bool), so both became true in the descriptive audit.",
+    "scope": "The defect was confined to descriptive positive counts in evidence/phase2/retinal_dataset_audit.json."
+  },
+  "corrected_totals": {
+    "independent_organoids": 988,
+    "RPE_Final": {"positive": 405, "negative": 583},
+    "Lens_Final": {"positive": 450, "negative": 538}
+  },
+  "science_impact": {
+    "method_changed": false,
+    "model_inputs_changed": false,
+    "headline_results_changed": false,
+    "result_changed_count": 0,
+    "details": "The modeling loader already decoded yes/no labels explicitly. Independent RPE, lens, robustness, OOD, frontier, and experiment-gate recomputation was identical."
+  },
+  "source_data": {
+    "doi": "10.5281/zenodo.18198347",
+    "record_id": "18198347",
+    "file": "Extended_Data_2.csv",
+    "size_bytes": 400059241,
+    "sha256": "b73890e767f63e9cc464597444e5159429172312d6e4539adbf83f128663ff61"
+  }
+}

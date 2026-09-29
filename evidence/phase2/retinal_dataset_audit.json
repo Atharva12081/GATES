@@ -23,6 +23,18 @@
     "organoids_below_72_observations": 189,
     "organoids_below_12_observations": 85
   },
+  "endpoint_label_totals": {
+    "RPE_Final": {
+      "positive": 405,
+      "negative": 583,
+      "prevalence": 0.409919028340081
+    },
+    "Lens_Final": {
+      "positive": 450,
+      "negative": 538,
+      "prevalence": 0.45546558704453444
+    }
+  },
   "observation_count_quantiles": {
     "minimum": 1,
     "q01": 4.0,
@@ -63,68 +75,112 @@
     {
       "experiment": "E001",
       "independent_organoids": 80,
-      "RPE_positive": 80,
-      "Lens_positive": 80
+      "RPE_positive": 32,
+      "RPE_negative": 48,
+      "RPE_prevalence": 0.4,
+      "Lens_positive": 73,
+      "Lens_negative": 7,
+      "Lens_prevalence": 0.9125
     },
     {
       "experiment": "E002",
       "independent_organoids": 92,
-      "RPE_positive": 92,
-      "Lens_positive": 92
+      "RPE_positive": 21,
+      "RPE_negative": 71,
+      "RPE_prevalence": 0.22826086956521738,
+      "Lens_positive": 7,
+      "Lens_negative": 85,
+      "Lens_prevalence": 0.07608695652173914
     },
     {
       "experiment": "E004",
       "independent_organoids": 96,
-      "RPE_positive": 96,
-      "Lens_positive": 96
+      "RPE_positive": 0,
+      "RPE_negative": 96,
+      "RPE_prevalence": 0.0,
+      "Lens_positive": 0,
+      "Lens_negative": 96,
+      "Lens_prevalence": 0.0
     },
     {
       "experiment": "E005",
       "independent_organoids": 92,
-      "RPE_positive": 92,
-      "Lens_positive": 92
+      "RPE_positive": 38,
+      "RPE_negative": 54,
+      "RPE_prevalence": 0.41304347826086957,
+      "Lens_positive": 49,
+      "Lens_negative": 43,
+      "Lens_prevalence": 0.532608695652174
     },
     {
       "experiment": "E006",
       "independent_organoids": 95,
-      "RPE_positive": 95,
-      "Lens_positive": 95
+      "RPE_positive": 64,
+      "RPE_negative": 31,
+      "RPE_prevalence": 0.6736842105263158,
+      "Lens_positive": 72,
+      "Lens_negative": 23,
+      "Lens_prevalence": 0.7578947368421053
     },
     {
       "experiment": "E007",
       "independent_organoids": 93,
-      "RPE_positive": 93,
-      "Lens_positive": 93
+      "RPE_positive": 47,
+      "RPE_negative": 46,
+      "RPE_prevalence": 0.5053763440860215,
+      "Lens_positive": 69,
+      "Lens_negative": 24,
+      "Lens_prevalence": 0.7419354838709677
     },
     {
       "experiment": "E008",
       "independent_organoids": 91,
-      "RPE_positive": 91,
-      "Lens_positive": 91
+      "RPE_positive": 61,
+      "RPE_negative": 30,
+      "RPE_prevalence": 0.6703296703296703,
+      "Lens_positive": 67,
+      "Lens_negative": 24,
+      "Lens_prevalence": 0.7362637362637363
     },
     {
       "experiment": "E009",
       "independent_organoids": 90,
-      "RPE_positive": 90,
-      "Lens_positive": 90
+      "RPE_positive": 0,
+      "RPE_negative": 90,
+      "RPE_prevalence": 0.0,
+      "Lens_positive": 69,
+      "Lens_negative": 21,
+      "Lens_prevalence": 0.7666666666666667
     },
     {
       "experiment": "E010",
       "independent_organoids": 92,
-      "RPE_positive": 92,
-      "Lens_positive": 92
+      "RPE_positive": 43,
+      "RPE_negative": 49,
+      "RPE_prevalence": 0.4673913043478261,
+      "Lens_positive": 3,
+      "Lens_negative": 89,
+      "Lens_prevalence": 0.03260869565217391
     },
     {
       "experiment": "E011",
       "independent_organoids": 90,
-      "RPE_positive": 90,
-      "Lens_positive": 90
+      "RPE_positive": 57,
+      "RPE_negative": 33,
+      "RPE_prevalence": 0.6333333333333333,
+      "Lens_positive": 15,
+      "Lens_negative": 75,
+      "Lens_prevalence": 0.16666666666666666
     },
     {
       "experiment": "E012",
       "independent_organoids": 77,
-      "RPE_positive": 77,
-      "Lens_positive": 77
+      "RPE_positive": 42,
+      "RPE_negative": 35,
+      "RPE_prevalence": 0.5454545454545454,
+      "Lens_positive": 26,
+      "Lens_negative": 51,
+      "Lens_prevalence": 0.33766233766233766
     }
   ],
   "endpoints": {

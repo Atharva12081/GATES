@@ -16,8 +16,9 @@ evaluation rotates the three endpoint replicates through train, calibration, and
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-uv sync --extra dev
+uv sync --frozen --extra dev
 uv run python scripts/fetch_data.py
+just data-retinal
 uv run gates audit
 uv run gates run
 uv run gates verify
@@ -98,6 +99,14 @@ not certified risk control. See the [claim freeze](docs/phase3/CLAIM_FREEZE.md),
 Rebuild and verify the final retrospective package with:
 
 ```bash
+uv sync --frozen --extra dev
+just data-retinal
 just phase3-finalize
+just verify
 just verify-final
 ```
+
+`just data-retinal` downloads the exact Zenodo record and filename pinned in
+`data/manifests/retinal_sources.json`, then checks its 400,059,241-byte size, MD5, and SHA-256.
+It never resolves a mutable “latest” record. See the [frozen-evidence erratum](docs/final/ERRATUM.md)
+for the corrected descriptive label audit; the model and frozen headline did not change.

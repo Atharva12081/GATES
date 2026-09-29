@@ -1,0 +1,75 @@
+{
+  "verified_at": "2026-09-29T12:07:00+05:30",
+  "frozen_baseline": {
+    "tag": "gates-science-freeze-v1",
+    "commit": "d701487df78595f835215b60523a95c154e0b16d",
+    "phase2_evidence_commit": "02ecb77976801b38228d4f09717b9f6593b7dc1d",
+    "manifest_sha256": "2def9352762ddfbb9735fb8c01e3e71d9cf4dd15cbc8b9bf83da97652cdb95d7"
+  },
+  "comparison_policy": {
+    "numeric_tolerance": 1e-12,
+    "ignored_provenance": [
+      "commit_hash",
+      "output_dir",
+      "protocol_commit"
+    ],
+    "reason": "Recomputation provenance changes do not represent scientific results."
+  },
+  "artifacts": [
+    {
+      "artifact_group": "Retinal dataset label audit",
+      "classification": "CORRECTED_METADATA_ONLY",
+      "before_sha256": "074192eb98219c1f5c2b6de819c8903018f6bc2031291c8fb27f10a62bfb3bcb",
+      "after_sha256": "94c42ee4643322b8dffe938d9b5fbaaf9d34bc23c47047a3b0eaa04da75fa219",
+      "impact": "Corrected positive/negative counts and prevalence; no model input or result changed."
+    },
+    {
+      "artifact_group": "RPE endpoint campaign and OOD ablation",
+      "classification": "RECOMPUTED_IDENTICAL",
+      "csv_files_compared": 9,
+      "json_files_compared": 1,
+      "comparison": "numeric values within 1e-12 and text exactly equal; commit/path provenance excluded"
+    },
+    {
+      "artifact_group": "Lens endpoint campaign",
+      "classification": "RECOMPUTED_IDENTICAL",
+      "csv_files_compared": 9,
+      "json_files_compared": 1,
+      "comparison": "numeric values within 1e-12 and text exactly equal; commit/path provenance excluded"
+    },
+    {
+      "artifact_group": "RPE robustness campaigns",
+      "classification": "RECOMPUTED_IDENTICAL",
+      "csv_files_compared": 46,
+      "json_files_compared": 1,
+      "comparison": "numeric values within 1e-12 and text exactly equal; commit/path provenance excluded"
+    },
+    {
+      "artifact_group": "Nested experiment gate",
+      "classification": "RECOMPUTED_IDENTICAL",
+      "csv_files_compared": 8,
+      "json_files_compared": 2,
+      "comparison": "numeric values within 1e-12 and text exactly equal; commit/path provenance excluded"
+    },
+    {
+      "artifact_group": "Final evidence tables and summaries",
+      "classification": "RECOMPUTED_IDENTICAL",
+      "csv_files_compared": 9,
+      "json_files_compared": 2,
+      "comparison": "numeric values within 1e-12 and text exactly equal; commit/path provenance excluded"
+    },
+    {
+      "artifact_group": "Final rendered figures",
+      "classification": "RECOMPUTED_IDENTICAL",
+      "png_files_compared": 12,
+      "comparison": "pixel render files are byte-identical"
+    }
+  ],
+  "classification_counts": {
+    "UNAFFECTED": 0,
+    "CORRECTED_METADATA_ONLY": 1,
+    "RECOMPUTED_IDENTICAL": 6,
+    "RESULT_CHANGED": 0
+  },
+  "conclusion": "The erratum changes audit metadata only; all recomputed science is identical."
+}

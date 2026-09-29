@@ -1,0 +1,18 @@
+{
+  "dataset": "A deep learning-based computational pipeline predicts developmental outcome in retinal organoids: Supplementary Data",
+  "doi": "10.5281/zenodo.18198347",
+  "record_id": "18198347",
+  "record_url": "https://zenodo.org/records/18198347",
+  "publication_date": "2026-01-09",
+  "license": "CC-BY-4.0",
+  "files": [
+    {
+      "source_name": "Extended_Data_2.csv",
+      "destination": "data/phase2_raw/orgainoid_morphometrics.csv",
+      "download_url": "https://zenodo.org/api/records/18198347/files/Extended_Data_2.csv/content",
+      "size_bytes": 400059241,
+      "md5": "061e65efaca175b27dabd20f83f0f4f5",
+      "sha256": "b73890e767f63e9cc464597444e5159429172312d6e4539adbf83f128663ff61"
+    }
+  ]
+}

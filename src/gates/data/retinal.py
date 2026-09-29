@@ -26,6 +26,16 @@ RETINAL_FEATURES = (
 )
 
 
+def decode_binary_labels(values: pd.Series, *, column: str) -> pd.Series:
+    """Decode documented yes/no labels, rejecting missing or unexpected values."""
+    normalized = values.astype("string").str.strip().str.lower()
+    decoded = normalized.map({"yes": True, "no": False})
+    invalid = sorted(normalized[decoded.isna()].drop_duplicates().tolist())
+    if invalid:
+        raise ValueError(f"{column} contains unsupported labels: {invalid}")
+    return decoded.astype(bool)
+
+
 def load_retinal_morphometrics(path: Path, endpoint: str = "RPE_Final") -> LongitudinalDataset:
     if endpoint not in {"RPE_Final", "Lens_Final"}:
         raise ValueError("endpoint must be RPE_Final or Lens_Final")
@@ -38,7 +48,7 @@ def load_retinal_morphometrics(path: Path, endpoint: str = "RPE_Final") -> Longi
     if endpoint_values.dtype == bool:
         frame["endpoint"] = endpoint_values.astype(int)
     else:
-        frame["endpoint"] = endpoint_values.astype(str).str.lower().map({"yes": 1, "no": 0})
+        frame["endpoint"] = decode_binary_labels(endpoint_values, column=endpoint).astype(int)
     frame = frame.replace([np.inf, -np.inf], np.nan)
     dataset = LongitudinalDataset(
         name=f"orgAInoid_{endpoint}",

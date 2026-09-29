@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from gates.data.retinal import RETINAL_FEATURES
+from gates.data.retinal import RETINAL_FEATURES, decode_binary_labels
 
 
 def main() -> None:
@@ -29,18 +29,30 @@ def main() -> None:
     frame = pd.read_csv(args.input, usecols=columns)
     frame["unit_id"] = frame["experiment"].astype(str) + "|" + frame["well"].astype(str)
     frame["time"] = frame["loop"].str.extract(r"(\d+)").astype(float) / 2
+    frame["RPE_Final_decoded"] = decode_binary_labels(frame["RPE_Final"], column="RPE_Final")
+    frame["Lens_Final_decoded"] = decode_binary_labels(
+        frame["Lens_Final"], column="Lens_Final"
+    )
     units = frame.drop_duplicates("unit_id")
     counts = frame.groupby("unit_id").size()
     experiment_rows = []
     for experiment, part in units.groupby("experiment", sort=True):
+        rpe_positive = int(part["RPE_Final_decoded"].sum())
+        lens_positive = int(part["Lens_Final_decoded"].sum())
         experiment_rows.append(
             {
                 "experiment": str(experiment),
                 "independent_organoids": len(part),
-                "RPE_positive": int(part["RPE_Final"].astype(bool).sum()),
-                "Lens_positive": int(part["Lens_Final"].astype(bool).sum()),
+                "RPE_positive": rpe_positive,
+                "RPE_negative": int(len(part) - rpe_positive),
+                "RPE_prevalence": rpe_positive / len(part),
+                "Lens_positive": lens_positive,
+                "Lens_negative": int(len(part) - lens_positive),
+                "Lens_prevalence": lens_positive / len(part),
             }
         )
+    rpe_positive = int(units["RPE_Final_decoded"].sum())
+    lens_positive = int(units["Lens_Final_decoded"].sum())
     digest = hashlib.sha256()
     with args.input.open("rb") as source:
         while chunk := source.read(1024 * 1024):
@@ -71,6 +83,18 @@ def main() -> None:
             "full_144_observation_organoids": int((counts == 144).sum()),
             "organoids_below_72_observations": int((counts < 72).sum()),
             "organoids_below_12_observations": int((counts < 12).sum()),
+        },
+        "endpoint_label_totals": {
+            "RPE_Final": {
+                "positive": rpe_positive,
+                "negative": int(len(units) - rpe_positive),
+                "prevalence": rpe_positive / len(units),
+            },
+            "Lens_Final": {
+                "positive": lens_positive,
+                "negative": int(len(units) - lens_positive),
+                "prevalence": lens_positive / len(units),
+            },
         },
         "observation_count_quantiles": {
             "minimum": int(counts.min()),

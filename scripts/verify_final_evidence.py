@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -42,6 +43,11 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def sha256_git_blob(revision: str, path: str) -> str:
+    payload = subprocess.check_output(["git", "show", f"{revision}:{path}"], cwd=ROOT)
+    return hashlib.sha256(payload).hexdigest()
 
 
 def selected(master: pd.DataFrame, method: str, risk: float) -> pd.Series:
@@ -95,12 +101,20 @@ def main() -> None:
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
         for record in manifest["files"]:
+            observed = sha256_git_blob("gates-science-freeze-v1", record["path"])
+            assert observed == record["sha256"], f"v1 hash mismatch: {record['path']}"
+    manifest_v2_path = FINAL / "MANIFEST_V2.json"
+    if manifest_v2_path.exists():
+        manifest_v2 = json.loads(manifest_v2_path.read_text())
+        for record in manifest_v2["files"]:
             path = ROOT / record["path"]
-            assert path.exists(), f"manifest file missing: {record['path']}"
-            assert sha256(path) == record["sha256"], f"hash mismatch: {record['path']}"
+            assert path.exists(), f"v2 manifest file missing: {record['path']}"
+            assert sha256(path) == record["sha256"], f"v2 hash mismatch: {record['path']}"
+        impact = json.loads((FINAL / "erratum_impact_report.json").read_text())
+        assert impact["classification_counts"]["RESULT_CHANGED"] == 0
     print(
         "Final evidence verified: schema, frozen headlines, 12 figure pairs, forensics, "
-        f"and {'manifest hashes' if manifest_path.exists() else 'manifest pending freeze commit'}."
+        "and freeze-aware manifest hashes."
     )
 
 
