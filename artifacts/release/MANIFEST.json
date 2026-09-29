@@ -1,6 +1,6 @@
 {
-  "release": "gates-ai4s-submission-final",
-  "release_commit": "5be5fa30277988cc272a54e45bc5bab60a491b4e",
+  "release": "gates-ai4s-submission-final-v2",
+  "release_commit": "6bda0aab24901bafc2cc4087404caee68801bf71",
   "base_science_tag": "gates-science-freeze-v2",
   "historical_science_tag": "gates-science-freeze-v1",
   "clean_clone_reproduction": "passed",
@@ -14,6 +14,11 @@
     "Streamlit health and browser interaction"
   ],
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 42,
+      "sha256": "3e00f42c6d21ba7166924f7bf3fd35c22c8d00ebebf04da4a9a11d5497761f32"
+    },
     {
       "path": ".github/workflows/ci.yml",
       "bytes": 334,
@@ -31,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6512,
-      "sha256": "1c52843e65203009e4ea0d7b0144643025e7283b758dcc2c1d45902c3256fdec"
+      "bytes": 6519,
+      "sha256": "0e45573200862bf3973077cfd28f76be8cfa44ce6b64d33aac215184578875f3"
     },
     {
       "path": "app/streamlit_app.py",
@@ -131,8 +136,8 @@
     },
     {
       "path": "artifacts/final/figures/01_rpe_risk_savings_frontier.svg",
-      "bytes": 60137,
-      "sha256": "f2f7bdd493be9f802a159f10df7f35fc9270ef67566bad2888262c6c45c877b8"
+      "bytes": 60087,
+      "sha256": "21cf5c8cd8860d3b7fb005493f920428e5980e47f131607e416d7bed19d1beb4"
     },
     {
       "path": "artifacts/final/figures/02_rpe_risk_coverage_frontier.png",
@@ -141,8 +146,8 @@
     },
     {
       "path": "artifacts/final/figures/02_rpe_risk_coverage_frontier.svg",
-      "bytes": 57777,
-      "sha256": "926e65ad02601b2fc57617dcffddf7659d905c0c9372d89afbaaa142e7e55877"
+      "bytes": 57727,
+      "sha256": "768b661b9ba46add20bcee90e1182c1f59f388cb1890e888b4895389265be70e"
     },
     {
       "path": "artifacts/final/figures/03_per_experiment_eesr.png",
@@ -151,8 +156,8 @@
     },
     {
       "path": "artifacts/final/figures/03_per_experiment_eesr.svg",
-      "bytes": 36480,
-      "sha256": "6e70683ee9e58389fbb678e0c8bad16b0451fe8c01949b043ca85d957dbce779"
+      "bytes": 36430,
+      "sha256": "918e70426a87032eaad703654af37a64e97defd491758419d2780be0c1c2e3ad"
     },
     {
       "path": "artifacts/final/figures/04_per_experiment_observation_savings.png",
@@ -161,8 +166,8 @@
     },
     {
       "path": "artifacts/final/figures/04_per_experiment_observation_savings.svg",
-      "bytes": 32660,
-      "sha256": "52b6b92b9da08c5dc448eaff3b223884b21734f9516ca2f5ab9cea638661c0b8"
+      "bytes": 32610,
+      "sha256": "ee824f2517d1710755044d093db0703ff125df258923c2cc6cb5813ce0c2a81f"
     },
     {
       "path": "artifacts/final/figures/05_baseline_comparison_005.png",
@@ -171,8 +176,8 @@
     },
     {
       "path": "artifacts/final/figures/05_baseline_comparison_005.svg",
-      "bytes": 46065,
-      "sha256": "a654d32baff39351b9e77bcc17d85902b4edbce7f5067077bf99b6f75cd96d53"
+      "bytes": 46015,
+      "sha256": "6b06d0275d053538d5304fb51008a552e6027703616a54905926bf3c1c47c54b"
     },
     {
       "path": "artifacts/final/figures/06_ood_refusal_ablation.png",
@@ -181,8 +186,8 @@
     },
     {
       "path": "artifacts/final/figures/06_ood_refusal_ablation.svg",
-      "bytes": 41535,
-      "sha256": "fbde6b5c6abaaf82c33ea50d70766449ffe1e50af9f0f6b420a709d183c5e29d"
+      "bytes": 41485,
+      "sha256": "436956f1d56c4c18d2b3b156fdc07283a13418ddd7bef7aef6300893e24667d4"
     },
     {
       "path": "artifacts/final/figures/07_experiment_gate_005.png",
@@ -191,8 +196,8 @@
     },
     {
       "path": "artifacts/final/figures/07_experiment_gate_005.svg",
-      "bytes": 46592,
-      "sha256": "db599654ae96e5ca4f271b27f7c29e377d5134134c13a2501c3d6f28a0de6c34"
+      "bytes": 46542,
+      "sha256": "aa91c47c458a206d2819690d8cdd691ccc0849fd7f1967587a8cbef87b752598"
     },
     {
       "path": "artifacts/final/figures/08_experiment_gate_010.png",
@@ -201,8 +206,8 @@
     },
     {
       "path": "artifacts/final/figures/08_experiment_gate_010.svg",
-      "bytes": 47970,
-      "sha256": "4f4ca06ac04d16e3edf5ac207bf1805202fc08c9557f4749545a290ddb8f8a01"
+      "bytes": 47920,
+      "sha256": "0bcf73f7f673e349cf6880bba26ffab6ef843f72679caac9412503eee4cb2aec"
     },
     {
       "path": "artifacts/final/figures/09_representative_successful_stop.png",
@@ -211,8 +216,8 @@
     },
     {
       "path": "artifacts/final/figures/09_representative_successful_stop.svg",
-      "bytes": 48357,
-      "sha256": "db24614bed71dd43e268d026624a456a322f99cc5546241aa3b533aaf7dac816"
+      "bytes": 48307,
+      "sha256": "b751fa733174dad9e282fcdb1c81ccb6ac07cc8b9fa1e8d934bee4bd6a2c316e"
     },
     {
       "path": "artifacts/final/figures/10_representative_abstention.png",
@@ -221,8 +226,8 @@
     },
     {
       "path": "artifacts/final/figures/10_representative_abstention.svg",
-      "bytes": 49651,
-      "sha256": "851aa9daf2e79e4c98fddd76e6e827566ff8bca7b8030ae55aa83c95b2fd385a"
+      "bytes": 49601,
+      "sha256": "9e14e461f927938fcd9387cd88110c45cc70e475fa620db555db576d2983e5c1"
     },
     {
       "path": "artifacts/final/figures/11_representative_erroneous_stop.png",
@@ -231,8 +236,8 @@
     },
     {
       "path": "artifacts/final/figures/11_representative_erroneous_stop.svg",
-      "bytes": 46648,
-      "sha256": "577b0a00c70f4ca504be1679363e957b5079350c140de25e27182215ef8542a1"
+      "bytes": 46598,
+      "sha256": "6ea8b05b13728073ba7d6a75ddda0f9ee1d854aacdc8b22a5630420bd4260cf9"
     },
     {
       "path": "artifacts/final/figures/12_e007_failure_case.png",
@@ -241,8 +246,8 @@
     },
     {
       "path": "artifacts/final/figures/12_e007_failure_case.svg",
-      "bytes": 40341,
-      "sha256": "5ec7919aa2e519ccfa4f7aa4a5d30646b3f46bee659ea3d14234f693f61c97b1"
+      "bytes": 40291,
+      "sha256": "b9cadbfc1b975073d834181a44bee61bbc7a6d48bafb62489b3f99325df3e70e"
     },
     {
       "path": "artifacts/final/master_evidence.csv",
@@ -1115,9 +1120,14 @@
       "sha256": "7bcdf8a98d90cf8d21d735e2bbcccf8dd379a78798ed2438b9b51d7580d21478"
     },
     {
+      "path": "docs/final/JUDGE_REVIEW.md",
+      "bytes": 8148,
+      "sha256": "a71cce3ec62e4dd05c308e61a05a354bd63f7f23af723be7dd943a4d6bb6e7a1"
+    },
+    {
       "path": "docs/final/KAGGLE_WRITEUP.md",
-      "bytes": 5578,
-      "sha256": "863bad6a2549fcee3e7dd11a3df64341f43977083379683dccdf4892f122a1c6"
+      "bytes": 5687,
+      "sha256": "019be6163cfe5318b26921cc4af9def3ce1dfaea8d5a49c6feccc89cbac0222d"
     },
     {
       "path": "docs/final/PROVENANCE.md",
@@ -1172,7 +1182,7 @@
     {
       "path": "docs/submission_checklist.md",
       "bytes": 1379,
-      "sha256": "d4b819398c03515c046c8fcb7141353673173fa2b3ad0bafe90cd81e8f38b672"
+      "sha256": "87ebf7c58c0ec98662b70837fffbafacfcdc74713896b9ec2bce2ba37b675cfb"
     },
     {
       "path": "docs/technical_report.md",
@@ -1271,8 +1281,8 @@
     },
     {
       "path": "scripts/finalize_phase3_submission.py",
-      "bytes": 30659,
-      "sha256": "90946bf7047f7ea37c435b9d935288cccefb689a5d906b0e0666132c733fdc47"
+      "bytes": 30784,
+      "sha256": "ff6a14bbeb55f2aa9fac92dd1baf559d638cdfeb485f3b1f74a027d3277f0284"
     },
     {
       "path": "scripts/freeze_release.py",
@@ -1486,8 +1496,8 @@
     },
     {
       "path": "tests/test_final_evidence.py",
-      "bytes": 1239,
-      "sha256": "d654d100477a5f57304577d74ae431ae7c2b618858c559699f1b8d9da6594ada"
+      "bytes": 1745,
+      "sha256": "78bc419ee8493035656b01d4946c0dfee1be0272c8048d09da34e2c11e759544"
     },
     {
       "path": "tests/test_phase2.py",
