@@ -1,7 +1,7 @@
 {
   "freeze_name": "gates-science-freeze-v2",
   "status": "v1 science preserved; audit metadata and data acquisition corrected",
-  "evidence_commit": "5fb5d5abe2a3f1f22f84eb9d5b342e89c54682fe",
+  "evidence_commit": "f1ea2c485880e9571dd060e7bf49cf5826e3a612",
   "supersedes": {
     "tag": "gates-science-freeze-v1",
     "scope": "audit metadata and deterministic data acquisition only"
