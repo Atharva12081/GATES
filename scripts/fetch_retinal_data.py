@@ -34,20 +34,36 @@ def validate(path: Path, record: dict[str, object]) -> None:
 
 
 def download_part(url: str, destination: Path, start: int, end: int) -> None:
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "gates-ai4s/0.1 data fetcher",
-            "Range": f"bytes={start}-{end}",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=120) as response, destination.open("wb") as out:
-        if response.status != 206:
-            raise ValueError(f"source did not honor byte range {start}-{end}")
-        while chunk := response.read(CHUNK_SIZE):
-            out.write(chunk)
     expected = end - start + 1
-    if destination.stat().st_size != expected:
+    destination.unlink(missing_ok=True)
+    failures = 0
+    while (destination.stat().st_size if destination.exists() else 0) < expected:
+        existing = destination.stat().st_size if destination.exists() else 0
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "gates-ai4s/0.1 data fetcher",
+                "Range": f"bytes={start + existing}-{end}",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=120) as response, destination.open(
+                "ab"
+            ) as out:
+                if response.status != 206:
+                    raise ValueError(f"source did not honor byte range {start}-{end}")
+                while chunk := response.read(CHUNK_SIZE):
+                    out.write(chunk)
+        except (OSError, TimeoutError):
+            failures += 1
+            if failures >= 8:
+                raise
+            continue
+        new_size = destination.stat().st_size
+        failures = failures + 1 if new_size == existing else 0
+        if failures >= 8:
+            break
+    if not destination.exists() or destination.stat().st_size != expected:
         raise ValueError(f"incomplete byte range {start}-{end}")
 
 
