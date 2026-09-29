@@ -1,9 +1,12 @@
 from pathlib import Path
+from runpy import run_path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+SAVE_FIGURE = run_path(ROOT / "scripts/finalize_phase3_submission.py")["save_figure"]
 
 
 def test_frozen_headline_is_derived_from_master_evidence() -> None:
@@ -32,3 +35,14 @@ def test_class_specific_audit_reconciles_with_frozen_decisions() -> None:
     assert audit["early_stops"].sum() == 439
     assert audit["erroneous_early_stops"].sum() == 25
     assert audit["refusals"].sum() == 38
+
+
+def test_svg_export_is_byte_reproducible(tmp_path: Path) -> None:
+    def render() -> bytes:
+        figure, axis = plt.subplots()
+        axis.plot([0, 1], [0, 1], label="deterministic")
+        axis.legend()
+        SAVE_FIGURE(figure, tmp_path, "deterministic")
+        return (tmp_path / "deterministic.svg").read_bytes()
+
+    assert render() == render()

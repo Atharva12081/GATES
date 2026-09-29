@@ -36,5 +36,5 @@
 - [x] Source, license, and asset provenance audit
 - [x] Registration completed (author-confirmed)
 - [ ] Record demo video
-- [ ] Publish repository and add its final URL
+- [x] Publish repository and add its final URL
 - [ ] Add final public links and submit

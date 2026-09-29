@@ -25,7 +25,7 @@ new observation -> CONTINUE -> STOP
 
 ![Risk versus retrospectively estimated observation savings](artifacts/final/figures/01_rpe_risk_savings_frontier.png)
 
-**[Demo](#interactive-evidence-demo) · [Technical report](docs/final/TECHNICAL_REPORT.md) ·
+**[Demo](#interactive-evidence-demo) · [Technical report](docs/final/GATES_Technical_Report.pdf) ·
 [Reproduce](#reproduce-the-frozen-evidence)**
 
 Developed by **Atharva Parande**.

@@ -13,6 +13,8 @@ import pandas as pd
 from gates.evaluation.uncertainty import exact_binomial_interval
 from gates.experiment_gate.signals import binary_entropy
 
+plt.rcParams["svg.hashsalt"] = "gates-ai4s"
+
 FINAL_COLUMNS = [
     "dataset",
     "endpoint",
@@ -280,7 +282,12 @@ def forensic_record(
 def save_figure(fig: plt.Figure, directory: Path, stem: str) -> None:
     fig.tight_layout()
     fig.savefig(directory / f"{stem}.png", dpi=300, bbox_inches="tight")
-    fig.savefig(directory / f"{stem}.svg", bbox_inches="tight")
+    svg_path = directory / f"{stem}.svg"
+    fig.savefig(
+        svg_path,
+        bbox_inches="tight",
+        metadata={"Date": None},
+    )
     plt.close(fig)
 
 

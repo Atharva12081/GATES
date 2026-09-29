@@ -6,9 +6,9 @@
 
 ## Demo Video
 
-The required 4:45 recording package is complete in `docs/final/VIDEO_SCRIPT.md`. The public video
-URL is not yet available; this is a submission blocker, and the Kaggle entry must not be finalized
-until the recording is uploaded and verified without login.
+The exact 4:45 recording script is complete in `docs/final/VIDEO_SCRIPT.md`, but the recording is
+not. The public video URL is not yet available; this is a submission blocker, and the Kaggle entry
+must not be finalized until the recording is uploaded and verified without login.
 
 ## Code Repository
 
@@ -102,8 +102,9 @@ frozen evidence and never retrains.
 
 ## Technical Report
 
-The self-contained report source is `docs/final/TECHNICAL_REPORT.md`; the 16-page submission PDF is
-`docs/final/GATES_Technical_Report.pdf`.
+The self-contained report source is `docs/final/TECHNICAL_REPORT.md`; the
+[16-page submission PDF](https://github.com/Atharva12081/GATES/blob/main/docs/final/GATES_Technical_Report.pdf)
+is publicly accessible in the repository.
 
 ## Optional Demo
 
