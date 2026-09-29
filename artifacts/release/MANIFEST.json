@@ -1,6 +1,6 @@
 {
   "release": "gates-ai4s-submission-rc1",
-  "release_commit": "e330cc0970dcb89a140caed1f166538d813d6ca3",
+  "release_commit": "32d8f9a57b90799c136e56a08d3b1fc4eec316a6",
   "base_science_tag": "gates-science-freeze-v2",
   "historical_science_tag": "gates-science-freeze-v1",
   "clean_clone_reproduction": "passed",
@@ -666,8 +666,8 @@
     },
     {
       "path": "artifacts/phase2/retinal_lens_final/run_summary.json",
-      "bytes": 179,
-      "sha256": "eb7cc5463105a64a65a23a29a5e03d61c4073e6f42c751f1cc798f6e3a268044"
+      "bytes": 151,
+      "sha256": "5501a2f4773915e91b75f7edce840828e559298179f273c5145f9e4cb91eba17"
     },
     {
       "path": "artifacts/phase2/retinal_lens_final/unit_decisions.csv",
@@ -756,8 +756,8 @@
     },
     {
       "path": "artifacts/phase2/retinal_rpe_final/run_summary.json",
-      "bytes": 177,
-      "sha256": "30df26e392fca0d0c738637deab9c02d246eacf7d92c3ab13d0de3e7d1111385"
+      "bytes": 149,
+      "sha256": "9512b1bbee087588db00e92c0d7e9922702c5c5069219044018ea8822be03e58"
     },
     {
       "path": "artifacts/phase2/retinal_rpe_final/unit_decisions.csv",
@@ -1221,8 +1221,8 @@
     },
     {
       "path": "scripts/check_release_claims.py",
-      "bytes": 1927,
-      "sha256": "c4551962bdab46d784d14428b21cfea9d32c2237325285896be49a4f64b368bc"
+      "bytes": 2276,
+      "sha256": "35a9b24786fd43b730cf1ee9f2b5b891df419c8f5ac2f097c5cc957eb9640b33"
     },
     {
       "path": "scripts/fetch_data.py",
@@ -1260,14 +1260,19 @@
       "sha256": "a533dc8dec7afb3e307d237fa5355153df76f173ea07b33831af3e2b8bf7aa3e"
     },
     {
+      "path": "scripts/normalize_evidence_paths.py",
+      "bytes": 493,
+      "sha256": "84855d237b0abd0717f50ae179a8a9e7b185d954c12cb6f8a90aeb59ce0d65db"
+    },
+    {
       "path": "scripts/phase2_existing_uncertainty.py",
       "bytes": 4023,
       "sha256": "c99b54267149358027ea6f0e18b4ef4d708f6cf544c4162ed6ef4380bfe83595"
     },
     {
       "path": "scripts/run_phase2_retinal.py",
-      "bytes": 1232,
-      "sha256": "bd607b06021d159fcdee56356641a19c5876f3e52d0da04b36bf690ca87b2556"
+      "bytes": 1353,
+      "sha256": "5c72d71d41b5f9414d8c08763d5329689873e8f1c797b510bb43bb11c284b005"
     },
     {
       "path": "scripts/run_phase2_stress.py",
