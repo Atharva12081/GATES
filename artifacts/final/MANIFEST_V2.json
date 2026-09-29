@@ -1,7 +1,7 @@
 {
   "freeze_name": "gates-science-freeze-v2",
   "status": "v1 science preserved; audit metadata and data acquisition corrected",
-  "evidence_commit": "f1ea2c485880e9571dd060e7bf49cf5826e3a612",
+  "evidence_commit": "14952c993b7ea0006856939de3383ab4c9ea3752",
   "supersedes": {
     "tag": "gates-science-freeze-v1",
     "scope": "audit metadata and deterministic data acquisition only"
@@ -46,8 +46,8 @@
     },
     {
       "path": "scripts/fetch_retinal_data.py",
-      "bytes": 3767,
-      "sha256": "c877434e19098b0395f9de9a7a771ab04717d156cc0485c82c68bf34842a57a2"
+      "bytes": 4425,
+      "sha256": "d917e361aa6c80e034b82f47a6eaff38956a102b69e1af5068862341934a0e2a"
     },
     {
       "path": "scripts/freeze_science_v2.py",
