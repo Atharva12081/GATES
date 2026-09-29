@@ -79,7 +79,8 @@ def main() -> None:
         },
         "phase2_immutable": {
             "tag": "gates-phase2-evidence-v1",
-            "commit": phase2_manifest["phase2_code_commit"],
+            "code_commit": phase2_manifest["phase2_code_commit"],
+            "evidence_commit": git_output("rev-list", "-n", "1", "gates-phase2-evidence-v1"),
             "manifest_sha256": sha256(ROOT / "artifacts" / "phase2" / "MANIFEST.json"),
         },
         "files": [
