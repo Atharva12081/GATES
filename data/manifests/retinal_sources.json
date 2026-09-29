@@ -4,7 +4,11 @@
   "record_id": "18198347",
   "record_url": "https://zenodo.org/records/18198347",
   "publication_date": "2026-01-09",
+  "validation_download_date": "2026-09-29",
   "license": "CC-BY-4.0",
+  "role": "Primary retinal-organoid evaluation source for Phase 2 and Phase 3",
+  "redistribution_permitted": "Yes with attribution under CC-BY-4.0; excluded from Git because of size",
+  "tracked_by_git": false,
   "files": [
     {
       "source_name": "Extended_Data_2.csv",
