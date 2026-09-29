@@ -1,7 +1,7 @@
 {
   "freeze_name": "gates-science-freeze-v2",
   "status": "v1 science preserved; audit metadata and data acquisition corrected",
-  "evidence_commit": "14952c993b7ea0006856939de3383ab4c9ea3752",
+  "evidence_commit": "6608298630487defa8a7279f63b2336499647fa2",
   "supersedes": {
     "tag": "gates-science-freeze-v1",
     "scope": "audit metadata and deterministic data acquisition only"
@@ -10,7 +10,7 @@
   "dataset_sha256": "b73890e767f63e9cc464597444e5159429172312d6e4539adbf83f128663ff61",
   "files": [
     {
-      "path": "Justfile",
+      "path": "justfile",
       "bytes": 849,
       "sha256": "3bd0d2f64358e4679130827133ee029642ff4241f92e3c7e247b666d8b540633"
     },
@@ -52,12 +52,12 @@
     {
       "path": "scripts/freeze_science_v2.py",
       "bytes": 2051,
-      "sha256": "a533dc8dec7afb3e307d237fa5355153df76f173ea07b33831af3e2b8bf7aa3e"
+      "sha256": "65bf73ab77b949e948bc1d0c9d64f888b14b18c494282e2a1b1a27e64a1dcbe2"
     },
     {
       "path": "scripts/run_phase2_retinal.py",
-      "bytes": 1232,
-      "sha256": "bd607b06021d159fcdee56356641a19c5876f3e52d0da04b36bf690ca87b2556"
+      "bytes": 1353,
+      "sha256": "5c72d71d41b5f9414d8c08763d5329689873e8f1c797b510bb43bb11c284b005"
     },
     {
       "path": "scripts/verify_erratum_recomputation.py",
@@ -66,8 +66,8 @@
     },
     {
       "path": "scripts/verify_final_evidence.py",
-      "bytes": 4392,
-      "sha256": "762ae80d3beb9229f21d932ca1ec6d968d08ab42bccb132db11725a09840fab1"
+      "bytes": 4349,
+      "sha256": "bc07539c56213a15372d073be8a8c6173680f55c312d5e7722af6d878c27e041"
     },
     {
       "path": "src/gates/data/retinal.py",
