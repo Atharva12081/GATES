@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = (
-    "Justfile",
+    "justfile",
     "data/manifests/retinal_sources.json",
     "docs/final/ERRATUM.md",
     "evidence/phase2/retinal_dataset_audit.json",
