@@ -1,6 +1,6 @@
 {
   "release": "gates-ai4s-submission-rc1",
-  "release_commit": "32d8f9a57b90799c136e56a08d3b1fc4eec316a6",
+  "release_commit": "507488c1846afc5fa28e3973e529bd306207d3d6",
   "base_science_tag": "gates-science-freeze-v2",
   "historical_science_tag": "gates-science-freeze-v1",
   "clean_clone_reproduction": "passed",
@@ -1291,8 +1291,8 @@
     },
     {
       "path": "scripts/verify_final_evidence.py",
-      "bytes": 4392,
-      "sha256": "762ae80d3beb9229f21d932ca1ec6d968d08ab42bccb132db11725a09840fab1"
+      "bytes": 4349,
+      "sha256": "bc07539c56213a15372d073be8a8c6173680f55c312d5e7722af6d878c27e041"
     },
     {
       "path": "snapshots/gates-organoid-feasibility-v0/FREEZE.json",
