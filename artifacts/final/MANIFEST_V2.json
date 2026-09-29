@@ -1,0 +1,83 @@
+{
+  "freeze_name": "gates-science-freeze-v2",
+  "status": "v1 science preserved; audit metadata and data acquisition corrected",
+  "evidence_commit": "5375ead63a3f91fe7b7495fa9de48489d441487d",
+  "supersedes": {
+    "tag": "gates-science-freeze-v1",
+    "scope": "audit metadata and deterministic data acquisition only"
+  },
+  "result_changed_count": 0,
+  "dataset_sha256": "b73890e767f63e9cc464597444e5159429172312d6e4539adbf83f128663ff61",
+  "files": [
+    {
+      "path": "Justfile",
+      "bytes": 799,
+      "sha256": "cc88121740fdbef226fe0a93217f7eefbd9194eb49bd5f09185c48eaff418c26"
+    },
+    {
+      "path": "data/manifests/retinal_sources.json",
+      "bytes": 720,
+      "sha256": "9e053e0167fcd22e2d7732383afd0c80ed92cc8a6325bb5dacdb9d3c946792e1"
+    },
+    {
+      "path": "docs/final/ERRATUM.md",
+      "bytes": 2764,
+      "sha256": "b1176fcab0ebe412360e2f3a5bea34885a0ffbc18ec7c696be80797e337a075d"
+    },
+    {
+      "path": "evidence/phase2/retinal_dataset_audit.json",
+      "bytes": 6288,
+      "sha256": "94c42ee4643322b8dffe938d9b5fbaaf9d34bc23c47047a3b0eaa04da75fa219"
+    },
+    {
+      "path": "artifacts/final/erratum.json",
+      "bytes": 1649,
+      "sha256": "9ff315460f11f151ac4280531ec9ba21468f3399785a2608c946b542265c8cd6"
+    },
+    {
+      "path": "artifacts/final/erratum_impact_report.json",
+      "bytes": 2885,
+      "sha256": "5e3ba91892978cad4c3587571bcba1b763b9a6c57eac0aa632f88c7c84c5c2cf"
+    },
+    {
+      "path": "scripts/audit_retinal_dataset.py",
+      "bytes": 6837,
+      "sha256": "d1d1ad79d0a587c445262e647bcac982bda648a4a898ced4686a711f88ae2807"
+    },
+    {
+      "path": "scripts/fetch_retinal_data.py",
+      "bytes": 2216,
+      "sha256": "d3929da56301ef81552253706788a1ed2b7c391ed895d14181d352910d42fd51"
+    },
+    {
+      "path": "scripts/freeze_science_v2.py",
+      "bytes": 2051,
+      "sha256": "a533dc8dec7afb3e307d237fa5355153df76f173ea07b33831af3e2b8bf7aa3e"
+    },
+    {
+      "path": "scripts/run_phase2_retinal.py",
+      "bytes": 1232,
+      "sha256": "bd607b06021d159fcdee56356641a19c5876f3e52d0da04b36bf690ca87b2556"
+    },
+    {
+      "path": "scripts/verify_erratum_recomputation.py",
+      "bytes": 6988,
+      "sha256": "551c167dce035863a76d65b4c8dde6540e427d1f827b296974d54f839d979008"
+    },
+    {
+      "path": "scripts/verify_final_evidence.py",
+      "bytes": 4392,
+      "sha256": "762ae80d3beb9229f21d932ca1ec6d968d08ab42bccb132db11725a09840fab1"
+    },
+    {
+      "path": "src/gates/data/retinal.py",
+      "bytes": 2120,
+      "sha256": "b7cef82683586dcaa34a2682378966ee28fdb1c2336f08d5f1189c4ef6df4eac"
+    },
+    {
+      "path": "tests/test_retinal_audit.py",
+      "bytes": 607,
+      "sha256": "dbb9e2af33768414b033971fc94bfbb2d28beb041b761f852942d6d906211bcb"
+    }
+  ]
+}
