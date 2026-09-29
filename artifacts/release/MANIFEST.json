@@ -1,6 +1,6 @@
 {
   "release": "gates-ai4s-submission-rc1",
-  "release_commit": "507488c1846afc5fa28e3973e529bd306207d3d6",
+  "release_commit": "a27c99ba62470bd0cddc13d5769a8812849ff34b",
   "base_science_tag": "gates-science-freeze-v2",
   "historical_science_tag": "gates-science-freeze-v1",
   "clean_clone_reproduction": "passed",
@@ -87,7 +87,7 @@
     {
       "path": "artifacts/final/MANIFEST_V2.json",
       "bytes": 2764,
-      "sha256": "15a454ae24ab12ab926c794b07fbb6e447c822a68dd5d916a411636963c04dea"
+      "sha256": "2c5b17171a5788eb67a92021ce4b0e765a1bb7230776790e2693df510022f714"
     },
     {
       "path": "artifacts/final/candidate_failure_score_comparison.csv",
@@ -1257,7 +1257,7 @@
     {
       "path": "scripts/freeze_science_v2.py",
       "bytes": 2051,
-      "sha256": "a533dc8dec7afb3e307d237fa5355153df76f173ea07b33831af3e2b8bf7aa3e"
+      "sha256": "65bf73ab77b949e948bc1d0c9d64f888b14b18c494282e2a1b1a27e64a1dcbe2"
     },
     {
       "path": "scripts/normalize_evidence_paths.py",
