@@ -107,9 +107,8 @@ def main() -> None:
     if manifest_v2_path.exists():
         manifest_v2 = json.loads(manifest_v2_path.read_text())
         for record in manifest_v2["files"]:
-            path = ROOT / record["path"]
-            assert path.exists(), f"v2 manifest file missing: {record['path']}"
-            assert sha256(path) == record["sha256"], f"v2 hash mismatch: {record['path']}"
+            observed = sha256_git_blob("gates-science-freeze-v2", record["path"])
+            assert observed == record["sha256"], f"v2 hash mismatch: {record['path']}"
         impact = json.loads((FINAL / "erratum_impact_report.json").read_text())
         assert impact["classification_counts"]["RESULT_CHANGED"] == 0
     print(
