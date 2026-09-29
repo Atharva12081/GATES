@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -46,13 +47,21 @@ def main() -> None:
     local_link = re.compile(r"\[[^]]+\]\((?!https?://|#)([^)]+)\)")
     for path in PUBLIC_FILES:
         text = path.read_text()
-        assert "/Users/" not in text and "/tmp/" not in text and "file://" not in text
         for target in local_link.findall(text):
             target_path = target.split("#", 1)[0]
             if target_path:
                 assert (path.parent / target_path).exists(), (
                     f"broken local link in {path.relative_to(ROOT)}: {target}"
                 )
+    forbidden = ("/" + "Users/", "/" + "tmp/", "file" + "://")
+    tracked = subprocess.check_output(["git", "ls-files"], cwd=ROOT, text=True).splitlines()
+    for relative in tracked:
+        try:
+            text = (ROOT / relative).read_text()
+        except UnicodeDecodeError:
+            continue
+        for marker in forbidden:
+            assert marker not in text, f"local path leak in {relative}: {marker}"
     print("Release claims, local links, and path hygiene verified.")
 
 

@@ -29,6 +29,9 @@ def main() -> None:
     )
     output = args.output or ROOT / "artifacts" / "phase2" / f"retinal_{args.endpoint.lower()}"
     result = run_phase2_campaign(dataset, output, args.seed, commit)
+    result["output_dir"] = (
+        str(output.relative_to(ROOT)) if output.is_relative_to(ROOT) else output.name
+    )
     (output / "run_summary.json").write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result, indent=2))
 

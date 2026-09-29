@@ -2,5 +2,5 @@
   "dataset": "orgAInoid_RPE_Final",
   "independent_units": 988,
   "independent_groups": 11,
-  "output_dir": "/Users/atharva/Desktop/AI4S/artifacts/phase2/retinal_rpe_final"
+  "output_dir": "artifacts/phase2/retinal_rpe_final"
 }
