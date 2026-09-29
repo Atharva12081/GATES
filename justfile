@@ -12,6 +12,12 @@ verify:
     uv run pytest
     uv run gates verify
 
+phase3-finalize:
+    uv run python scripts/run_phase3_experiment_gate.py --data data/phase2_raw/orgainoid_morphometrics.csv --phase2 artifacts/phase2/retinal_rpe_final --protocol protocols/phase3/orgainoid_experiment_gate_protocol.json --output artifacts/phase3/orgainoid_experiment_gate
+    uv run python scripts/finalize_phase3_submission.py
+
+verify-final:
+    uv run python scripts/verify_final_evidence.py
+
 demo:
     uv run streamlit run app/streamlit_app.py
-

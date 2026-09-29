@@ -1,0 +1,113 @@
+{
+  "status": "post-hoc forensic analysis; no Phase-2 model or threshold changed",
+  "experiment": "E007",
+  "sample_count": 93,
+  "positive_endpoint_fraction": 0.5053763440860215,
+  "condition_counts": {
+    "0nM": 24,
+    "4nM": 24,
+    "2nM": 23,
+    "1nM": 22
+  },
+  "phase2_005": {
+    "independent_units": 93,
+    "stopped_early": 49,
+    "incorrect_early": 15,
+    "EESR": 0.30612244897959184,
+    "EESR_exact_lower": 0.18251944764587358,
+    "EESR_exact_upper": 0.4541524365052459,
+    "FP_errors": 5,
+    "FN_errors": 10,
+    "FP_EESR": 0.10204081632653061,
+    "FN_EESR": 0.20408163265306123,
+    "coverage": 0.5268817204301075,
+    "abstention_rate": 0.3333333333333333,
+    "observation_savings": 0.3028673835125448,
+    "mean_decision_time": 50.193548387096776,
+    "median_decision_time": 60.0
+  },
+  "error_direction": {
+    "false_positive": 5,
+    "false_negative": 10
+  },
+  "error_decision_times": {
+    "24.0": 8,
+    "48.0": 6,
+    "60.0": 1
+  },
+  "input_shift_signals": {
+    "two_sample_auc": 0.8523528731645278,
+    "standardized_mean_distance": 2.2338776412783754,
+    "rbf_mmd": 0.05523865194874711,
+    "energy_distance": 0.7654230277329619,
+    "unit_ood_mean": 0.7164044189155309,
+    "unit_ood_fraction": 0.043010752688172046
+  },
+  "cross_experiment_ranks": {
+    "two_sample_auc": {
+      "rank_high_to_low": 6,
+      "of": 11
+    },
+    "standardized_mean_distance": {
+      "rank_high_to_low": 7,
+      "of": 11
+    },
+    "rbf_mmd": {
+      "rank_high_to_low": 7,
+      "of": 11
+    },
+    "energy_distance": {
+      "rank_high_to_low": 7,
+      "of": 11
+    },
+    "unit_ood_mean": {
+      "rank_high_to_low": 3,
+      "of": 11
+    },
+    "unit_ood_fraction": {
+      "rank_high_to_low": 4,
+      "of": 11
+    },
+    "prediction_entropy_mean": {
+      "rank_high_to_low": 4,
+      "of": 11
+    },
+    "ensemble_disagreement_mean": {
+      "rank_high_to_low": 7,
+      "of": 11
+    },
+    "trajectory_slope_norm_mean": {
+      "rank_high_to_low": 11,
+      "of": 11
+    }
+  },
+  "prediction_at_12h": {
+    "mean_probability": 0.5800211345345311,
+    "predicted_positive_fraction": 0.6774193548387096,
+    "mean_entropy": 0.56159653985871,
+    "mean_disagreement": 0.07051941511470856,
+    "brier_score": 0.23629997876100514
+  },
+  "stopped_unit_comparison": {
+    "erroneous_stops": 15,
+    "correct_stops": 34,
+    "erroneous_mean_selective_confidence": 0.7960113479109407,
+    "correct_mean_selective_confidence": 0.8496208445980102,
+    "erroneous_mean_unit_ood_ratio": 0.8174223459857072,
+    "correct_mean_unit_ood_ratio": 0.7844455070055214,
+    "erroneous_mean_disagreement": 0.08198110627902158,
+    "correct_mean_disagreement": 0.06241960135600647,
+    "erroneous_stops_with_ood_ratio_at_least_one": 0
+  },
+  "diagnosis": {
+    "primary": "conditional/concept shift or insufficient calibration representation",
+    "confidence": "moderate; mechanism unidentified",
+    "evidence": "E007 has balanced conditions and near-average endpoint prevalence. Generic input distances are not extreme across experiments, all 15 erroneous stops have unit OOD ratios below one, and errors are mixed but false-negative dominant. The lowest-ranked early trajectory magnitude was detectable by the retrospective nested 5% gate, but not by generic covariate-shift scores.",
+    "not_supported": [
+      "a specific biological mechanism",
+      "label-prevalence shift as the main cause",
+      "noisy ground truth",
+      "pure covariate shift"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "protocol_hash": "35f7642203792bdde9190fbdcd6c7fd0fa1ebd3c74068197cfe71f1fbb0f75f3",
+  "protocol_commit": "38fa90b29c08545cb6e15e1778f1cd110c78a8ff",
+  "classification": "retrospective_nested_not_prospective",
+  "external_validation": "not run; mTIPs failed availability/grouping acceptance",
+  "independent_experiments": 11,
+  "independent_units": 988
+}

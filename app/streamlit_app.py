@@ -3,103 +3,158 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE = ROOT / "artifacts" / "evidence"
+RPE_EVIDENCE = ROOT / "artifacts" / "phase2" / "retinal_rpe_final"
+FINAL_EVIDENCE = ROOT / "artifacts" / "final"
 
-st.set_page_config(page_title="GATES", page_icon="⏱️", layout="wide")
+st.set_page_config(page_title="GATES evidence demo", page_icon="⏱️", layout="wide")
 
 
 @st.cache_data
-def load_evidence() -> tuple[pd.DataFrame, pd.DataFrame, dict[str, object]]:
-    predictions = pd.read_csv(EVIDENCE / "predictions_by_time.csv")
-    decisions = pd.read_csv(EVIDENCE / "decisions.csv")
-    summary = json.loads((EVIDENCE / "summary.json").read_text())
-    return predictions, decisions, summary
+def load_evidence() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, dict]:
+    predictions = pd.read_csv(RPE_EVIDENCE / "predictions_by_time.csv")
+    decisions = pd.read_csv(RPE_EVIDENCE / "unit_decisions.csv")
+    decisions = decisions[
+        (decisions["method"] == "gates_full") & np.isclose(decisions["parameter"], 0.05)
+    ].copy()
+    frontier = pd.read_csv(FINAL_EVIDENCE / "risk_savings_frontier.csv")
+    cases = pd.read_csv(FINAL_EVIDENCE / "representative_cases.csv")
+    summary = json.loads((FINAL_EVIDENCE / "science_summary.json").read_text())
+    return predictions, decisions, frontier, cases, summary
 
 
-predictions, decisions, summary = load_evidence()
+predictions, decisions, frontier, cases, summary = load_evidence()
+headline = summary["headline"]
+
 st.title("GATES")
-st.subheader("Group-Aware Time-Efficient Stopping")
-st.write(
-    "A feasibility system that asks whether a longitudinal in-vitro experiment has enough "
-    "evidence to stop, should continue, or is too shifted for automated early action."
+st.subheader("When is a held-out retinal-organoid trajectory safe enough to stop observing?")
+st.caption(
+    "Frozen retrospective evidence • 988 organoids • 11 experiment-held-out rotations • "
+    "no retraining in this app"
 )
 
-c1, c2, c3, c4 = st.columns(4)
-c1.metric("Held-out units", int(summary["total"]))
-c2.metric("Early-stop coverage", f"{summary['coverage']:.0%}")
-c3.metric("Error among early stops", f"{summary['eesr']:.1%}")
-c4.metric("Mean saved observations", f"{summary['observation_savings'] * 18:.1f} / 18")
+c1, c2, c3 = st.columns(3)
+c1.metric("Observed early-stop error", f"{headline['eesr']:.2%}")
+c2.metric("Early-decision coverage", f"{headline['coverage']:.2%}")
+c3.metric("Observation savings", f"{headline['observation_savings']:.2%}")
 
-unit = st.selectbox("Held-out experimental unit", predictions["unit_id"].drop_duplicates())
-trajectory = predictions.loc[predictions["unit_id"] == unit].sort_values("decision_time")
-chosen = decisions.loc[decisions["unit_id"] == unit].iloc[0]
+case_labels = {
+    "Correct early stop": "Successful early stop",
+    "Refusal / full observation": "Difficult case — refusal",
+    "Erroneous early stop": "Failure case — erroneous stop",
+}
+selected_label = st.radio(
+    "Evidence case", list(case_labels), format_func=case_labels.get, horizontal=True
+)
+case = cases[cases["selection_rule"] == selected_label].iloc[0]
+unit_id = str(case["unit_id"])
+trajectory = predictions[predictions["unit_id"] == unit_id].sort_values("decision_time")
+decision = decisions[decisions["unit_id"] == unit_id].iloc[0]
+available_times = trajectory["decision_time"].astype(float).tolist()
+current_time = st.select_slider(
+    "Observations available through",
+    options=available_times,
+    value=available_times[-1],
+    format_func=lambda value: f"{value:.0f} h",
+)
+visible = trajectory[trajectory["decision_time"] <= current_time]
+current = visible.iloc[-1]
+terminal_time = float(decision["terminal_time"])
+
+if current_time < terminal_time:
+    displayed_action = "CONTINUE"
+elif decision["decision"] == "STOP":
+    displayed_action = "STOP"
+else:
+    displayed_action = "REFUSE / CONTINUE TO 72 h"
 
 left, right = st.columns([2, 1])
 with left:
     figure = go.Figure()
     figure.add_trace(
         go.Scatter(
-            x=trajectory["decision_time"],
-            y=trajectory["probability_response"],
+            x=visible["decision_time"],
+            y=visible["probability"],
             mode="lines+markers",
-            name="Predicted response probability",
+            name="Predicted P(RPE+)",
         )
     )
-    figure.add_hline(y=0.5, line_dash="dot", annotation_text="decision boundary")
-    figure.add_vline(
-        x=float(chosen["decision_time"]), line_dash="dash", annotation_text=str(chosen["decision"])
-    )
+    figure.add_hline(y=0.5, line_dash="dot", annotation_text="class boundary")
+    if current_time >= terminal_time:
+        figure.add_vline(x=terminal_time, line_dash="dash", annotation_text=displayed_action)
     figure.update_layout(
-        xaxis_title="Hours observed",
-        yaxis_title="Probability of low-viability response",
+        height=390,
+        xaxis_title="Observation time (h)",
+        yaxis_title="Predicted P(RPE+)",
         yaxis_range=[0, 1],
+        margin=dict(l=30, r=20, t=30, b=30),
     )
     st.plotly_chart(figure, width="stretch")
 
 with right:
-    st.metric("Decision", chosen["decision"])
-    st.metric("Decision time", f"{int(chosen['decision_time'])} h")
-    st.metric("Scheduled observations saved", int(chosen["observations_saved"]))
-    st.metric("Confidence", f"{chosen['confidence']:.1%}")
-    trust = (
-        "Shifted — automation refused" if bool(chosen["is_ood"]) else "Within fitted distance gate"
-    )
-    st.write(f"**Trust check:** {trust}")
-    st.write(f"**Final viability:** {chosen['viability']:.3f}")
+    st.metric("Current decision", displayed_action)
+    confidence = max(current["probability"], 1 - current["probability"])
+    st.metric("Current confidence", f"{confidence:.1%}")
+    ood_ratio = float(current["ood_score"] / current["ood_threshold"])
+    st.metric("OOD score / threshold", f"{ood_ratio:.2f}")
+    st.metric("Final endpoint", "RPE+" if int(decision["endpoint"]) else "RPE−")
+    if current_time >= terminal_time:
+        st.metric("Observations saved", f"{decision['saved_fraction']:.1%}")
+    else:
+        st.metric("Observations saved", "pending")
 
 st.divider()
-st.subheader("Evidence across held-out units")
-plot = px.scatter(
-    decisions,
-    x="decision_time",
-    y="confidence",
-    color="decision",
-    symbol=decisions["prediction"] == decisions["label"],
-    hover_data=["unit_id", "viability", "observations_saved", "is_ood"],
-    labels={"decision_time": "Decision time (h)", "confidence": "Prediction confidence"},
+st.subheader("Aggregate risk–savings evidence")
+shown_methods = ["cbes_style", "gates_without_ood", "gates_full"]
+plot_data = frontier[frontier["method"].isin(shown_methods)].copy()
+plot_data["method"] = plot_data["method"].map(
+    {
+        "cbes_style": "CBES-style",
+        "gates_without_ood": "GATES without refusal",
+        "gates_full": "Full GATES",
+    }
 )
-st.plotly_chart(plot, width="stretch")
+plot_data["EESR_percent"] = plot_data["EESR"] * 100
+plot_data["savings_percent"] = plot_data["observation_savings"] * 100
+risk_plot = px.line(
+    plot_data.sort_values("savings_percent"),
+    x="savings_percent",
+    y="EESR_percent",
+    color="method",
+    markers=True,
+    labels={
+        "savings_percent": "Observation savings (%)",
+        "EESR_percent": "Erroneous early-stop rate (%)",
+        "method": "Method",
+    },
+)
+risk_plot.add_hline(y=5, line_dash="dot", annotation_text="5% operating target")
+risk_plot.update_layout(height=430, margin=dict(l=30, r=20, t=30, b=30))
+st.plotly_chart(risk_plot, width="stretch")
 
-with st.expander("Audit record"):
+with st.expander("Exact frozen evidence record"):
     fields = [
         "unit_id",
-        "fold",
+        "group_id",
+        "endpoint",
+        "decision",
+        "prediction",
         "decision_time",
-        "probability_response",
-        "confidence_threshold",
-        "calibration_certified",
+        "terminal_time",
+        "saved_fraction",
         "ood_score",
         "ood_threshold",
-        "decision",
+        "fold",
+        "test_group",
     ]
-    st.dataframe(chosen[fields].astype(str).to_frame("value"), width="stretch")
+    st.dataframe(decision[fields].astype(str).to_frame("value"), width="stretch")
     st.caption(
-        "This public dataset has 21 endpoint-labelled units. Confidence-bound certification is "
-        "not claimed when calibration sample size is insufficient."
+        "The nominal 5% target is not a certified guarantee. Aggregate EESR is 5.69% "
+        "(exact 95% CI 3.72–8.29%), and performance varies substantially by experiment."
     )

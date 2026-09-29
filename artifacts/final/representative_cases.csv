@@ -1,0 +1,4 @@
+figure,unit_id,experiment,decision,prediction,endpoint,decision_time,saved_fraction,selection_rule
+09_representative_successful_stop,E001|A006,E001,STOP,1,1,48.0,0.3333333333333333,Correct early stop
+10_representative_abstention,E002|E002,E002,ABSTAIN,0,0,72.0,0.0,Refusal / full observation
+11_representative_erroneous_stop,E009|E001,E009,STOP,1,0,12.0,0.8333333333333334,Erroneous early stop

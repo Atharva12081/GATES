@@ -1,0 +1,8 @@
+result,eesr,observation_savings,source
+Lens transfer,0.1782178217821782,0.0642712550607287,retinal_lens_final/aggregate_results.csv
+irregular_sampling,0.1061320754716981,0.1558704453441295,retinal_rpe_stress/stress_matrix.csv
+measurement_noise_025sd,0.0737463126843657,0.0998650472334682,retinal_rpe_stress/stress_matrix.csv
+dropped_half_features,0.0791788856304985,0.1056005398110661,retinal_rpe_stress/stress_matrix.csv
+altered_class_balance,0.0846681922196796,0.1902937420178799,retinal_rpe_stress/stress_matrix.csv
+decision_tree_predictor,0.1577060931899641,0.1115047233468286,retinal_rpe_stress/stress_matrix.csv
+experiment_gate_at_10pct,0.1634408602150537,0.2169365721997301,phase3_comparison.csv

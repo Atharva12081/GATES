@@ -86,3 +86,18 @@ This is research software for retrospective analysis. It does not prescribe wet-
 medical treatment, or clinical decisions. STOP means "the model's endpoint call meets the configured
 research threshold under this evaluation," not "terminate a real experiment without human review."
 
+## Frozen retinal-organoid result
+
+The competition-facing result uses 988 organoids from 11 independent experiments and holds out
+entire experiments. At the frozen 5% operating point, Full GATES produced 5.69% observed EESR at
+44.43% early-decision coverage while saving 12.26% of scheduled observations. This is empirical,
+not certified risk control. See the [claim freeze](docs/phase3/CLAIM_FREEZE.md),
+[technical report](docs/final/TECHNICAL_REPORT.md), and
+[master evidence table](artifacts/final/master_evidence.csv).
+
+Rebuild and verify the final retrospective package with:
+
+```bash
+just phase3-finalize
+just verify-final
+```

@@ -1,0 +1,24 @@
+{
+  "status": "science frozen after verification; no further model development",
+  "headline_master_evidence_selector": {
+    "dataset": "orgAInoid_RPE_Final",
+    "experiment": "ALL",
+    "method": "gates_full",
+    "risk_target": 0.05
+  },
+  "headline": {
+    "test_units": 988,
+    "eesr": 0.0569476082004555,
+    "eesr_exact_95_ci": [
+      0.0371888126152213,
+      0.0829207798764289
+    ],
+    "coverage": 0.444331983805668,
+    "observation_savings": 0.122638326585695
+  },
+  "experiment_gate_status": "OPTIONAL RESEARCH EXTENSION",
+  "experiment_gate_interpretation": "At the pre-specified 5% target, experiment-level refusal removed a substantial number of unsafe early decisions. However, this behavior did not transfer to the 10% operating point, indicating that experiment-level failure prediction remains unstable.",
+  "phase2_protocol_hash": "2264d2f6ac2fde621c6218352e3ffe14e765700f89b99c6cc03a12c9f1bc3b31",
+  "phase3_protocol_hash": "35f7642203792bdde9190fbdcd6c7fd0fa1ebd3c74068197cfe71f1fbb0f75f3",
+  "environment_lock_hash": "40b5caa036b28f3715543fa1b96b2a50a72a6df20b61958171fbc93c2e4bcdc9"
+}

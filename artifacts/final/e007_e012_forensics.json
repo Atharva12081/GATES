@@ -1,0 +1,316 @@
+{
+  "E007": {
+    "status": "post-hoc numerical forensic analysis; no model or threshold changed",
+    "experiment": "E007",
+    "unit_count": 93,
+    "positive_endpoint_fraction": 0.5053763440860215,
+    "condition_counts": {
+      "0nM": 24,
+      "4nM": 24,
+      "2nM": 23,
+      "1nM": 22
+    },
+    "phase2_005": {
+      "test_units": 93,
+      "early_stops": 49,
+      "early_stop_errors": 15,
+      "eesr": 0.30612244897959184,
+      "eesr_ci_low": 0.18251944764587358,
+      "eesr_ci_high": 0.4541524365052459,
+      "coverage": 0.5268817204301075,
+      "abstention_rate": 0.3333333333333333,
+      "observation_savings": 0.3028673835125448,
+      "mean_decision_time": 50.193548387096776,
+      "median_decision_time": 60.0,
+      "false_positive_early_stops": 5,
+      "false_negative_early_stops": 10
+    },
+    "error_direction": {
+      "false_positive": 5,
+      "false_negative": 10
+    },
+    "error_decision_times": {
+      "24.0": 8,
+      "48.0": 6,
+      "60.0": 1
+    },
+    "early_12h": {
+      "mean_probability": 0.5800211345345311,
+      "predicted_positive_fraction": 0.6774193548387096,
+      "mean_entropy": 0.56159653985871,
+      "mean_ensemble_disagreement": 0.07051941511470856,
+      "brier_score": 0.23629997876100514
+    },
+    "stopped_unit_comparison": {
+      "erroneous_stops": 15,
+      "correct_stops": 34,
+      "erroneous_mean_confidence": 0.7960113479109407,
+      "correct_mean_confidence": 0.8496208445980102,
+      "erroneous_mean_entropy": 0.4941984042409551,
+      "correct_mean_entropy": 0.4093945300208452,
+      "erroneous_mean_disagreement": 0.08198110627902158,
+      "correct_mean_disagreement": 0.06241960135600647,
+      "erroneous_mean_ood_ratio": 0.8174223459857072,
+      "correct_mean_ood_ratio": 0.7844455070055214,
+      "erroneous_ood_threshold_crossings": 0
+    },
+    "signal_values_and_ranks": {
+      "two_sample_auc": {
+        "rank_high_to_low": 6,
+        "of": 11,
+        "value": 0.8523528731645278
+      },
+      "standardized_mean_distance": {
+        "rank_high_to_low": 7,
+        "of": 11,
+        "value": 2.2338776412783754
+      },
+      "rbf_mmd": {
+        "rank_high_to_low": 7,
+        "of": 11,
+        "value": 0.0552386519487471
+      },
+      "energy_distance": {
+        "rank_high_to_low": 7,
+        "of": 11,
+        "value": 0.7654230277329619
+      },
+      "unit_ood_mean": {
+        "rank_high_to_low": 3,
+        "of": 11,
+        "value": 0.7164044189155309
+      },
+      "unit_ood_p95": {
+        "rank_high_to_low": 3,
+        "of": 11,
+        "value": 0.9466844176415004
+      },
+      "unit_ood_fraction": {
+        "rank_high_to_low": 4,
+        "of": 11,
+        "value": 0.043010752688172
+      },
+      "prediction_entropy_mean": {
+        "rank_high_to_low": 4,
+        "of": 11,
+        "value": 0.56159653985871
+      },
+      "prediction_entropy_p90": {
+        "rank_high_to_low": 6,
+        "of": 11,
+        "value": 0.6878811907769427
+      },
+      "ensemble_disagreement_mean": {
+        "rank_high_to_low": 7,
+        "of": 11,
+        "value": 0.0705194151147085
+      },
+      "ensemble_disagreement_p90": {
+        "rank_high_to_low": 8,
+        "of": 11,
+        "value": 0.1100818681953742
+      },
+      "ambiguous_prediction_fraction": {
+        "rank_high_to_low": 5,
+        "of": 11,
+        "value": 0.3763440860215054
+      },
+      "predicted_positive_fraction": {
+        "rank_high_to_low": 1,
+        "of": 11,
+        "value": 0.6774193548387096
+      },
+      "observation_count_mean": {
+        "rank_high_to_low": 2,
+        "of": 11,
+        "value": 23.440860215053764
+      },
+      "observation_count_cv": {
+        "rank_high_to_low": 7,
+        "of": 11,
+        "value": 0.0759697289308629
+      },
+      "trajectory_slope_norm_mean": {
+        "rank_high_to_low": 11,
+        "of": 11,
+        "value": 2.475396558287219
+      },
+      "trajectory_slope_norm_p90": {
+        "rank_high_to_low": 11,
+        "of": 11,
+        "value": 3.416120939170347
+      }
+    },
+    "missingness_proxy": {
+      "mean_observations_available_by_12h": 23.440860215053764,
+      "observation_count_cv": 0.0759697289308629,
+      "note": "Availability is reported descriptively and was excluded from predictors."
+    },
+    "diagnosis": {
+      "classification": "possible conditional/concept shift",
+      "confidence": "moderate; mechanism remains unidentified",
+      "reason": "Errors are concentrated despite non-extreme generic feature-distance ranks, near-middle endpoint prevalence, and no erroneous stopped unit crossing the unit OOD threshold. This does not identify a biological mechanism."
+    },
+    "insufficient_evidence_for": [
+      "a biological mechanism",
+      "ground-truth error",
+      "a uniquely identified shift mechanism"
+    ]
+  },
+  "E012": {
+    "status": "post-hoc numerical forensic analysis; no model or threshold changed",
+    "experiment": "E012",
+    "unit_count": 77,
+    "positive_endpoint_fraction": 0.5454545454545454,
+    "condition_counts": {
+      "4nM": 21,
+      "0nM": 20,
+      "1nM": 20,
+      "2nM": 16
+    },
+    "phase2_005": {
+      "test_units": 77,
+      "early_stops": 43,
+      "early_stop_errors": 6,
+      "eesr": 0.13953488372093023,
+      "eesr_ci_low": 0.05297657386681719,
+      "eesr_ci_high": 0.27932480031414914,
+      "coverage": 0.5584415584415584,
+      "abstention_rate": 0.0,
+      "observation_savings": 0.17532467532467533,
+      "mean_decision_time": 59.37662337662338,
+      "median_decision_time": 60.0,
+      "false_positive_early_stops": 6,
+      "false_negative_early_stops": 0
+    },
+    "error_direction": {
+      "false_positive": 6,
+      "false_negative": 0
+    },
+    "error_decision_times": {
+      "48.0": 6
+    },
+    "early_12h": {
+      "mean_probability": 0.24722264312282813,
+      "predicted_positive_fraction": 0.05194805194805195,
+      "mean_entropy": 0.47581654930751793,
+      "mean_ensemble_disagreement": 0.05900293205679999,
+      "brier_score": 0.36207556685946807
+    },
+    "stopped_unit_comparison": {
+      "erroneous_stops": 6,
+      "correct_stops": 37,
+      "erroneous_mean_confidence": 0.9568639160590564,
+      "correct_mean_confidence": 0.9524524003321767,
+      "erroneous_mean_entropy": 0.17631058663244079,
+      "correct_mean_entropy": 0.184016346175793,
+      "erroneous_mean_disagreement": 0.019971698894302267,
+      "correct_mean_disagreement": 0.0245160230734142,
+      "erroneous_mean_ood_ratio": 0.5354489171630221,
+      "correct_mean_ood_ratio": 0.5281892062422184,
+      "erroneous_ood_threshold_crossings": 0
+    },
+    "signal_values_and_ranks": {
+      "two_sample_auc": {
+        "rank_high_to_low": 4,
+        "of": 11,
+        "value": 0.9205599595209986
+      },
+      "standardized_mean_distance": {
+        "rank_high_to_low": 4,
+        "of": 11,
+        "value": 3.451108513256146
+      },
+      "rbf_mmd": {
+        "rank_high_to_low": 3,
+        "of": 11,
+        "value": 0.091764317430208
+      },
+      "energy_distance": {
+        "rank_high_to_low": 3,
+        "of": 11,
+        "value": 1.4256318508971877
+      },
+      "unit_ood_mean": {
+        "rank_high_to_low": 9,
+        "of": 11,
+        "value": 0.5782456897210304
+      },
+      "unit_ood_p95": {
+        "rank_high_to_low": 9,
+        "of": 11,
+        "value": 0.7717825367753879
+      },
+      "unit_ood_fraction": {
+        "rank_high_to_low": 7,
+        "of": 11,
+        "value": 0.0259740259740259
+      },
+      "prediction_entropy_mean": {
+        "rank_high_to_low": 8,
+        "of": 11,
+        "value": 0.4758165493075179
+      },
+      "prediction_entropy_p90": {
+        "rank_high_to_low": 9,
+        "of": 11,
+        "value": 0.6791304748354784
+      },
+      "ensemble_disagreement_mean": {
+        "rank_high_to_low": 10,
+        "of": 11,
+        "value": 0.0590029320567999
+      },
+      "ensemble_disagreement_p90": {
+        "rank_high_to_low": 11,
+        "of": 11,
+        "value": 0.0954811389094054
+      },
+      "ambiguous_prediction_fraction": {
+        "rank_high_to_low": 10,
+        "of": 11,
+        "value": 0.2597402597402597
+      },
+      "predicted_positive_fraction": {
+        "rank_high_to_low": 11,
+        "of": 11,
+        "value": 0.0519480519480519
+      },
+      "observation_count_mean": {
+        "rank_high_to_low": 10,
+        "of": 11,
+        "value": 18.727272727272727
+      },
+      "observation_count_cv": {
+        "rank_high_to_low": 11,
+        "of": 11,
+        "value": 0.0351013890009535
+      },
+      "trajectory_slope_norm_mean": {
+        "rank_high_to_low": 5,
+        "of": 11,
+        "value": 3.051368202596518
+      },
+      "trajectory_slope_norm_p90": {
+        "rank_high_to_low": 5,
+        "of": 11,
+        "value": 4.3408442071955955
+      }
+    },
+    "missingness_proxy": {
+      "mean_observations_available_by_12h": 18.727272727272727,
+      "observation_count_cv": 0.0351013890009535,
+      "note": "Availability is reported descriptively and was excluded from predictors."
+    },
+    "diagnosis": {
+      "classification": "calibration failure",
+      "confidence": "moderate",
+      "reason": "All six errors are high-confidence false positives at 48 h. Input-shift scores are not extreme, and confidence/disagreement do not separate erroneous from correct stops. A concurrent conditional shift cannot be excluded."
+    },
+    "insufficient_evidence_for": [
+      "a biological mechanism",
+      "ground-truth error",
+      "a uniquely identified shift mechanism"
+    ]
+  }
+}
