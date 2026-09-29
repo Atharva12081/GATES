@@ -1,20 +1,27 @@
 # GATES demo video — 4:45 shot-by-shot script
 
+**Presenter:** Atharva Parande
+
 Target runtime: **4 minutes 45 seconds**. Record at 1080p with the browser at 100% zoom.
 
-## 0:00–0:18 — Problem
+## 0:00–0:15 — Hook
 
-Longitudinal experiments follow a fixed observation schedule, even when some outcomes become clear
-early. Stopping early can save observation effort, but a wrong early decision can invalidate the
-experiment.
+An experiment may already contain enough information to predict its endpoint. But prediction
+confidence alone does not tell us whether it is safe to stop measuring.
 
-## 0:18–0:38 — What GATES does
+## 0:15–0:35 — Problem
+
+Longitudinal biological experiments follow fixed schedules. Each additional time point requires
+acquisition, storage, and analysis, even when some trajectories have already become decisive.
+
+## 0:35–0:55 — What GATES does
 
 GATES turns prediction into a sequential decision. It says CONTINUE while evidence is weak, STOP
 when a group-calibrated rule passes, and ABSTAIN when the trajectory is unfamiliar. It never trains
-inside the demo; every result comes from held-out evidence.
+inside the demo; every result comes from held-out evidence. GATES does not only ask what will
+happen. It asks whether we know enough to stop measuring.
 
-## 0:38–1:18 — Successful example
+## 0:55–1:30 — Successful example
 
 Load the frozen representative correct-stop case. Advance time. Show probability and OOD ratio,
 then the STOP decision, final endpoint, decision time, and saved fraction. Open its exact evidence
@@ -23,40 +30,47 @@ row.
 Start at 12 h and advance through 48 h. Pause on experiment ID, observations consumed, endpoint
 prediction, OOD ratio, and STOP. Ground truth remains hidden until the 72 h endpoint.
 
-## 1:18–1:48 — Hard/refused example
+## 1:30–1:55 — Hard/refused example
 
 Load the representative ABSTAIN case. Show that the OOD boundary is crossed and the unit continues
 to the 72 h protocol. Emphasize that refusal trades savings for fewer premature errors.
 
-## 1:48–2:25 — Main result
+## 1:55–2:25 — Evaluation design
+
+Show the hierarchy: 114,510 published morphometric observations nested within 988 medaka retinal
+organoids, nested within 11 independent experiments. Entire experiments are held out from fitting,
+calibration, and refusal-threshold estimation.
+
+## 2:25–2:55 — Main result
 
 Show the risk–savings frontier and the frozen 5% row: 988 organoids, 11 held-out experiments, 439
 early stops, 25 errors, 5.69% EESR, 44.43% coverage, and 12.26% savings. Show the exact 95% interval,
 3.72–8.29%, and the wider experiment-bootstrap interval.
 
-## 2:25–2:55 — Baselines
+## 2:55–3:20 — Why refusal matters
 
-Show Full GATES beside fixed-time, naive confidence, non-group calibration, CBES-style, and GATES
-without refusal. Removing refusal raises EESR from 5.69% to 8.60%. CBES-style reaches 15.51%.
+Show the ablation: without refusal, 8.60% EESR and 13.65% estimated savings; with refusal, 5.69%
+and 12.26%. Stopping early is easy. Knowing when not to stop is the harder problem.
 
-## 2:55–3:28 — Experiment variation and E007
+## 3:20–3:45 — E007 failure
 
-Show per-experiment EESR, then E007. It has 15 errors among 49 stops, and its erroneous stops do not
-cross the frozen OOD boundary. State the evidence-based diagnosis: possible conditional/concept
-shift; mechanism undetermined.
+Show E007 at 30.61% EESR among early stops. Its erroneous stops did not cross the frozen OOD
+threshold. State: aggregate performance can hide severe experiment-specific failure, and the
+mechanism is undetermined.
 
-## 3:28–3:55 — Negative results
+## 3:45–4:10 — Baselines and negative results
 
-Show Lens at 17.82% EESR, irregular sampling at 10.61%, and the experiment gate’s collapse at the
-10% operating point. Say clearly: the extension is not a general safety mechanism.
+Briefly show CBES-style at 15.51%, the safest tested fixed-time method at 13.82%, Lens transfer at
+17.82%, and irregular sampling at 10.61%. Do not imply that methods at different savings are
+directly equivalent.
 
-## 3:55–4:25 — Reproducibility
+## 4:10–4:30 — Reproducibility
 
 Run `just verify-final`, then show the manifest, transparent erratum, and figure source map. State
 that the audit-only correction produced zero changed scientific results after full recomputation.
 
-## 4:25–4:45 — Impact
+## 4:30–4:45 — Limitation and close
 
-GATES does not promise universal risk control. It demonstrates that experiment-held-out selective
-stopping can save observations, reduce premature errors relative to tested alternatives, and fail
-honestly when evidence is weak. That is the decision system we can defend today.
+GATES is retrospective evidence on medaka retinal organoids, not a deployment guarantee. The next
+step is prospective validation in independent laboratories and direct organ-on-chip systems. GATES
+turns prediction into a decision about whether another measurement is still necessary.

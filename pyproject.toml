@@ -2,6 +2,7 @@
 name = "gates-ai4s"
 version = "0.1.0"
 description = "Group-Aware Time-Efficient Stopping for longitudinal in-vitro experiments"
+authors = [{ name = "Atharva Parande" }]
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -43,4 +44,3 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
-

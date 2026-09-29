@@ -1,5 +1,7 @@
 # GATES Defense Questions
 
+**Author:** Atharva Parande
+
 ## 1. Why isn't this just CBES?
 
 The tested CBES-style adaptation supplies one comparator, not the entire method. GATES adds strict
@@ -41,7 +43,7 @@ new-experiment guarantee, and the 10% operating point also misses its nominal ta
 ## 7. Why does Lens fail?
 
 Lens transfer reaches 17.82% EESR with 6.43% savings. The available evidence establishes endpoint
-transfer failure but does not identify a biological mechanism. We report it as a negative result.
+transfer failure but does not identify a biological mechanism. I report it as a negative result.
 
 ## 8. Why isn't there direct organ-on-chip validation?
 
@@ -147,3 +149,97 @@ at 10%, so it remains an optional retrospective extension with its failure repor
 Prospective multi-laboratory evidence showing no reproducible savings at an acceptable error and
 coverage tradeoff would falsify it. So would a comparator that dominates the complete frontier
 under the same group-held-out protocol.
+
+## 26. Why does the paper report 117,249 images but GATES reports 114,510 observations?
+
+The paper reports the upstream acquisition count. GATES reads the pinned published morphometrics
+table, `Extended_Data_2.csv`, which contains exactly 114,510 rows; the loader removes no rows. The
+2,739-image difference therefore arose before GATES, between acquisition and the published table.
+Neither the article nor table supplies per-image exclusion reasons, so I do not invent one.
+
+## 27. Are these human retinal organoids?
+
+No. They are medaka retinal organoids derived from *Oryzias latipes*. The project makes no human or
+mammalian performance claim.
+
+## 28. Why use medaka?
+
+The public dataset provides unusually dense, experiment-identified longitudinal trajectories with
+final tissue labels. That makes it a useful biological testbed for selective stopping. Faster
+development also enabled the source study's 72 h acquisition window. Transfer to other species is
+unknown.
+
+## 29. Why is there no direct organ-on-chip validation?
+
+No accessible OoC dataset passed the pre-specified requirements for longitudinal prefixes, final
+endpoint labels, complete experimental grouping, and leakage-safe evaluation. Retinal organoids are
+not represented as OoC experiments. Direct OoC validation is a priority future experiment.
+
+## 30. Does refusal disproportionately reject one endpoint class?
+
+Yes, in the frozen audit. Refusal was 5.93% for RPE-positive organoids and 2.40% for RPE-negative
+organoids. Early-decision coverage was 35.56% and 50.60%, respectively. This appendix result was
+computed from frozen decisions without changing the method and motivates larger class-conditional
+validation.
+
+## 31. Is 5.69% an anytime-valid guarantee under repeated looks?
+
+No. It is the empirical held-out result of the complete frozen sequential policy. The current method
+does not provide anytime-valid distribution-free risk control; that is future work.
+
+## 32. Why is experiment-bootstrap uncertainty wider than the unit-level interval?
+
+The binomial interval treats 439 early-stop decisions as its denominator. The bootstrap resamples
+only 11 experiments, preserving the generalization boundary and the observed heterogeneity. Its
+wider interval reflects uncertainty about transfer across experiments.
+
+## 33. Is 12.26% savings prospective?
+
+No. It is retrospectively estimated by replaying the frozen policy over recorded trajectories. It
+counts observations scheduled after an early stop that would not have been needed under that policy.
+No microscope time, labor, money, or wall-clock duration was physically saved in this study.
+
+## 34. Could future information leak into prefixes?
+
+Prefix features use only measurements available at the decision time. Final labels, identifiers,
+and availability variables are excluded from predictors. The complete test experiment is absent
+from preprocessing, fitting, calibration, and OOD-threshold estimation.
+
+## 35. Was the CBES-style comparison fair?
+
+It used identical test experiments, source features, candidate times, and risk grid. The binary
+endpoint required replacing the original continuous Gaussian-process setup with bootstrap logistic
+ensembles and symmetric confidence bounds. CBES also reserves separate calibration and validation
+experiments as its procedure requires. It is a documented adaptation, not a claim to reproduce every
+original implementation detail.
+
+## 36. Why not use a vision foundation model?
+
+The frozen public artifact is a morphometrics table, and the independent-information bottleneck is
+11 experiments. A larger image encoder would add training and tuning degrees of freedom without
+creating more independent experiments. It is not required to test the stopping-policy contribution.
+
+## 37. What happens when the model sees an unfamiliar experiment?
+
+The unit-level distance gate can disable early automation when a prefix crosses its fitted
+threshold. However, E007 demonstrates that unfamiliar failure can occur without extreme generic
+input distance. Refusal reduces risk empirically but does not solve all experiment-level shift.
+
+## 38. What is the single most important limitation?
+
+Only 11 experiments from one medaka dataset define the independent evidence base. That makes the
+aggregate result promising but insufficient for a reliable new-laboratory guarantee.
+
+## 39. What is the immediate next experiment?
+
+A preregistered prospective shadow evaluation across independent laboratories: freeze the endpoint,
+policy, and analysis; log every candidate decision without acting on it; then assess risk, coverage,
+savings, class asymmetry, and shift at the experiment level. Direct OoC data should follow the same
+protocol.
+
+## 40. Why should this project win?
+
+GATES tackles a practical question most predictive systems leave unanswered: whether another
+measurement is necessary. It delivers a complete, reproducible decision workflow, validates it at
+the experiment boundary, demonstrates that refusal materially changes outcomes, and exposes the
+cases where the system fails. Its value is defensible selective termination, not inflated accuracy.

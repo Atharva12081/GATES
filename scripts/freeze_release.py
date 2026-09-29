@@ -16,6 +16,7 @@ def git_bytes(revision: str, path: str) -> bytes:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--release-commit", required=True)
+    parser.add_argument("--release", default="gates-ai4s-submission-final")
     args = parser.parse_args()
     commit = subprocess.check_output(
         ["git", "rev-parse", args.release_commit], cwd=ROOT, text=True
@@ -31,7 +32,7 @@ def main() -> None:
             {"path": path, "bytes": len(payload), "sha256": hashlib.sha256(payload).hexdigest()}
         )
     manifest = {
-        "release": "gates-ai4s-submission-rc1",
+        "release": args.release,
         "release_commit": commit,
         "base_science_tag": "gates-science-freeze-v2",
         "historical_science_tag": "gates-science-freeze-v1",

@@ -1,5 +1,7 @@
 # Frozen-evidence erratum: retinal label prevalence audit
 
+**Author:** Atharva Parande
+
 Discovered: 2026-09-29T12:00:09+05:30  
 Scope: descriptive dataset-audit metadata only  
 Status: corrected with no change to method, model inputs, or reported scientific results
@@ -32,7 +34,7 @@ The corrected audit includes positive and negative counts plus prevalence for ev
 
 ## Independent impact check
 
-Starting from the pinned 400,059,241-byte Zenodo source file, we independently recomputed both
+Starting from the pinned 400,059,241-byte Zenodo source file, the project independently recomputed both
 endpoint campaigns, the OOD ablation, risk–savings frontier, robustness scenarios, nested
 experiment gate, final evidence tables, and all 12 final PNG figures in an isolated temporary
 directory. Numeric tables matched within `1e-12`, categorical data matched exactly, and the PNG

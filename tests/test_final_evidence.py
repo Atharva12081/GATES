@@ -24,3 +24,11 @@ def test_frozen_headline_is_derived_from_master_evidence() -> None:
 def test_experiment_gate_is_not_promoted_to_core_method() -> None:
     summary = (ROOT / "artifacts/final/science_summary.json").read_text()
     assert '"experiment_gate_status": "OPTIONAL RESEARCH EXTENSION"' in summary
+
+
+def test_class_specific_audit_reconciles_with_frozen_decisions() -> None:
+    audit = pd.read_csv(ROOT / "artifacts/final/class_specific_audit.csv")
+    assert audit["organoids"].sum() == 988
+    assert audit["early_stops"].sum() == 439
+    assert audit["erroneous_early_stops"].sum() == 25
+    assert audit["refusals"].sum() == 38

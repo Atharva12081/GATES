@@ -10,7 +10,7 @@
 - [x] Machine-readable decision audit
 - [x] Explicit small-sample limitation
 - [ ] Larger independent second dataset
-- [ ] Group bootstrap confidence intervals on a sufficiently large population
+- [x] Experiment-level bootstrap intervals reported (wide because only 11 experiments)
 
 ## Reproducibility
 
@@ -25,11 +25,16 @@
 
 ## Submission surfaces
 
-- [x] Technical report draft
-- [x] Kaggle writeup draft
+- [x] Final 16-page technical report PDF
+- [x] Final 238-word Kaggle project summary
 - [x] Exact 4:45 shot-by-shot video script
-- [x] 25 hostile defense questions
+- [x] 40 hostile defense questions
 - [x] Model card data statement and limitations
+- [x] Class-specific frozen-decision audit
+- [x] 117,249 acquisition versus 114,510 morphometrics explanation
+- [x] Medaka species and no-direct-OoC limitation stated
+- [x] Source, license, and asset provenance audit
+- [x] Registration completed (author-confirmed)
 - [ ] Record demo video
 - [ ] Publish repository and add its final URL
 - [ ] Add final public links and submit

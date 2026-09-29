@@ -33,16 +33,17 @@ predictions, decisions, frontier, cases, summary = load_evidence()
 headline = summary["headline"]
 
 st.title("GATES")
-st.subheader("When is a held-out retinal-organoid trajectory safe enough to stop observing?")
+st.subheader("When is a held-out medaka retinal-organoid trajectory safe enough to stop observing?")
 st.caption(
-    "Frozen retrospective evidence • 988 organoids • 11 experiment-held-out rotations • "
-    "no retraining in this app"
+    "FROZEN EVIDENCE: gates-science-freeze-v2 • 988 organoids • "
+    "11 experiment-held-out rotations • no retraining in this app"
 )
+st.caption("Developed by Atharva Parande")
 
 c1, c2, c3 = st.columns(3)
 c1.metric("Observed early-stop error", f"{headline['eesr']:.2%}")
 c2.metric("Early-decision coverage", f"{headline['coverage']:.2%}")
-c3.metric("Observation savings", f"{headline['observation_savings']:.2%}")
+c3.metric("Retrospectively estimated savings", f"{headline['observation_savings']:.2%}")
 
 case_labels = {
     "Correct early stop": "Successful early stop",
@@ -116,10 +117,20 @@ with right:
 
 st.divider()
 st.subheader("Aggregate risk–savings evidence")
-shown_methods = ["cbes_style", "gates_without_ood", "gates_full"]
+shown_methods = [
+    "fixed_time",
+    "naive_confidence",
+    "calibrated_non_group",
+    "cbes_style",
+    "gates_without_ood",
+    "gates_full",
+]
 plot_data = frontier[frontier["method"].isin(shown_methods)].copy()
 plot_data["method"] = plot_data["method"].map(
     {
+        "fixed_time": "Fixed time",
+        "naive_confidence": "Naive confidence",
+        "calibrated_non_group": "Non-group calibration",
         "cbes_style": "CBES-style",
         "gates_without_ood": "GATES without refusal",
         "gates_full": "Full GATES",
@@ -142,6 +153,10 @@ risk_plot = px.line(
 risk_plot.add_hline(y=5, line_dash="dot", annotation_text="5% operating target")
 risk_plot.update_layout(height=430, margin=dict(l=30, r=20, t=30, b=30))
 st.plotly_chart(risk_plot, width="stretch")
+st.caption(
+    "Methods occupy different coverage and savings points; compare the frontier rather than "
+    "treating a single operating-point bar as equivalent performance."
+)
 
 with st.expander("Exact frozen evidence record"):
     fields = [

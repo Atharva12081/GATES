@@ -6,6 +6,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+tmp/
 data/raw/*.csv
 data/phase2_raw/*
 artifacts/models/*.joblib

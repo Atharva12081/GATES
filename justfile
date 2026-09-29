@@ -22,6 +22,7 @@ phase3-finalize:
 reproduce: data-retinal phase3-finalize verify verify-final
 
 verify-final:
+    uv run python scripts/build_class_specific_audit.py
     uv run python scripts/verify_final_evidence.py
     uv run python scripts/check_release_claims.py
 
