@@ -1,4 +1,8 @@
-# Data Statement
+# Data Statement — historical feasibility appendix
+
+For the competition-facing retinal dataset, see the [final report](final/TECHNICAL_REPORT.md) and
+[frozen-evidence erratum](final/ERRATUM.md). The 21-unit source below is retained as feasibility
+evidence.
 
 ## Source
 
@@ -30,4 +34,3 @@ imputed within each training fold.
 At build time, the upstream repository had no GitHub-detected license. Raw tables are therefore
 downloaded locally and ignored by version control. Public redistribution and competition use should
 be confirmed with the original authors.
-

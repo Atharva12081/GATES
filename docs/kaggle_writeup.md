@@ -1,4 +1,7 @@
-# GATES Group-Aware Time-Efficient Stopping
+# GATES feasibility writeup — superseded for submission
+
+Use the current [Kaggle writeup](final/KAGGLE_WRITEUP.md). This file remains as historical
+21-unit feasibility material.
 
 ## The problem
 
@@ -52,4 +55,3 @@ and an evidence-only Streamlit demo. Every headline number can be recomputed fro
 The dataset is small, shares dose conditions across replicates, and does not represent an independent
 laboratory or donor. The next gate is a larger longitudinal organoid dataset with many independent
 experiments, allowing stronger calibration, a sealed test set, and prospective shift stress tests.
-

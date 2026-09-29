@@ -60,7 +60,7 @@ available_times = trajectory["decision_time"].astype(float).tolist()
 current_time = st.select_slider(
     "Observations available through",
     options=available_times,
-    value=available_times[-1],
+    value=available_times[0],
     format_func=lambda value: f"{value:.0f} h",
 )
 visible = trajectory[trajectory["decision_time"] <= current_time]
@@ -98,12 +98,17 @@ with left:
     st.plotly_chart(figure, width="stretch")
 
 with right:
+    st.metric("Held-out experiment", str(decision["group_id"]))
+    st.metric("Observations consumed", int(current["observations_available"]))
     st.metric("Current decision", displayed_action)
     confidence = max(current["probability"], 1 - current["probability"])
     st.metric("Current confidence", f"{confidence:.1%}")
     ood_ratio = float(current["ood_score"] / current["ood_threshold"])
     st.metric("OOD score / threshold", f"{ood_ratio:.2f}")
-    st.metric("Final endpoint", "RPE+" if int(decision["endpoint"]) else "RPE−")
+    predicted_endpoint = "RPE+" if float(current["probability"]) >= 0.5 else "RPE−"
+    st.metric("Endpoint prediction", predicted_endpoint)
+    ground_truth = "RPE+" if int(decision["endpoint"]) else "RPE−"
+    st.metric("Ground truth", ground_truth if current_time >= 72 else "Hidden until 72 h")
     if current_time >= terminal_time:
         st.metric("Observations saved", f"{decision['saved_fraction']:.1%}")
     else:
@@ -157,4 +162,8 @@ with st.expander("Exact frozen evidence record"):
     st.caption(
         "The nominal 5% target is not a certified guarantee. Aggregate EESR is 5.69% "
         "(exact 95% CI 3.72–8.29%), and performance varies substantially by experiment."
+    )
+    st.caption(
+        "Audit provenance: gates-science-freeze-v2; source record Zenodo 18198347; "
+        "the displayed unit belongs only to its held-out experiment fold."
     )

@@ -1,4 +1,6 @@
-# Defense Questions
+# Feasibility defense — superseded
+
+Use the current [25-question defense](final/DEFENSE.md).
 
 ## Why is this more than an endpoint classifier
 
@@ -27,4 +29,3 @@ evaluation population grows.
 
 Failure to reproduce an early-signal curve, unstable stopping across held-out experiments, or a
 large second dataset showing no safe savings would invalidate the current project direction.
-

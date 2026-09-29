@@ -1,4 +1,7 @@
-# GATES Technical Report
+# GATES feasibility report — superseded for submission
+
+Use the [final technical report](final/TECHNICAL_REPORT.md). This file remains as historical
+21-unit feasibility material.
 
 ## Abstract
 

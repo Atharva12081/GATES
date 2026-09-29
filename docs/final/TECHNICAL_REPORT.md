@@ -38,7 +38,10 @@ allowing explicit OOD refusal.
 
 The retrospective dataset is the CC-BY-4.0 orgAInoid retinal-morphometrics source table. It contains
 988 organoid wells from 11 experiments, sampled up to 72 h at a nominal 0.5 h cadence. The audit
-found 114,510 rows, no duplicate experiment–well–loop rows, no missing final labels, and substantial
+contains 405 RPE-positive and 583 RPE-negative organoids; the Lens endpoint contains 450 positive
+and 538 negative organoids. These are dataset prevalence counts, distinct from the 25 errors among
+439 Full GATES early stops reported below. The audit found 114,510 rows, no duplicate
+experiment–well–loop rows, no missing final labels, and substantial
 experiment-dependent trajectory incompleteness. The endpoint is the published final RPE morphology
 label. No new biological data were collected.
 

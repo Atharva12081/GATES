@@ -24,6 +24,9 @@ At each observation time, GATES returns:
 The independent unit is an organoid well, and the generalization boundary is a complete experiment.
 All prefixes from the held-out experiment are excluded from fitting and calibration.
 
+Dataset prevalence is 405/988 RPE-positive and 450/988 Lens-positive. These label counts are not
+model errors: the headline result below is 25 erroneous decisions among 439 early stops.
+
 ## Main evidence
 
 At the frozen 5% operating point, Full GATES made 439 early decisions and 25 errors: 5.69% EESR

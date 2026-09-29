@@ -88,8 +88,9 @@ the nested retrospective gate results were generated.
 ## 15. How reproducible is the result?
 
 The environment is locked, seeds are fixed, source/protocol/evidence/figure hashes are recorded,
-and final verification recomputes Phase 3 outputs, checks headline rows, verifies the manifest, and
-runs lint/tests. A second-machine clean-clone reproduction remains a submission blocker.
+and final verification recomputes Phase 3 outputs, checks headline rows, verifies both freeze
+manifests, and runs lint/tests. A clean clone downloads the pinned source and reproduces the package
+using README commands only.
 
 ## 16. What happens under missing observations?
 
@@ -120,3 +121,29 @@ The contribution is the auditable combination of experiment-held-out sequential 
 group-calibrated stopping, explicit refusal, risk–savings accounting, and visible negative results
 on retinal-organoid trajectories. It is not a claim of a new universal classifier or certified risk
 controller.
+
+## 21. Was frozen evidence changed after the label-audit bug was found?
+
+No. `gates-science-freeze-v1` remains at `d701487`. V2 corrects only descriptive audit metadata and
+adds deterministic data acquisition. A full isolated recomputation found zero changed results.
+
+## 22. Why trust the data acquisition path?
+
+It pins Zenodo record 18198347, filename, 400,059,241-byte size, MD5, and SHA-256. The downloader
+never resolves “latest” and exposes the file only after verification.
+
+## 23. Are 114,510 frames the sample size?
+
+No. They are repeated observations. The prediction unit is an organoid well (988), and the
+generalization boundary is the experiment (11). Frames are not treated as independent samples.
+
+## 24. Does the experiment-level gate rescue the headline?
+
+No. It is outside the core headline. It looks useful at 5% but reverses safe and unsafe experiments
+at 10%, so it remains an optional retrospective extension with its failure reported.
+
+## 25. What would falsify the practical value of GATES?
+
+Prospective multi-laboratory evidence showing no reproducible savings at an acceptable error and
+coverage tradeoff would falsify it. So would a comparator that dominates the complete frontier
+under the same group-held-out protocol.

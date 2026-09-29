@@ -1,4 +1,7 @@
-# Limitations
+# Limitations — historical feasibility appendix
+
+Current competition-facing limitations and negative results are in the
+[final technical report](final/TECHNICAL_REPORT.md). The list below applies to the 21-unit run.
 
 1. **Small sample size.** There are only 21 endpoint-labelled units and three replicate groups. This
    is sufficient for a pipeline feasibility check, not a deployment-grade safety claim.

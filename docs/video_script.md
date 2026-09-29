@@ -1,4 +1,6 @@
-# Five Minute Demo Script
+# Feasibility video script — superseded
+
+Use the exact 4:45 [final shot-by-shot script](final/VIDEO_SCRIPT.md).
 
 ## 0:00 to 0:30 Problem
 
@@ -34,4 +36,3 @@ bound and does not claim certified low risk when the calibration sample cannot s
 
 Show the one-command run, data manifest, locked environment, tests, and evidence tables. The next
 gate is a larger independent longitudinal dataset that can support stronger calibration claims.
-

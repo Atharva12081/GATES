@@ -20,17 +20,16 @@
 - [x] Deterministic configuration
 - [x] Automated tests and CI
 - [x] Evidence-only demo
-- [ ] Confirm upstream data reuse terms
-- [ ] Reproduce from a clean clone on a second machine
+- [x] Confirm retinal source license (Zenodo CC-BY-4.0)
+- [x] Reproduce from a clean clone with no copied data, environment, or cache
 
 ## Submission surfaces
 
 - [x] Technical report draft
 - [x] Kaggle writeup draft
-- [x] Five-minute video script
-- [x] Defense questions
+- [x] Exact 4:45 shot-by-shot video script
+- [x] 25 hostile defense questions
 - [x] Model card data statement and limitations
 - [ ] Record demo video
-- [ ] Publish repository after license review
+- [ ] Publish repository and add its final URL
 - [ ] Add final public links and submit
-

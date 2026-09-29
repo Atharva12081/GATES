@@ -1,4 +1,8 @@
-# GATES Model Card
+# GATES Model Card — historical feasibility appendix
+
+The current competition-facing account is in the [final technical report](final/TECHNICAL_REPORT.md)
+and [claim freeze](phase3/CLAIM_FREEZE.md). The 21-unit analysis below is retained as feasibility
+evidence.
 
 ## Intended use
 
@@ -30,4 +34,3 @@ replicate holdouts.
 Small calibration samples, unseen acquisition conditions, missing or corrupted time points,
 endpoint drift, dose-associated shortcuts, and overconfident extrapolation beyond the observed
 population.
-

@@ -11,6 +11,28 @@ OrganoID gemcitabine time course: measurements every four hours from 0 to 72 h a
 measured endpoint viability. All time points from an experimental unit stay together. The default
 evaluation rotates the three endpoint replicates through train, calibration, and test roles.
 
+## 60-second judge experience
+
+![GATES risk–savings frontier](artifacts/final/figures/01_rpe_risk_savings_frontier.png)
+
+The competition result is 988 retinal organoids across 11 experiment-held-out rotations. At the
+frozen 5% operating point, Full GATES made 439 early stops with 25 errors: 5.69% observed EESR
+(exact 95% CI 3.72–8.29%), 44.43% coverage, and 12.26% observation savings. This is empirical,
+not certified risk control.
+
+Dataset prevalence is 405/988 RPE-positive and 450/988 Lens-positive; these label counts are
+distinct from the 25 errors among 439 early stops.
+
+```bash
+uv sync --frozen --extra dev
+just data-retinal
+just verify-final
+just demo
+```
+
+In the demo, choose a successful, refused, or erroneous held-out case and advance the time control
+to see CONTINUE become STOP or refusal. The app reads frozen evidence and never retrains.
+
 ## Reproduce
 
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
