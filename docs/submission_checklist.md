@@ -25,7 +25,7 @@
 
 ## Submission surfaces
 
-- [x] Final 16-page technical report PDF
+- [x] Final 12-page research paper PDF
 - [x] Final 238-word Kaggle project summary
 - [x] Exact 4:45 shot-by-shot video script
 - [x] 40 hostile defense questions
@@ -37,4 +37,5 @@
 - [x] Registration completed (author-confirmed)
 - [ ] Record demo video
 - [x] Publish repository and add its final URL
-- [ ] Add final public links and submit
+- [x] Add final public repository and paper links
+- [ ] Submit final Kaggle entry

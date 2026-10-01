@@ -102,9 +102,10 @@ frozen evidence and never retrains.
 
 ## Technical Report
 
-The self-contained report source is `docs/final/TECHNICAL_REPORT.md`; the
-[16-page submission PDF](https://github.com/Atharva12081/GATES/blob/main/docs/final/GATES_Technical_Report.pdf)
-is publicly accessible in the repository.
+The frozen scientific source report is `docs/final/TECHNICAL_REPORT.md`. The final
+[12-page research paper](https://github.com/Atharva12081/GATES/blob/main/output/pdf/GATES_Paper.pdf)
+and its [LaTeX source](https://github.com/Atharva12081/GATES/blob/main/docs/paper/GATES_Paper.tex)
+are publicly accessible in the repository.
 
 ## Optional Demo
 
