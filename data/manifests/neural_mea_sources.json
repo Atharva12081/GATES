@@ -1,0 +1,21 @@
+{
+  "dataset": "Data for: Evaluation of Chemical Effects on Network Formation in Cortical Neurons Grown on Microelectrode Arrays",
+  "publisher": "U.S. EPA Office of Research and Development",
+  "dataset_doi": "10.23719/1503191",
+  "publication_doi": "10.1093/toxsci/kfz052",
+  "catalog_url": "https://catalog.data.gov/dataset/data-for-evaluation-of-chemical-effects-on-network-formation-in-cortical-neurons-grown-on-",
+  "download_url": "https://pasteur.epa.gov/uploads/10.23719/1503191/NTP_TC_Analysis.zip",
+  "license_url": "https://pasteur.epa.gov/license/sciencehub-license.html",
+  "archive": {
+    "filename": "NTP_TC_Analysis.zip",
+    "bytes": 159560650,
+    "sha256": "fd92c1339bb764ee9b96c935bf31867c12640505e5c3f065ad5956a7eea08cfb"
+  },
+  "workbook": {
+    "filename": "All_Compound_Summary.xlsx",
+    "bytes": 4695866,
+    "sha256": "39fa16a7d6a60c4b4e8a3345867090df5840f5981241918d36c4599d27794ef1"
+  },
+  "retrieved_utc": "2026-10-23",
+  "notes": "Raw files are ignored by git. scripts/fetch_neural_mea_data.py verifies both hashes."
+}

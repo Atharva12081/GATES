@@ -1,0 +1,81 @@
+run_id,compound,compound_group,policy,decision,decision_round,decision_div,recording_sessions,instrument_well_recordings,terminal_nrmse,effect_recall,missed_effect_cells,stop_safe
+BROWN::MW1007-26::Acetaminophen,Acetaminophen,acetaminophen,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Acetaminophen,Acetaminophen,acetaminophen,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Acetaminophen,Acetaminophen,acetaminophen,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Acetaminophen,Acetaminophen,acetaminophen,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Acetaminophen,Acetaminophen,acetaminophen,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Loperamide,Loperamide,loperamide,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Loperamide,Loperamide,loperamide,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Loperamide,Loperamide,loperamide,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Loperamide,Loperamide,loperamide,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Loperamide,Loperamide,loperamide,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Mevastatin,Mevastatin,mevastatin,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Mevastatin,Mevastatin,mevastatin,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Mevastatin,Mevastatin,mevastatin,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Mevastatin,Mevastatin,mevastatin,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-26::Mevastatin,Mevastatin,mevastatin,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Acetaminophen,Acetaminophen,acetaminophen,risk_sensitive,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Acetaminophen,Acetaminophen,acetaminophen,max_variance,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Acetaminophen,Acetaminophen,acetaminophen,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Acetaminophen,Acetaminophen,acetaminophen,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Acetaminophen,Acetaminophen,acetaminophen,random,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,risk_sensitive,STOP,2,7,2,48,0.08222486988775007,1.0,0,True
+BROWN::MW1007-27::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,max_variance,STOP,2,7,2,48,0.08222486988775007,1.0,0,True
+BROWN::MW1007-27::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,random,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Domoic Acid,Domoic Acid,domoic acid,risk_sensitive,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Domoic Acid,Domoic Acid,domoic acid,max_variance,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Domoic Acid,Domoic Acid,domoic acid,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Domoic Acid,Domoic Acid,domoic acid,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Domoic Acid,Domoic Acid,domoic acid,random,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Loperamide,Loperamide,loperamide,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Loperamide,Loperamide,loperamide,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Loperamide,Loperamide,loperamide,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Loperamide,Loperamide,loperamide,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Loperamide,Loperamide,loperamide,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Mevastatin,Mevastatin,mevastatin,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Mevastatin,Mevastatin,mevastatin,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Mevastatin,Mevastatin,mevastatin,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Mevastatin,Mevastatin,mevastatin,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Mevastatin,Mevastatin,mevastatin,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-27::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Acetaminophen,Acetaminophen,acetaminophen,risk_sensitive,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Acetaminophen,Acetaminophen,acetaminophen,max_variance,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Acetaminophen,Acetaminophen,acetaminophen,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Acetaminophen,Acetaminophen,acetaminophen,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Acetaminophen,Acetaminophen,acetaminophen,random,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,risk_sensitive,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,max_variance,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Bisindolymaleimide 1,Bisindolymaleimide 1,bisindolymaleimide 1,random,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Domoic Acid,Domoic Acid,domoic acid,risk_sensitive,STOP,2,7,2,48,0.250874736626113,1.0,0,False
+BROWN::MW1007-38::Domoic Acid,Domoic Acid,domoic acid,max_variance,STOP,2,7,2,48,0.25087473662611304,1.0,0,False
+BROWN::MW1007-38::Domoic Acid,Domoic Acid,domoic acid,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Domoic Acid,Domoic Acid,domoic acid,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Domoic Acid,Domoic Acid,domoic acid,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Loperamide,Loperamide,loperamide,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Loperamide,Loperamide,loperamide,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Loperamide,Loperamide,loperamide,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Loperamide,Loperamide,loperamide,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Loperamide,Loperamide,loperamide,random,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Mevastatin,Mevastatin,mevastatin,risk_sensitive,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Mevastatin,Mevastatin,mevastatin,max_variance,STOP,3,9,3,72,0.3427149970088923,1.0,0,False
+BROWN::MW1007-38::Mevastatin,Mevastatin,mevastatin,maximin,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Mevastatin,Mevastatin,mevastatin,fixed_sentinel,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Mevastatin,Mevastatin,mevastatin,random,COMPLETE,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,risk_sensitive,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,max_variance,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,maximin,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,fixed_sentinel,ABSTAIN,4,12,4,96,0.0,1.0,0,True
+BROWN::MW1007-38::Sodium Orthovanadate,Sodium Orthovanadate,sodium orthovanadate,random,COMPLETE,4,12,4,96,0.0,1.0,0,True

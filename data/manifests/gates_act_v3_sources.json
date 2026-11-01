@@ -1,0 +1,44 @@
+{
+  "schema": "gates-act-v3-sources-v1",
+  "retrieved_utc": "2026-10-23",
+  "sources": [
+    {
+      "name": "NTP/EPA Phase-1 DNT MEA Network Formation",
+      "doi": "10.22427/NTP-DATA-500-018-001-000-5",
+      "catalog_url": "https://cebs.niehs.nih.gov/cebs/paper/16069",
+      "download_url": "https://cebs.niehs.nih.gov/cebs/get_file/accno/16069_25915/file/DNT_NTP2021_EPA_MEA_NFA_2022-08-16_Output.xlsx",
+      "local_path": "data/neural_mea_phase1_raw/DNT_NTP2021_EPA_MEA_NFA_2022-08-16_Output.xlsx",
+      "bytes": 3043456,
+      "sha256": "5b7c0ae5b5e0eb1991be49dd1fcbe081a59e2f5441fe0dc2cded3f6dc14557d7"
+    },
+    {
+      "name": "Brown et al. MEA developmental neurotoxicity screening",
+      "doi": "10.23719/1412682",
+      "catalog_url": "https://catalog.data.gov/dataset/data-for-brown-et-al-mea-developmental-neurotoxicity-screening-manuscript",
+      "download_url": "https://pasteur.epa.gov/uploads/10.23719/1412682/Final_Data_Set_SA1_DNT_Paper1%20%282%29%28updated%29_CF.csv",
+      "local_path": "data/neural_mea_brown_raw/brown_mea_2016.csv",
+      "bytes": 210268,
+      "sha256": "80522f6654012a18851ad17f180f51d98df6b84ab122078ce303c4d3c079f43a"
+    },
+    {
+      "name": "EPA Tipping Point determinations",
+      "doi": "10.23719/1407690",
+      "catalog_url": "https://catalog.data.gov/dataset/data-for-tipping-point-determinations",
+      "download_url": "https://pasteur.epa.gov/uploads/10.23719/1407690/TippingPointData.zip",
+      "local_path": "data/neural_mea_tipping_raw/TippingPointData.zip",
+      "bytes": 5013799,
+      "sha256": "921d8736d522346541664a2aa38817606211ae061f57124d1b12f4310acb785e"
+    },
+    {
+      "name": "Vassallo et al. multi-laboratory acute neural MEA",
+      "doi": "10.23719/1517583",
+      "catalog_url": "https://catalog.data.gov/dataset/data-set-for-vassallo-et-al",
+      "download_url": "https://pasteur.epa.gov/uploads/10.23719/1517583/Vassallo%20Data.zip",
+      "local_path": "data/neural_mea_vassallo_raw/Vassallo_Data.zip",
+      "bytes": 198920470,
+      "sha256": "441efd9f4cf8266dea7764b8f18b62963fa5e75497add04819faf108d797ea4a",
+      "compatibility": "excluded from sequential replay: the public processed workbook contains baseline summaries but not phase-resolved dose responses; the raw timestamp archive does not retain a validated phase-to-dose map"
+    }
+  ],
+  "compatibility_note": "Only longitudinal neural MEA datasets with dose, DIV and well-level mean firing rate were pooled or compared. The Vassallo archive was audited but excluded because its public processed files do not expose a compatible phase-resolved sequential response grid. No organ-on-chip dataset was merged because no public candidate found in the search exposed a compatible repeated dose-by-time electrophysiology grid and measurement-cost contract."
+}

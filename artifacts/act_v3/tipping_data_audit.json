@@ -1,0 +1,13 @@
+{
+  "complete_runs": 168,
+  "endpoint": "meanfiringrate",
+  "excluded_group_count": 228,
+  "fresh_compound_groups": 53,
+  "grid": "zero dose plus 7 treated dose ranks x DIV 5, 7, 9, 12",
+  "normalization": "median within-run log1p dose minus log1p zero-dose",
+  "source_files": [
+    "AllData_SA3_NoDNTRef.csv",
+    "DNTRef_all.csv"
+  ],
+  "source_rows_after_exclusions": 5407
+}

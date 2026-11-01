@@ -1,0 +1,66 @@
+{
+  "brain_organoid": {
+    "external_shift_flagged_fraction": 1.0,
+    "external_shift_gated_coverage": 0.0,
+    "images": 1407,
+    "metadata_sha256": "95cde068f6bedf34b3a0c96467ff6b81fbb9c8ce6844e3ef60d3c450c2b7c0a9",
+    "organoids": 64,
+    "protected_recomputed": {
+      "central_otsu": {
+        "LabA": {
+          "images": 176,
+          "mean_area_relative_error": 0.7156199925551832,
+          "mean_dice": 0.8340059751278069,
+          "organoids": 16
+        },
+        "LabB": {
+          "images": 176,
+          "mean_area_relative_error": 2.633387473592023,
+          "mean_dice": 0.6478265434050735,
+          "organoids": 16
+        }
+      },
+      "lraspp_lab_a_only": {
+        "LabA": {
+          "images": 176,
+          "mean_area_relative_error": 0.04079081464167926,
+          "mean_dice": 0.9679826142419233,
+          "organoids": 16
+        },
+        "LabB": {
+          "images": 176,
+          "mean_area_relative_error": 0.09865194765431094,
+          "mean_dice": 0.9416029502495658,
+          "organoids": 16
+        }
+      }
+    },
+    "published_predictions_sha256": "472a9da6e5d2eab5081690aab987b1c41847e16721d3f79b6fbec6144f5e33dd",
+    "split_organoids": {
+      "calibration": 12,
+      "test": 16,
+      "train": 36
+    }
+  },
+  "claim_boundary": "Imaging experiments are independent validation modules and are not paired with the MEA acquisition benchmark.",
+  "ooc": {
+    "archive_md5_verified": true,
+    "automatic_pass_coverage": 0.0,
+    "date_groups": 59,
+    "images": 3072,
+    "metadata_sha256": "863fc133f8be825c010c41ea26168fedb75af8d2722646f61402779583073eba",
+    "protected_images": 1373,
+    "recomputed_auroc": 0.6471052182810368,
+    "recomputed_average_precision": 0.6726196459239405,
+    "release_authorized": false,
+    "selected_model": "finetuned_mobilenet_v3",
+    "split_date_groups": {
+      "calibration": 10,
+      "test": 10,
+      "train": 39
+    },
+    "unsafe_passes": 0
+  },
+  "schema": "gates-act-vision-audit-v1",
+  "status": "PASS"
+}

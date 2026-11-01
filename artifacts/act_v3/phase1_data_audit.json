@@ -1,0 +1,22 @@
+{
+  "eligible_complete_runs": 95,
+  "eligible_dtxsid_groups": 86,
+  "endpoint": "CCTE_Shafer_MEA_dev_firing_rate_mean",
+  "grid": "vehicle plus 7 treated dose ranks x DIV 5, 7, 9, 12",
+  "legacy_overlap_groups_excluded": 6,
+  "normalization": "median matched-vehicle log1p contrast",
+  "source_rows": 11748,
+  "split_groups": {
+    "calibration": 23,
+    "development": 13,
+    "test": 17,
+    "train": 33
+  },
+  "split_runs": {
+    "calibration": 24,
+    "development": 13,
+    "test": 22,
+    "train": 36
+  },
+  "split_unit": "DTXSID; repeated plates never cross partitions"
+}

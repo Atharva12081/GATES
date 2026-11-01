@@ -1,0 +1,5 @@
+baseline,effect_recall_advantage,effect_recall_sign_flip_p,test_groups
+max_variance,0.03935185185185188,0.5,6
+maximin,0.016848220769789386,0.25,6
+fixed_sentinel,0.010802469135802462,0.5,6
+random,0.00015432098765433278,1.0,6

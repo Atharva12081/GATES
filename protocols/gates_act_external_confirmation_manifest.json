@@ -1,0 +1,9 @@
+{
+  "schema": "gates-act-external-confirmation-manifest-v1",
+  "frozen_date": "2026-10-28",
+  "outcome_access_status": "no new eligible HESI or BrainSphere row-level outcomes possessed",
+  "files": {
+    "protocols/gates_act_external_confirmation_bundle.md": "de3bbd2fc12a3875bc211a193c60f7a7328a697957fb6cbf5b38f0e298a30de5",
+    "protocols/gates_act_external_confirmation_v1.json": "21b6f893cdaeb385e1dee0510a95668584141bb0d78aa804f4deb5db22e2b88d"
+  }
+}

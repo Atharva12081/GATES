@@ -1,0 +1,15 @@
+{
+  "complete_runs": 16,
+  "endpoint": "meanfiringrate",
+  "fresh_compound_groups": 6,
+  "grid": "zero dose plus 6 treated dose ranks x DIV 5, 7, 9, 12",
+  "normalization": "median within-run log1p dose minus log1p zero-dose",
+  "raw_rows": 990,
+  "technical_replicates_per_cell": {
+    "1": 236,
+    "2": 233,
+    "3": 48,
+    "4": 31,
+    "5": 4
+  }
+}

@@ -11,3 +11,16 @@ data/raw/*.csv
 data/phase2_raw/*
 artifacts/models/*.joblib
 artifacts/figures/demo-home.png
+.vercel
+.env*
+.codex-build/
+.codex-finalizer/
+.playwright-cli/
+.deck-build/
+data/neural_mea_raw/
+data/neural_mea_phase1_raw/
+data/neural_mea_brown_raw/
+data/neural_mea_tipping_raw/
+data/neural_mea_vassallo_raw/
+data/ooc_image_raw/
+data/brain_organoid_raw/

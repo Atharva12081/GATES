@@ -1,0 +1,301 @@
+{
+  "calibration_gate": {
+    "accepted": 131,
+    "authorized": true,
+    "coverage": 1.0,
+    "failure_definition": "absolute area error > 10%",
+    "failures": 5,
+    "one_sided_95_percent_upper_risk": 0.0785728722540139,
+    "threshold": 0.5647012971795672
+  },
+  "dataset": {
+    "clones": 4,
+    "doi": "10.5281/zenodo.10301912",
+    "images": 1407,
+    "laboratories": [
+      "LabA",
+      "LabB"
+    ],
+    "license": "CC-BY-4.0",
+    "organoids": 64
+  },
+  "group_shift_gate": {
+    "calibration_quantile": 0.95,
+    "method": "Lab-A acquisition fingerprint plus Ledoit-Wolf Mahalanobis distance",
+    "protected": {
+      "LabA": {
+        "flagged_fraction": 0.0625,
+        "images": 176,
+        "median_score": 8.2186954812189
+      },
+      "LabB": {
+        "flagged_fraction": 1.0,
+        "images": 176,
+        "median_score": 38.679111367375796
+      }
+    },
+    "secondary_analysis": "specified after the initial external segmentation failure; not treated as an untouched primary claim",
+    "threshold": 23.025843733570305
+  },
+  "interpretation_boundary": "The new LR-ASPP model is trained on Lab A only. Published learned baselines used both laboratories in specimen-disjoint cross-validation and are contextual, not a matched unseen-laboratory comparison.",
+  "paired_against_published_segformer": {
+    "LabA": {
+      "area_error_two_sided_exact_sign_flip_p": 0.160888671875,
+      "dice_two_sided_exact_sign_flip_p": 0.00048828125,
+      "lraspp_area_error_wins": 9,
+      "lraspp_dice_wins": 14,
+      "lraspp_minus_segformer_mean_area_relative_error": -0.011396019140411466,
+      "lraspp_minus_segformer_mean_dice": 0.007909263496830736,
+      "organoid_pairs": 16
+    },
+    "LabB": {
+      "area_error_two_sided_exact_sign_flip_p": 3.0517578125e-05,
+      "dice_two_sided_exact_sign_flip_p": 3.0517578125e-05,
+      "lraspp_area_error_wins": 0,
+      "lraspp_dice_wins": 0,
+      "lraspp_minus_segformer_mean_area_relative_error": 0.04818062031510777,
+      "lraspp_minus_segformer_mean_dice": -0.01805267395718832,
+      "organoid_pairs": 16
+    }
+  },
+  "protected_test": {
+    "central_otsu": {
+      "LabA": {
+        "area_error_over_10_percent": 0.375,
+        "images": 176,
+        "mean_area_relative_error": 0.7156199925551832,
+        "mean_area_relative_error_group_bootstrap_95ci": [
+          0.4650498182967396,
+          0.9644604220779122
+        ],
+        "mean_dice": 0.8340059751278069,
+        "mean_dice_group_bootstrap_95ci": [
+          0.7913322614203091,
+          0.8759815718960404
+        ],
+        "median_area_relative_error": 0.06056798910849513,
+        "median_dice": 0.9608965413301973,
+        "organoids": 16
+      },
+      "LabB": {
+        "area_error_over_10_percent": 0.6022727272727273,
+        "images": 176,
+        "mean_area_relative_error": 2.633387473592023,
+        "mean_area_relative_error_group_bootstrap_95ci": [
+          2.2211240149638782,
+          3.053141486698634
+        ],
+        "mean_dice": 0.6478265434050734,
+        "mean_dice_group_bootstrap_95ci": [
+          0.5981644454726712,
+          0.6949534839395786
+        ],
+        "median_area_relative_error": 0.18981303701076366,
+        "median_dice": 0.9023702484256202,
+        "organoids": 16
+      }
+    },
+    "lraspp_lab_a_only": {
+      "LabA": {
+        "area_error_over_10_percent": 0.0625,
+        "images": 176,
+        "mean_area_relative_error": 0.0407908146416793,
+        "mean_area_relative_error_group_bootstrap_95ci": [
+          0.031722972390621905,
+          0.052772431313582155
+        ],
+        "mean_dice": 0.9679826142419233,
+        "mean_dice_group_bootstrap_95ci": [
+          0.9627681836936497,
+          0.9723425358506768
+        ],
+        "median_area_relative_error": 0.029401117468869555,
+        "median_dice": 0.9733211083231772,
+        "organoids": 16
+      },
+      "LabB": {
+        "area_error_over_10_percent": 0.22727272727272727,
+        "images": 176,
+        "mean_area_relative_error": 0.09865194765431098,
+        "mean_area_relative_error_group_bootstrap_95ci": [
+          0.08061394661638273,
+          0.11770927132827252
+        ],
+        "mean_dice": 0.9416029502495658,
+        "mean_dice_group_bootstrap_95ci": [
+          0.9334568876991477,
+          0.9496807133664447
+        ],
+        "median_area_relative_error": 0.043060952095067384,
+        "median_dice": 0.9630417267524998,
+        "organoids": 16
+      }
+    }
+  },
+  "protocol": {
+    "batch_size": 8,
+    "device": "mps",
+    "epochs": 15,
+    "protected_external_laboratory": "LabB",
+    "seed": 20261024,
+    "split_organoids": {
+      "calibration": 12,
+      "test": 16,
+      "train": 36
+    },
+    "test_used_for_selection": false,
+    "training_laboratory": "LabA"
+  },
+  "published_locked_subset": {
+    "LabA": {
+      "CellProfiler": {
+        "area_error_over_10_percent": 0.5056818181818182,
+        "mean_area_relative_error": 0.7491392652834467,
+        "mean_dice": 0.7725091717736121,
+        "training_scope": "training-free"
+      },
+      "MOrgAna_MLP_W": {
+        "area_error_over_10_percent": 0.7045454545454546,
+        "mean_area_relative_error": 0.5180764556882181,
+        "mean_dice": 0.8671545833802131,
+        "training_scope": "published specimen-disjoint CV using both laboratories"
+      },
+      "OrganoSeg": {
+        "area_error_over_10_percent": 0.4034090909090909,
+        "mean_area_relative_error": 0.37824466370425114,
+        "mean_dice": 0.7951598661774395,
+        "training_scope": "training-free"
+      },
+      "SegFormer": {
+        "area_error_over_10_percent": 0.13068181818181818,
+        "mean_area_relative_error": 0.05218683378209077,
+        "mean_dice": 0.9600733507450928,
+        "training_scope": "published specimen-disjoint CV using both laboratories"
+      }
+    },
+    "LabB": {
+      "CellProfiler": {
+        "area_error_over_10_percent": 0.7045454545454546,
+        "mean_area_relative_error": 3.034644849337269,
+        "mean_dice": 0.5227842703251178,
+        "training_scope": "training-free"
+      },
+      "MOrgAna_MLP_W": {
+        "area_error_over_10_percent": 0.8806818181818182,
+        "mean_area_relative_error": 1.3738432642934293,
+        "mean_dice": 0.7591934127551787,
+        "training_scope": "published specimen-disjoint CV using both laboratories"
+      },
+      "OrganoSeg": {
+        "area_error_over_10_percent": 0.3977272727272727,
+        "mean_area_relative_error": 0.4843674678958795,
+        "mean_dice": 0.8048963087398129,
+        "training_scope": "training-free"
+      },
+      "SegFormer": {
+        "area_error_over_10_percent": 0.10795454545454546,
+        "mean_area_relative_error": 0.050471327339203224,
+        "mean_dice": 0.959655624206754,
+        "training_scope": "published specimen-disjoint CV using both laboratories"
+      }
+    }
+  },
+  "schema_version": 1,
+  "selective_measurement": {
+    "LabA": {
+      "accepted_images": 176,
+      "area_error_over_10_percent": 0.0625,
+      "coverage": 1.0,
+      "mean_area_relative_error": 0.0407908146416793,
+      "shift_gated_area_error_over_10_percent": 0.06666666666666667,
+      "shift_gated_coverage": 0.9375,
+      "shift_gated_images": 165
+    },
+    "LabB": {
+      "accepted_images": 175,
+      "area_error_over_10_percent": 0.22285714285714286,
+      "coverage": 0.9943181818181818,
+      "mean_area_relative_error": 0.09597952142512521,
+      "shift_gated_area_error_over_10_percent": null,
+      "shift_gated_coverage": 0.0,
+      "shift_gated_images": 0
+    }
+  },
+  "training_history": [
+    {
+      "calibration_dice": 0.897315128158977,
+      "epoch": 1,
+      "train_loss": 0.7388792437314987
+    },
+    {
+      "calibration_dice": 0.9480113541806927,
+      "epoch": 2,
+      "train_loss": 0.3031812912225723
+    },
+    {
+      "calibration_dice": 0.9579655409769248,
+      "epoch": 3,
+      "train_loss": 0.2044266602396965
+    },
+    {
+      "calibration_dice": 0.9550062154085581,
+      "epoch": 4,
+      "train_loss": 0.170319904088974
+    },
+    {
+      "calibration_dice": 0.9651004139703648,
+      "epoch": 5,
+      "train_loss": 0.1403075359761715
+    },
+    {
+      "calibration_dice": 0.9663512438308192,
+      "epoch": 6,
+      "train_loss": 0.13088145807385446
+    },
+    {
+      "calibration_dice": 0.9689307058130512,
+      "epoch": 7,
+      "train_loss": 0.115456865131855
+    },
+    {
+      "calibration_dice": 0.9666739520225817,
+      "epoch": 8,
+      "train_loss": 0.1138460211455822
+    },
+    {
+      "calibration_dice": 0.9681497634822176,
+      "epoch": 9,
+      "train_loss": 0.10589397385716438
+    },
+    {
+      "calibration_dice": 0.9659864292799971,
+      "epoch": 10,
+      "train_loss": 0.10007048755884171
+    },
+    {
+      "calibration_dice": 0.9625030865196054,
+      "epoch": 11,
+      "train_loss": 0.09780545875430108
+    },
+    {
+      "calibration_dice": 0.9683337352658046,
+      "epoch": 12,
+      "train_loss": 0.0967515666782856
+    },
+    {
+      "calibration_dice": 0.9673551020731452,
+      "epoch": 13,
+      "train_loss": 0.09566788792610169
+    },
+    {
+      "calibration_dice": 0.9679482165183729,
+      "epoch": 14,
+      "train_loss": 0.09362085938453674
+    },
+    {
+      "calibration_dice": 0.967996780198949,
+      "epoch": 15,
+      "train_loss": 0.09223173171281815
+    }
+  ]
+}

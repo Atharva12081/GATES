@@ -1,0 +1,83 @@
+{
+  "claim_boundary": "Protected evaluation is chronological by acquisition date. Date is a conservative batch proxy because chip identifiers are unavailable.",
+  "contextual_published_image_split": {
+    "accuracy": 0.81,
+    "comparison_warning": "published split is not documented as acquisition-date-disjoint",
+    "precision": 0.79,
+    "recall": 0.78
+  },
+  "dataset": {
+    "acquisition_date_groups": 59,
+    "cell_types": 6,
+    "doi": "10.5281/zenodo.10203721",
+    "images": 3072,
+    "license_record": "CC-BY-4.0"
+  },
+  "locked_candidate_baselines_on_same_protected_test": {
+    "classical_logistic": {
+      "auroc": 0.5701814034788539,
+      "average_precision": 0.60761096316433,
+      "bad_recall_at_0_5": 0.0,
+      "bad_recall_date_group_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "balanced_accuracy_at_0_5": 0.5,
+      "brier": 0.3212089538574219
+    },
+    "classical_random_forest": {
+      "auroc": 0.5975571282401091,
+      "average_precision": 0.6497693790181235,
+      "bad_recall_at_0_5": 0.0,
+      "bad_recall_date_group_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "balanced_accuracy_at_0_5": 0.5,
+      "brier": 0.3163522374911399
+    },
+    "finetuned_mobilenet_v3": {
+      "auroc": 0.6471052182810368,
+      "average_precision": 0.6726196459239405,
+      "bad_recall_at_0_5": 0.0941336971350614,
+      "bad_recall_date_group_bootstrap_95ci": [
+        0.06290297220531547,
+        0.12729900689955317
+      ],
+      "balanced_accuracy_at_0_5": 0.5259730985675307,
+      "brier": 0.3075897693634033
+    },
+    "pretrained_linear_probe": {
+      "auroc": 0.5506885231923602,
+      "average_precision": 0.5952847123697261,
+      "bad_recall_at_0_5": 0.0068212824010914054,
+      "bad_recall_date_group_bootstrap_95ci": [
+        0.002564102564102564,
+        0.01203405680483667
+      ],
+      "balanced_accuracy_at_0_5": 0.5018481412005457,
+      "brier": 0.31520748138427734
+    }
+  },
+  "selected_model": "finetuned_mobilenet_v3",
+  "test": {
+    "auroc": 0.6471052182810368,
+    "automatic_pass_coverage": 0.0,
+    "average_precision": 0.6726196459239405,
+    "bad_images": 733,
+    "bad_recall": 1.0,
+    "bad_recall_at_0_5": 0.0941336971350614,
+    "bad_recall_date_group_bootstrap_95ci": [
+      1.0,
+      1.0
+    ],
+    "balanced_accuracy_at_0_5": 0.5259730985675307,
+    "brier": 0.3075897693634033,
+    "date_groups": 10,
+    "date_level_recall_median": 1.0,
+    "date_level_recall_minimum": 1.0,
+    "images": 1373,
+    "unsafe_passes": 0,
+    "unsafe_risk_among_passes": 0.0
+  }
+}

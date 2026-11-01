@@ -1,0 +1,21 @@
+{
+  "dataset": "EPA Tipping Point longitudinal neural MEA source data",
+  "fresh_compound_groups": 53,
+  "fresh_runs": 168,
+  "mean_recording_sessions": 3.9642857142857144,
+  "measurement_cost_contract": "24 physical wells allocated; savings count only avoided whole-plate DIV sessions",
+  "model_lock_sha256": "bb14f65534125a5c54e6dd2a226dfa60f756f93bb9fa3ec9a0fa7a7b119e0dfe",
+  "recording_session_reduction": 0.008928571428571397,
+  "risk_sensitive_decisions": {
+    "ABSTAIN": 96,
+    "COMPLETE": 66,
+    "STOP": 6
+  },
+  "risk_sensitive_missed_effect_cells_at_stop": 4,
+  "risk_sensitive_stop_effect_recall": 0.9125541125541127,
+  "risk_sensitive_stops": 6,
+  "risk_sensitive_unsafe_stops": 4,
+  "schema": "gates-act-v3-tipping-confirmation-v1",
+  "source_doi": "10.23719/1407690",
+  "stopping_lock_sha256": "8cc7fce7797e17522583aa83634e88017357741f547f1ba15845c068b847c465"
+}

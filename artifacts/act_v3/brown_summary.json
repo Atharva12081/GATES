@@ -1,0 +1,17 @@
+{
+  "dataset": "Brown et al. 2016 EPA neural network ontogeny MEA training set",
+  "source_doi": "10.23719/1412682",
+  "fresh_compound_groups": 6,
+  "fresh_runs": 16,
+  "risk_sensitive_decisions": {
+    "ABSTAIN": 9,
+    "COMPLETE": 5,
+    "STOP": 2
+  },
+  "risk_sensitive_stops": 2,
+  "risk_sensitive_unsafe_stops": 1,
+  "risk_sensitive_stop_effect_recall": 1.0,
+  "recording_session_reduction": 0.0625,
+  "calibration_violation_budget": 0.1,
+  "measurement_cost_contract": "24 wells allocated; savings count only avoided DIV sessions"
+}

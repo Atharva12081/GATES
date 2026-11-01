@@ -1,0 +1,42 @@
+{
+  "schema": "gates-act-canonical-core-v1",
+  "canonical_acquisition": "cost-aware conditional maximum variance",
+  "selection_basis": "adopt the strongest frozen acquisition baseline; no external outcomes were used to tune a new acquisition score",
+  "evaluation_groups": 76,
+  "pooled_group_weighted": {
+    "effect_recall": 0.9786829582838932,
+    "effect_precision": 0.3204025262340859,
+    "nrmse": 0.3344825508064703,
+    "direct_effect_capture": 0.42679245156236184
+  },
+  "largest_independent_confirmation": {
+    "dataset": "tipping",
+    "groups": 53,
+    "effect_recall": 0.980089049894164,
+    "nrmse": 0.40564915395677914,
+    "direct_effect_capture": 0.4327532051202684
+  },
+  "stopping": {
+    "candidate_validation_stops": 3,
+    "candidate_unsafe_stops": 2,
+    "one_sided_95pct_unsafe_rate_upper_bound": 0.9830475724915585,
+    "authorized": false,
+    "minimum_zero_failure_validation_stops_for_5pct_limit": 59,
+    "released_action": "COMPLETE_OR_ABSTAIN",
+    "actual_session_savings": 0.0
+  },
+  "source_hashes": {
+    "artifacts/act_v3/fresh_acquisition_traces.csv": "059f16b1a75c8e1526ed1a2bb89685aaf1909f54e807feb523d201cc34bf95d3",
+    "artifacts/act_v3/brown_fresh_traces.csv": "8157ebdff9ae616c0836124c13b26ccd53f4d52eec44ba191f0cd0a02430abee",
+    "artifacts/act_v3/tipping_fresh_traces.csv": "0a8cfa159ce197e6158a9132641d28eb01d39c367310bbf4e2f066b41d9ed6a1",
+    "artifacts/act_v3/fresh_decisions.csv": "7946b9266073d80a09e66e06182ebca6089a028dc74477a1d21dc6575737c4e0",
+    "artifacts/act_v3/brown_fresh_decisions.csv": "e2c7cb21466df3e3443d35271a1ff6b7fd95d76b3bebdd19c8b8150786d6a459",
+    "artifacts/act_v3/tipping_fresh_decisions.csv": "b91afc4f9a5027b74a294ce6bd2428bec643867f1b0257ef31ebfcd1d5f51d8f"
+  },
+  "limitations": [
+    "No current evidence authorizes early stopping at a 5% unsafe-stop risk limit.",
+    "Protected effect recall is conservative and has low precision under group shift.",
+    "Measurement-count efficiency is not equivalent to saved physical wells or sessions.",
+    "The Vassallo public archive lacks phase-resolved processed responses needed for a compatible sequential replay."
+  ]
+}

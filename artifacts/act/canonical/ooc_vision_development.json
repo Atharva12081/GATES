@@ -1,0 +1,111 @@
+{
+  "candidate_leaderboard": [
+    {
+      "auroc": 0.6472685164161482,
+      "average_precision": 0.46904016728914344,
+      "bad_recall_at_0_5": 0.4426229508196721,
+      "balanced_accuracy_at_0_5": 0.6146632759638527,
+      "brier": 0.20518215000629425,
+      "model": "finetuned_mobilenet_v3"
+    },
+    {
+      "auroc": 0.5799237091866855,
+      "average_precision": 0.32460392097394153,
+      "bad_recall_at_0_5": 0.39344262295081966,
+      "balanced_accuracy_at_0_5": 0.5360564915308115,
+      "brier": 0.2908581793308258,
+      "model": "pretrained_linear_probe"
+    },
+    {
+      "auroc": 0.5163253258253485,
+      "average_precision": 0.292661944825149,
+      "bad_recall_at_0_5": 0.4098360655737705,
+      "balanced_accuracy_at_0_5": 0.5207075064710958,
+      "brier": 0.3617304563522339,
+      "model": "classical_logistic"
+    },
+    {
+      "auroc": 0.5415285409381954,
+      "average_precision": 0.27514096579763503,
+      "bad_recall_at_0_5": 0.10655737704918032,
+      "balanced_accuracy_at_0_5": 0.508957358884701,
+      "brier": 0.20448333971371435,
+      "model": "classical_random_forest"
+    }
+  ],
+  "feature_kind": "finetuned",
+  "mobilenet_training_history": [
+    {
+      "development_average_precision": 0.4502120815171398,
+      "epoch": 1,
+      "train_loss": 0.928739084303379
+    },
+    {
+      "development_average_precision": 0.4653882817489158,
+      "epoch": 2,
+      "train_loss": 0.8307809680700302
+    },
+    {
+      "development_average_precision": 0.46904016728914344,
+      "epoch": 3,
+      "train_loss": 0.7650465503334999
+    },
+    {
+      "development_average_precision": 0.4647358652026232,
+      "epoch": 4,
+      "train_loss": 0.712400983273983
+    },
+    {
+      "development_average_precision": 0.4654422649653449,
+      "epoch": 5,
+      "train_loss": 0.649237335473299
+    },
+    {
+      "development_average_precision": 0.46332782328758093,
+      "epoch": 6,
+      "train_loss": 0.6328884296119213
+    },
+    {
+      "development_average_precision": 0.46535684235000674,
+      "epoch": 7,
+      "train_loss": 0.6025202393531799
+    },
+    {
+      "development_average_precision": 0.4639221744005072,
+      "epoch": 8,
+      "train_loss": 0.6101635709404946
+    },
+    {
+      "development_average_precision": 0.46302823579644914,
+      "epoch": 9,
+      "train_loss": 0.5741498999297618
+    },
+    {
+      "development_average_precision": 0.4604876773074079,
+      "epoch": 10,
+      "train_loss": 0.5714606538414955
+    }
+  ],
+  "protected_test_pixels_accessed": false,
+  "release_gate": {
+    "accepted": 0,
+    "authorized": false,
+    "bad_recall": 1.0,
+    "coverage": 0.0,
+    "failures": 0,
+    "one_sided_95_percent_upper_risk": 1.0,
+    "threshold": 0.0
+  },
+  "selected_model": "finetuned_mobilenet_v3",
+  "split_counts": {
+    "calibration": 748,
+    "test": 1373,
+    "train": 951
+  },
+  "split_date_counts": {
+    "calibration": 10,
+    "test": 10,
+    "train": 39
+  },
+  "stage": "development_locked_before_test_pixels"
+}

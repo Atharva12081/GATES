@@ -30,9 +30,62 @@ new observation -> CONTINUE -> STOP
 
 Developed by **Atharva Parande**.
 
+## GATES-ACT adaptive assay screening
+
+The canonical GATES-ACT policy is cost-aware conditional maximum variance. Across 76 independent
+external compound groups from three public neural-MEA datasets it achieved 97.87% protected effect
+recall and the lowest pooled hidden-response NRMSE (0.334). It significantly improved recall over
+fixed sentinels and random acquisition; recall differences versus maximin and the rejected
+effect-weighted policy were not significant.
+
+Early stopping is disabled. Three external candidate stops included two unsafe outcomes, giving a
+98.3% one-sided upper confidence bound on unsafe-stop risk. The released workflow therefore issues
+COMPLETE or ABSTAIN and claims zero physical-session savings. At least 59 independent zero-failure
+validation stops are required before the 5% risk limit could authorize STOP.
+
+Independent real-image stress tests do not alter that MEA claim. On 3,072 OOC microscopy images,
+fine-tuned MobileNetV3 reached 0.673 protected chronological average precision, but the 5% release
+gate authorized no automatic PASS decisions. On 1,407 brain-organoid images, a Lab-A-only segmenter
+lost to the published multi-lab SegFormer in unseen Lab B; the shift gate therefore releases no
+Lab-B image. Imaging remains an audited, fail-closed module because neither archive contains paired
+MEA outcomes.
+
+Reproduce and audit the final evidence with `just act-final-verify`. Launch the live defense console
+with `just demo`. See the
+[submission technical report](docs/act/TECHNICAL_REPORT_V3.md),
+[supplementary methods](docs/act/SUPPLEMENTARY_MATERIAL.md),
+[rendered report](output/pdf/GATES_ACT_Submission_Technical_Report.pdf), and
+[canonical evidence](artifacts/act/canonical/core_evidence.json).
+
+### Preserved v2 evidence
+
+GATES-ACT v2 predicts unmeasured dose-time responses, chooses chronologically eligible measurements,
+and uses GATES for calibrated STOP, CONTINUE, or ABSTAIN decisions. The primary benchmark is the
+public EPA cortical-neuron MEA network-formation assay. It contains 135 complete compound runs across
+127 canonical compound groups; 80 groups train the model, 21 calibrate decisions, and 26 are held out.
+
+| GATES-ACT v2 test result | Value |
+|---|---:|
+| Held-out runs / independent groups | 28 / 26 |
+| Chronological decisions | 5 STOP, 2 ABSTAIN, 21 COMPLETE |
+| STOP timing | 1 at DIV7, 4 at DIV9 |
+| Unsafe stops / compound-effect misses | 0 / 0 |
+| Mean recording-session reduction | 5.36% |
+| ACT advantage versus random | 0.00681 NRMSE (paired p=0.00062) |
+
+ACT did not significantly outperform maximum variance, maximin, or fixed sentinel selection. The
+earlier six-replicate OrganoID replay is preserved under `artifacts/act/`, but its active-decision
+interpretation is withdrawn because every successful stop occurred at the initial five measurements.
+
+Run `just act-v2`, then open the interactive console with `just demo`. See the
+[GATES-ACT technical report](docs/act/TECHNICAL_REPORT.md),
+[public-method study](docs/act/COMPETITOR_METHODS.md), and
+[defense Q&A](docs/act/DEFENSE_QA.md). The [v1-to-v2 erratum](docs/act/V1_TO_V2_ERRATUM.md)
+records the corrected claim boundary.
+
 ## Why this is not ordinary prediction
 
-The source orgAInoid study established that future tissue outcomes can be predicted from early
+The source organoid study established that future tissue outcomes can be predicted from early
 images. GATES addresses the downstream decision: whether a particular partial trajectory is
 reliable enough to justify terminating observation. Entire experiments—not individual images or
 organoids—form the held-out generalization boundary. Experimental groups are therefore part of the

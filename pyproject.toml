@@ -10,17 +10,24 @@ dependencies = [
   "joblib>=1.5,<2",
   "matplotlib>=3.10,<4",
   "numpy>=2.2,<3",
+  "opencv-python-headless>=4.12,<5",
+  "openpyxl>=3.1,<4",
   "pandas>=2.3,<3",
   "plotly>=6.3,<7",
+  "scikit-image>=0.25,<1",
   "scikit-learn>=1.7,<2",
   "scipy>=1.16,<2",
   "streamlit>=1.54,<2",
+  "torch>=2.8,<3",
+  "torchvision>=0.23,<1",
 ]
 
 [project.optional-dependencies]
 dev = [
+  "pypdf>=6.1,<7",
   "pytest>=8.4,<9",
   "pytest-cov>=7,<8",
+  "reportlab>=4.4,<5",
   "ruff>=0.16,<0.17",
 ]
 
@@ -37,6 +44,7 @@ packages = ["src/gates"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 100

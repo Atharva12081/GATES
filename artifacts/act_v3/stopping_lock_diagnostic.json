@@ -1,0 +1,48 @@
+{
+  "development_stop_groups": 10,
+  "risk_weights": {
+    "ambiguity": 0.5,
+    "drift": 0.0,
+    "interval": 0.1,
+    "loo": 0.5,
+    "shift": 0.0,
+    "uncertainty": 1.0
+  },
+  "rules": {
+    "fixed_sentinel": {
+      "conformal_q": 2.2252656959940182,
+      "ood_threshold": 1.2010086542101208,
+      "risk_threshold": -1.0,
+      "stop_groups": 0,
+      "violation_rate": 0.0
+    },
+    "max_variance": {
+      "conformal_q": 2.524143358790271,
+      "ood_threshold": 1.1739196979753548,
+      "risk_threshold": -1.0,
+      "stop_groups": 0,
+      "violation_rate": 0.0
+    },
+    "maximin": {
+      "conformal_q": 2.380705382484357,
+      "ood_threshold": 1.1634768216570504,
+      "risk_threshold": 0.34749252776677214,
+      "stop_groups": 5,
+      "violation_rate": 0.0
+    },
+    "random": {
+      "conformal_q": 2.2147066078265594,
+      "ood_threshold": 1.20709007308117,
+      "risk_threshold": 0.358761464222814,
+      "stop_groups": 6,
+      "violation_rate": 0.0
+    },
+    "risk_sensitive": {
+      "conformal_q": 2.353671385543871,
+      "ood_threshold": 1.2782032075797516,
+      "risk_threshold": 0.32633417967819917,
+      "stop_groups": 4,
+      "violation_rate": 0.0
+    }
+  }
+}

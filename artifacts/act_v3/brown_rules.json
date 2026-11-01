@@ -1,0 +1,37 @@
+{
+  "risk_sensitive": {
+    "risk_threshold": 0.39522405526771615,
+    "calibration_stop_groups": 20,
+    "calibration_violation_rate": 0.1,
+    "conformal_q": 2.465932930505913,
+    "ood_threshold": 1.1912769394452227
+  },
+  "max_variance": {
+    "risk_threshold": 0.3452918203665978,
+    "calibration_stop_groups": 21,
+    "calibration_violation_rate": 0.09523809523809523,
+    "conformal_q": 1.9900943040206907,
+    "ood_threshold": 1.1971438018379694
+  },
+  "maximin": {
+    "risk_threshold": -1.0,
+    "calibration_stop_groups": 0,
+    "calibration_violation_rate": 0.0,
+    "conformal_q": 2.1955339600056325,
+    "ood_threshold": 1.1513039881853135
+  },
+  "fixed_sentinel": {
+    "risk_threshold": -1.0,
+    "calibration_stop_groups": 0,
+    "calibration_violation_rate": 0.0,
+    "conformal_q": 2.1955339600056325,
+    "ood_threshold": 1.1513039881853135
+  },
+  "random": {
+    "risk_threshold": -1.0,
+    "calibration_stop_groups": 0,
+    "calibration_violation_rate": 0.0,
+    "conformal_q": 1.9780129818444987,
+    "ood_threshold": 1.1694393985536318
+  }
+}

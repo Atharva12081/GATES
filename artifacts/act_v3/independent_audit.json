@@ -1,0 +1,179 @@
+{
+  "acceptance_checks": {
+    "effect_recall_at_least_90pct": true,
+    "positive_actual_session_savings": true,
+    "superior_to_all_strong_baselines": false,
+    "zero_unsafe_external_stops": false
+  },
+  "brown_confirmation": {
+    "comparisons": [
+      {
+        "baseline": "max_variance",
+        "effect_recall_advantage": 0.0393518518518518,
+        "effect_recall_sign_flip_p": 0.5,
+        "test_groups": 6
+      },
+      {
+        "baseline": "maximin",
+        "effect_recall_advantage": 0.0168482207697893,
+        "effect_recall_sign_flip_p": 0.25,
+        "test_groups": 6
+      },
+      {
+        "baseline": "fixed_sentinel",
+        "effect_recall_advantage": 0.0108024691358024,
+        "effect_recall_sign_flip_p": 0.5,
+        "test_groups": 6
+      },
+      {
+        "baseline": "random",
+        "effect_recall_advantage": 0.0001543209876543,
+        "effect_recall_sign_flip_p": 1.0,
+        "test_groups": 6
+      }
+    ],
+    "groups": 6,
+    "recording_session_reduction": 0.0625,
+    "runs": 16,
+    "stops": 2,
+    "trajectory_effect_precision": 0.24992654914529913,
+    "trajectory_effect_recall": 0.9722222222222222,
+    "trajectory_nrmse": 0.20186507171965226,
+    "unsafe_stops": 1
+  },
+  "deployment_action": "disable v3 early stopping; complete or abstain under group shift",
+  "hashes": {
+    "brown_fresh_traces.csv": "8157ebdff9ae616c0836124c13b26ccd53f4d52eec44ba191f0cd0a02430abee",
+    "fresh_acquisition_traces.csv": "059f16b1a75c8e1526ed1a2bb89685aaf1909f54e807feb523d201cc34bf95d3",
+    "preregistered_config.json": "bb14f65534125a5c54e6dd2a226dfa60f756f93bb9fa3ec9a0fa7a7b119e0dfe",
+    "stopping_lock.json": "8cc7fce7797e17522583aa83634e88017357741f547f1ba15845c068b847c465",
+    "tipping_fresh_traces.csv": "0a8cfa159ce197e6158a9132641d28eb01d39c367310bbf4e2f066b41d9ed6a1"
+  },
+  "headline_boundary": {
+    "max_variance_effect_recall_advantage_over_risk": 0.0133198563041347,
+    "rejected": "superiority to maximum variance, externally safe early stopping, and validated laboratory cost savings",
+    "supported": "risk-sensitive acquisition exceeds 90% effect recall and beats fixed sentinel and random acquisition on the largest shifted confirmation"
+  },
+  "phase1_external": {
+    "comparisons": [
+      {
+        "baseline": "max_variance",
+        "effect_recall_advantage": 0.0098039215686274,
+        "effect_recall_ci_high": 0.0294117647058823,
+        "effect_recall_ci_low": 0.0,
+        "effect_recall_sign_flip_p": 1.0,
+        "nrmse_advantage": -0.0073733047292169,
+        "nrmse_ci_high": 0.0006609779200133,
+        "nrmse_ci_low": -0.0172399243490262,
+        "nrmse_sign_flip_p": 0.12493896484375,
+        "test_groups": 17
+      },
+      {
+        "baseline": "maximin",
+        "effect_recall_advantage": 0.0117647058823529,
+        "effect_recall_ci_high": 0.0333333333333333,
+        "effect_recall_ci_low": 0.0,
+        "effect_recall_sign_flip_p": 0.5,
+        "nrmse_advantage": 0.0060641563684302,
+        "nrmse_ci_high": 0.012274965084099,
+        "nrmse_ci_low": -0.0006496467545633,
+        "nrmse_sign_flip_p": 0.0960540771484375,
+        "test_groups": 17
+      },
+      {
+        "baseline": "fixed_sentinel",
+        "effect_recall_advantage": 0.0196078431372549,
+        "effect_recall_ci_high": 0.0588235294117647,
+        "effect_recall_ci_low": 0.0,
+        "effect_recall_sign_flip_p": 1.0,
+        "nrmse_advantage": -0.0034944937027541,
+        "nrmse_ci_high": 0.0093756492437021,
+        "nrmse_ci_low": -0.0185345863865671,
+        "nrmse_sign_flip_p": 0.6904449462890625,
+        "test_groups": 17
+      },
+      {
+        "baseline": "random",
+        "effect_recall_advantage": 0.0196078431372549,
+        "effect_recall_ci_high": 0.0588235294117647,
+        "effect_recall_ci_low": 0.0,
+        "effect_recall_sign_flip_p": 1.0,
+        "nrmse_advantage": -0.0057890696330141,
+        "nrmse_ci_high": 0.0076712511409525,
+        "nrmse_ci_low": -0.0206772069281386,
+        "nrmse_sign_flip_p": 0.46380615234375,
+        "test_groups": 17
+      }
+    ],
+    "groups": 17,
+    "recording_session_reduction": 0.0,
+    "runs": 22,
+    "stops": 0,
+    "trajectory_effect_precision": 0.16232207706138188,
+    "trajectory_effect_recall": 1.0,
+    "trajectory_nrmse": 0.1667564945545107,
+    "unsafe_stops": 0
+  },
+  "release_status": "REJECT_RESEARCH_ONLY",
+  "schema": "gates-act-v3-independent-audit-v1",
+  "tipping_confirmation": {
+    "comparisons": [
+      {
+        "baseline": "max_variance",
+        "effect_recall_advantage": -0.0133198563041347,
+        "effect_recall_ci_high": -0.0052250108186096,
+        "effect_recall_ci_low": -0.0226313139531844,
+        "effect_recall_sign_flip_p": 0.0011299887001129,
+        "nrmse_advantage": -0.0077506257705925,
+        "nrmse_ci_high": 0.0013352508531416,
+        "nrmse_ci_low": -0.0184158483179448,
+        "nrmse_sign_flip_p": 0.1396686033139668,
+        "test_groups": 53
+      },
+      {
+        "baseline": "maximin",
+        "effect_recall_advantage": -0.004113862606035,
+        "effect_recall_ci_high": 0.001930056712307,
+        "effect_recall_ci_low": -0.0097927388023918,
+        "effect_recall_sign_flip_p": 0.1824181758182418,
+        "nrmse_advantage": 0.0142401585972289,
+        "nrmse_ci_high": 0.0321054603679153,
+        "nrmse_ci_low": -0.0019455973839547,
+        "nrmse_sign_flip_p": 0.1148488515114848,
+        "test_groups": 53
+      },
+      {
+        "baseline": "fixed_sentinel",
+        "effect_recall_advantage": 0.0220225759875174,
+        "effect_recall_ci_high": 0.0366636350350991,
+        "effect_recall_ci_low": 0.0088153074671203,
+        "effect_recall_sign_flip_p": 0.0020299797002029,
+        "nrmse_advantage": 0.0106609925406907,
+        "nrmse_ci_high": 0.0249708328471527,
+        "nrmse_ci_low": -0.0038902679621486,
+        "nrmse_sign_flip_p": 0.1605783942160578,
+        "test_groups": 53
+      },
+      {
+        "baseline": "random",
+        "effect_recall_advantage": 0.0118637245907765,
+        "effect_recall_ci_high": 0.0216880746294172,
+        "effect_recall_ci_low": 0.0034907593815901,
+        "effect_recall_sign_flip_p": 0.0098599014009859,
+        "nrmse_advantage": 0.0308614037714923,
+        "nrmse_ci_high": 0.0470234600112222,
+        "nrmse_ci_low": 0.0167904477369286,
+        "nrmse_sign_flip_p": 1.999980000199998e-05,
+        "test_groups": 53
+      }
+    ],
+    "groups": 53,
+    "recording_session_reduction": 0.008928571428571397,
+    "runs": 168,
+    "stops": 6,
+    "trajectory_effect_precision": 0.3580021008986345,
+    "trajectory_effect_recall": 0.9647503041496547,
+    "trajectory_nrmse": 0.383317690786685,
+    "unsafe_stops": 4
+  }
+}

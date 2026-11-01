@@ -1,0 +1,77 @@
+{
+  "schema": "gates-act-external-confirmation-v1",
+  "status": "frozen-before-new-outcomes",
+  "eligible_sources": [
+    "new HESI multi-laboratory MEA row-level release",
+    "Carstens BrainSphere raw per-well dose-by-time data obtained from authors"
+  ],
+  "required_identity_fields": [
+    "laboratory_id",
+    "plate_or_experiment_id",
+    "well_or_specimen_id",
+    "chemical_id",
+    "concentration_value",
+    "concentration_unit",
+    "recording_time",
+    "vehicle_control_link"
+  ],
+  "eligibility": {
+    "minimum_repeated_times": 4,
+    "minimum_biological_experiments_per_chemical": 2,
+    "numeric_per_well_outcomes_required": true,
+    "digitized_figures_allowed": false,
+    "same_unit_longitudinal_mapping_required": true,
+    "matched_plate_time_controls_required": true
+  },
+  "split_order": [
+    "laboratory",
+    "experiment_or_plate",
+    "chemical",
+    "well_or_specimen"
+  ],
+  "effect_threshold": {
+    "commensurate_normalized_response": 0.4,
+    "otherwise": "training-control-derived threshold frozen before calibration/test inspection"
+  },
+  "budget": {
+    "times": 4,
+    "vehicle_cells_per_time": 1,
+    "treated_cells_per_time": 3,
+    "physical_cells_observed": 16,
+    "physical_cells_total": 32,
+    "elapsed_time_selection_allowed": false
+  },
+  "baselines": [
+    "highest_three_direct_only",
+    "highest_three_gates_agreement_release",
+    "cost_aware_conditional_maximum_variance",
+    "middle_high_sentinels",
+    "maximin",
+    "seeded_random"
+  ],
+  "primary_endpoint": "active-chemical sensitivity against full-assay reference",
+  "secondary_endpoints": [
+    "effect_call_precision",
+    "specificity",
+    "protected_recall",
+    "wrong_decisions",
+    "decisive_coverage",
+    "direct_effect_capture",
+    "hidden_effect_recall",
+    "worst_source_performance"
+  ],
+  "confirmation_gate": {
+    "minimum_active_chemical_gain_points_vs_cmv": 0.05,
+    "minimum_active_chemical_count_gain_vs_cmv": 2,
+    "minimum_effect_precision": 0.95,
+    "minimum_protected_recall": 0.95,
+    "wrong_decisions_may_increase": false,
+    "no_worse_than_direct_high_dose_for_active_chemical_sensitivity": true
+  },
+  "uncertainty": [
+    "exact_clopper_pearson_chemical_intervals",
+    "hierarchical_cluster_bootstrap_chemical_then_experiment"
+  ],
+  "early_stopping": "disabled",
+  "independent_confirmation_label": "prohibited until every eligibility and success gate passes"
+}

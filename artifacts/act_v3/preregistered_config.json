@@ -1,0 +1,79 @@
+{
+  "fresh_test_boundary": "Phase-1 DTXSID groups assigned to test by _v3_split; their outcomes are ingested for schema-complete loading but never used by configuration selection, fitting, calibration, or acceptance gates",
+  "legacy_test_boundary": "all legacy v2 test groups excluded from v3 selection and fitting",
+  "schema": "gates-act-v3-preregistration-v1",
+  "seed": 20261023,
+  "selected_config": {
+    "analog_weight": 0.75,
+    "conformal_coverage": 0.9,
+    "covariance_blend": 0.9,
+    "direct_bonus": 3.0,
+    "effect_threshold": 0.4,
+    "effect_weight": 6.0,
+    "minimum_effect_divs": 2,
+    "minimum_stop_round": 2,
+    "neighbor_count": 10,
+    "noise_fraction": 0.08,
+    "ood_quantile": 0.9,
+    "target_effect_recall": 0.9,
+    "target_nrmse": 0.2
+  },
+  "selection_evidence": {
+    "direct_advantage_vs_best_baseline": 0.03098999765666438,
+    "objective": 1.1215359132493814,
+    "recall_advantage_vs_best_baseline": 0.00028058361391702924,
+    "risk_direct_capture": 0.5024446232779567,
+    "risk_nrmse": 0.17245911466422043,
+    "risk_precision": 0.18423466965133634,
+    "risk_recall": 0.9542328042328043
+  },
+  "source_audits": {
+    "legacy": {
+      "canonical_groups": 127,
+      "eligible_complete_runs": 135,
+      "endpoint": "meanfiringrate",
+      "grid": "8 within-compound dose ranks x DIV 5, 7, 9, 12",
+      "normalization": "median plate-matched log1p(treated) minus log1p(zero-dose)",
+      "raw_compound_runs": 153,
+      "raw_rows": 17224,
+      "split_groups": {
+        "calibration": 21,
+        "test": 26,
+        "train": 80
+      },
+      "split_runs": {
+        "calibration": 23,
+        "test": 28,
+        "train": 84
+      },
+      "technical_replicates_per_cell": {
+        "2": 44,
+        "3": 4388,
+        "5": 108,
+        "6": 572
+      }
+    },
+    "phase1": {
+      "eligible_complete_runs": 95,
+      "eligible_dtxsid_groups": 86,
+      "endpoint": "CCTE_Shafer_MEA_dev_firing_rate_mean",
+      "grid": "vehicle plus 7 treated dose ranks x DIV 5, 7, 9, 12",
+      "legacy_overlap_groups_excluded": 6,
+      "normalization": "median matched-vehicle log1p contrast",
+      "source_rows": 11748,
+      "split_groups": {
+        "calibration": 23,
+        "development": 13,
+        "test": 17,
+        "train": 33
+      },
+      "split_runs": {
+        "calibration": 24,
+        "development": 13,
+        "test": 22,
+        "train": 36
+      },
+      "split_unit": "DTXSID; repeated plates never cross partitions"
+    }
+  }
+}

@@ -1,0 +1,841 @@
+run_id,source,compound,compound_group,policy,decision,decision_round,decision_div,selected_cells_used,physical_wells_allocated,instrument_well_recordings,recording_sessions,terminal_nrmse,effect_recall,missed_effect_cells,compound_effect_missed,stop_safe
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1007-109::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,random,STOP,3,9,16,24,72,3,0.22998452955762225,0.8571428571428571,1,0,False
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-1::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,risk_sensitive,STOP,3,9,16,24,72,3,0.12653869732856807,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,random,STOP,3,9,16,24,72,3,0.14616555933575678,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-37::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,risk_sensitive,STOP,3,9,16,24,72,3,0.2005487310185818,1.0,0,0,False
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,maximin,STOP,3,9,16,24,72,3,0.18184394882060814,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Aldicarb,AllData_SA3_NoDNTRef.csv,Aldicarb,aldicarb,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Carbaryl,AllData_SA3_NoDNTRef.csv,Carbaryl,carbaryl,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Heptachlor epoxide,AllData_SA3_NoDNTRef.csv,Heptachlor epoxide,heptachlor epoxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Imidacloprid,AllData_SA3_NoDNTRef.csv,Imidacloprid,imidacloprid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Lindane,AllData_SA3_NoDNTRef.csv,Lindane,lindane,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-40::Spiroxamine,AllData_SA3_NoDNTRef.csv,Spiroxamine,spiroxamine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::1-2-PropyleneGlycol,AllData_SA3_NoDNTRef.csv,1-2-PropyleneGlycol,1-2-propyleneglycol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::Acetamiprid,AllData_SA3_NoDNTRef.csv,Acetamiprid,acetamiprid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TCEP,AllData_SA3_NoDNTRef.csv,TCEP,tcep,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1008-42::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,random,STOP,3,9,16,24,72,3,0.15666912303652417,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,random,STOP,3,9,16,24,72,3,0.28321635361309383,1.0,0,0,False
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-42::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-43::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,random,STOP,3,9,16,24,72,3,0.14274290268280102,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Bis1,AllData_SA3_NoDNTRef.csv,Bis1,bis1,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1042-44::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,random,STOP,3,9,16,24,72,3,0.20742122180940029,0.9090909090909091,1,0,False
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-02::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,random,STOP,3,9,16,24,72,3,0.24679355537290834,1.0,0,0,False
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-06::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Cypermethrin,AllData_SA3_NoDNTRef.csv,Cypermethrin,cypermethrin,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Fipronil,AllData_SA3_NoDNTRef.csv,Fipronil,fipronil,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Flusilazole,AllData_SA3_NoDNTRef.csv,Flusilazole,flusilazole,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Lactofen,AllData_SA3_NoDNTRef.csv,Lactofen,lactofen,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,maximin,STOP,3,9,16,24,72,3,0.16019104827871608,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1045-09::Methylchloroisothiazolinone,AllData_SA3_NoDNTRef.csv,Methylchloroisothiazolinone,methylchloroisothiazolinone,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-39::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TDCPP,AllData_SA3_NoDNTRef.csv,TDCPP,tdcpp,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::TPP,AllData_SA3_NoDNTRef.csv,TPP,tpp,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::AllData_SA3_NoDNTRef.csv::MW1086-41::Tetrabromobisphenol A,AllData_SA3_NoDNTRef.csv,Tetrabromobisphenol A,tetrabromobisphenol a,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-11::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hexachlorophene,DNTRef_all.csv,Hexachlorophene,hexachlorophene,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Hydroxyurea,DNTRef_all.csv,Hydroxyurea,hydroxyurea,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Methotrexate,DNTRef_all.csv,Methotrexate,methotrexate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Tebuconazole,DNTRef_all.csv,Tebuconazole,tebuconazole,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1040-12::Thalidomide,DNTRef_all.csv,Thalidomide,thalidomide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Colchicine,DNTRef_all.csv,Colchicine,colchicine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Colchicine,DNTRef_all.csv,Colchicine,colchicine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Colchicine,DNTRef_all.csv,Colchicine,colchicine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Colchicine,DNTRef_all.csv,Colchicine,colchicine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-2::Colchicine,DNTRef_all.csv,Colchicine,colchicine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Colchicine,DNTRef_all.csv,Colchicine,colchicine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Colchicine,DNTRef_all.csv,Colchicine,colchicine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Colchicine,DNTRef_all.csv,Colchicine,colchicine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Colchicine,DNTRef_all.csv,Colchicine,colchicine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-6::Colchicine,DNTRef_all.csv,Colchicine,colchicine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Aminonicotinamide,DNTRef_all.csv,Aminonicotinamide,aminonicotinamide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Amphetamine,DNTRef_all.csv,Amphetamine,amphetamine,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Bis tri n butylin oxide,DNTRef_all.csv,Bis tri n butylin oxide,bis tri n butylin oxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Chlordiazepoxide,DNTRef_all.csv,Chlordiazepoxide,chlordiazepoxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Colchicine,DNTRef_all.csv,Colchicine,colchicine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Colchicine,DNTRef_all.csv,Colchicine,colchicine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Colchicine,DNTRef_all.csv,Colchicine,colchicine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Colchicine,DNTRef_all.csv,Colchicine,colchicine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1044-7::Colchicine,DNTRef_all.csv,Colchicine,colchicine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Chloramben,DNTRef_all.csv,Chloramben,chloramben,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Chloramben,DNTRef_all.csv,Chloramben,chloramben,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Chloramben,DNTRef_all.csv,Chloramben,chloramben,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Chloramben,DNTRef_all.csv,Chloramben,chloramben,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Chloramben,DNTRef_all.csv,Chloramben,chloramben,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cotinine,DNTRef_all.csv,Cotinine,cotinine,risk_sensitive,STOP,3,9,16,24,72,3,0.23443919679782263,0.8571428571428571,1,0,False
+TIP::DNTRef_all.csv::MW1047-22::Cotinine,DNTRef_all.csv,Cotinine,cotinine,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cotinine,DNTRef_all.csv,Cotinine,cotinine,maximin,STOP,3,9,16,24,72,3,0.20399917432165351,0.8571428571428571,1,0,False
+TIP::DNTRef_all.csv::MW1047-22::Cotinine,DNTRef_all.csv,Cotinine,cotinine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cotinine,DNTRef_all.csv,Cotinine,cotinine,random,STOP,3,9,16,24,72,3,0.22528655359685107,1.0,0,0,False
+TIP::DNTRef_all.csv::MW1047-22::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-22::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Chloramben,DNTRef_all.csv,Chloramben,chloramben,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Chloramben,DNTRef_all.csv,Chloramben,chloramben,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Chloramben,DNTRef_all.csv,Chloramben,chloramben,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Chloramben,DNTRef_all.csv,Chloramben,chloramben,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Chloramben,DNTRef_all.csv,Chloramben,chloramben,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cotinine,DNTRef_all.csv,Cotinine,cotinine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cotinine,DNTRef_all.csv,Cotinine,cotinine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cotinine,DNTRef_all.csv,Cotinine,cotinine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cotinine,DNTRef_all.csv,Cotinine,cotinine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cotinine,DNTRef_all.csv,Cotinine,cotinine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-29::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Chloramben,DNTRef_all.csv,Chloramben,chloramben,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Chloramben,DNTRef_all.csv,Chloramben,chloramben,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Chloramben,DNTRef_all.csv,Chloramben,chloramben,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Chloramben,DNTRef_all.csv,Chloramben,chloramben,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Chloramben,DNTRef_all.csv,Chloramben,chloramben,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cotinine,DNTRef_all.csv,Cotinine,cotinine,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cotinine,DNTRef_all.csv,Cotinine,cotinine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cotinine,DNTRef_all.csv,Cotinine,cotinine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cotinine,DNTRef_all.csv,Cotinine,cotinine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cotinine,DNTRef_all.csv,Cotinine,cotinine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Cytosine Arabinoside,DNTRef_all.csv,Cytosine Arabinoside,cytosine arabinoside,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,risk_sensitive,STOP,3,9,16,24,72,3,0.39511013040644183,0.8181818181818182,2,0,False
+TIP::DNTRef_all.csv::MW1047-30::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Diethylene glycol,DNTRef_all.csv,Diethylene glycol,diethylene glycol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1047-30::Fluconazole,DNTRef_all.csv,Fluconazole,fluconazole,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Chloramben,DNTRef_all.csv,Chloramben,chloramben,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Chloramben,DNTRef_all.csv,Chloramben,chloramben,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Chloramben,DNTRef_all.csv,Chloramben,chloramben,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Chloramben,DNTRef_all.csv,Chloramben,chloramben,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Chloramben,DNTRef_all.csv,Chloramben,chloramben,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Cotinine,DNTRef_all.csv,Cotinine,cotinine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Cotinine,DNTRef_all.csv,Cotinine,cotinine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Cotinine,DNTRef_all.csv,Cotinine,cotinine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Cotinine,DNTRef_all.csv,Cotinine,cotinine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Cotinine,DNTRef_all.csv,Cotinine,cotinine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,random,STOP,3,9,16,24,72,3,0.14741416492957052,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-26::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Chloramben,DNTRef_all.csv,Chloramben,chloramben,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Chloramben,DNTRef_all.csv,Chloramben,chloramben,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Chloramben,DNTRef_all.csv,Chloramben,chloramben,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Chloramben,DNTRef_all.csv,Chloramben,chloramben,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Chloramben,DNTRef_all.csv,Chloramben,chloramben,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Cotinine,DNTRef_all.csv,Cotinine,cotinine,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Cotinine,DNTRef_all.csv,Cotinine,cotinine,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Cotinine,DNTRef_all.csv,Cotinine,cotinine,maximin,STOP,2,7,12,24,48,2,0.2856429933811068,1.0,0,0,False
+TIP::DNTRef_all.csv::MW1053-31::Cotinine,DNTRef_all.csv,Cotinine,cotinine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Cotinine,DNTRef_all.csv,Cotinine,cotinine,random,STOP,2,7,12,24,48,2,0.2638651256116708,0.8571428571428571,1,0,False
+TIP::DNTRef_all.csv::MW1053-31::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-31::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Acrylamide,DNTRef_all.csv,Acrylamide,acrylamide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Chloramben,DNTRef_all.csv,Chloramben,chloramben,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Chloramben,DNTRef_all.csv,Chloramben,chloramben,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Chloramben,DNTRef_all.csv,Chloramben,chloramben,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Chloramben,DNTRef_all.csv,Chloramben,chloramben,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Chloramben,DNTRef_all.csv,Chloramben,chloramben,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Cotinine,DNTRef_all.csv,Cotinine,cotinine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Cotinine,DNTRef_all.csv,Cotinine,cotinine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Cotinine,DNTRef_all.csv,Cotinine,cotinine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Cotinine,DNTRef_all.csv,Cotinine,cotinine,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Cotinine,DNTRef_all.csv,Cotinine,cotinine,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Diethylstilbestrol,DNTRef_all.csv,Diethylstilbestrol,diethylstilbestrol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::Isoniazid,DNTRef_all.csv,Isoniazid,isoniazid,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1053-33::PBDE-47,DNTRef_all.csv,PBDE-47,pbde-47,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Naloxone,DNTRef_all.csv,Naloxone,naloxone,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Naloxone,DNTRef_all.csv,Naloxone,naloxone,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Naloxone,DNTRef_all.csv,Naloxone,naloxone,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Naloxone,DNTRef_all.csv,Naloxone,naloxone,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Naloxone,DNTRef_all.csv,Naloxone,naloxone,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-29::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Naloxone,DNTRef_all.csv,Naloxone,naloxone,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Naloxone,DNTRef_all.csv,Naloxone,naloxone,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Naloxone,DNTRef_all.csv,Naloxone,naloxone,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Naloxone,DNTRef_all.csv,Naloxone,naloxone,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Naloxone,DNTRef_all.csv,Naloxone,naloxone,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-43::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Carbamazepine,DNTRef_all.csv,Carbamazepine,carbamazepine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Chlorpromazine,DNTRef_all.csv,Chlorpromazine,chlorpromazine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Cyclophosphamid,DNTRef_all.csv,Cyclophosphamid,cyclophosphamid,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Fluoxetine,DNTRef_all.csv,Fluoxetine,fluoxetine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Naloxone,DNTRef_all.csv,Naloxone,naloxone,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Naloxone,DNTRef_all.csv,Naloxone,naloxone,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Naloxone,DNTRef_all.csv,Naloxone,naloxone,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Naloxone,DNTRef_all.csv,Naloxone,naloxone,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Naloxone,DNTRef_all.csv,Naloxone,naloxone,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1062-44::Triethyltin bromide,DNTRef_all.csv,Triethyltin bromide,triethyltin bromide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Caffeine,DNTRef_all.csv,Caffeine,caffeine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Caffeine,DNTRef_all.csv,Caffeine,caffeine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Caffeine,DNTRef_all.csv,Caffeine,caffeine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Caffeine,DNTRef_all.csv,Caffeine,caffeine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Caffeine,DNTRef_all.csv,Caffeine,caffeine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Captopril,DNTRef_all.csv,Captopril,captopril,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Captopril,DNTRef_all.csv,Captopril,captopril,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Captopril,DNTRef_all.csv,Captopril,captopril,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Captopril,DNTRef_all.csv,Captopril,captopril,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Captopril,DNTRef_all.csv,Captopril,captopril,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Phenol,DNTRef_all.csv,Phenol,phenol,risk_sensitive,STOP,3,9,16,24,72,3,0.17812147840997342,0.8,1,0,False
+TIP::DNTRef_all.csv::MW1076-42::Phenol,DNTRef_all.csv,Phenol,phenol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Phenol,DNTRef_all.csv,Phenol,phenol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Phenol,DNTRef_all.csv,Phenol,phenol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Phenol,DNTRef_all.csv,Phenol,phenol,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-42::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Caffeine,DNTRef_all.csv,Caffeine,caffeine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Caffeine,DNTRef_all.csv,Caffeine,caffeine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Caffeine,DNTRef_all.csv,Caffeine,caffeine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Caffeine,DNTRef_all.csv,Caffeine,caffeine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Caffeine,DNTRef_all.csv,Caffeine,caffeine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Captopril,DNTRef_all.csv,Captopril,captopril,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Captopril,DNTRef_all.csv,Captopril,captopril,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Captopril,DNTRef_all.csv,Captopril,captopril,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Captopril,DNTRef_all.csv,Captopril,captopril,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Captopril,DNTRef_all.csv,Captopril,captopril,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Phenol,DNTRef_all.csv,Phenol,phenol,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Phenol,DNTRef_all.csv,Phenol,phenol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Phenol,DNTRef_all.csv,Phenol,phenol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Phenol,DNTRef_all.csv,Phenol,phenol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Phenol,DNTRef_all.csv,Phenol,phenol,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,risk_sensitive,STOP,3,9,16,24,72,3,0.12416165441310179,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-43::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,random,STOP,3,9,16,24,72,3,0.13226781129668344,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Caffeine,DNTRef_all.csv,Caffeine,caffeine,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Caffeine,DNTRef_all.csv,Caffeine,caffeine,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Caffeine,DNTRef_all.csv,Caffeine,caffeine,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Caffeine,DNTRef_all.csv,Caffeine,caffeine,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Caffeine,DNTRef_all.csv,Caffeine,caffeine,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Captopril,DNTRef_all.csv,Captopril,captopril,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Captopril,DNTRef_all.csv,Captopril,captopril,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Captopril,DNTRef_all.csv,Captopril,captopril,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Captopril,DNTRef_all.csv,Captopril,captopril,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Captopril,DNTRef_all.csv,Captopril,captopril,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Heptachlor epoxide,DNTRef_all.csv,Heptachlor epoxide,heptachlor epoxide,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Phenol,DNTRef_all.csv,Phenol,phenol,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Phenol,DNTRef_all.csv,Phenol,phenol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Phenol,DNTRef_all.csv,Phenol,phenol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Phenol,DNTRef_all.csv,Phenol,phenol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Phenol,DNTRef_all.csv,Phenol,phenol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sodium benzoate,DNTRef_all.csv,Sodium benzoate,sodium benzoate,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1076-44::Sorbitol,DNTRef_all.csv,Sorbitol,sorbitol,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Manganese,DNTRef_all.csv,Manganese,manganese,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Manganese,DNTRef_all.csv,Manganese,manganese,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Manganese,DNTRef_all.csv,Manganese,manganese,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Manganese,DNTRef_all.csv,Manganese,manganese,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Manganese,DNTRef_all.csv,Manganese,manganese,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Paraquat,DNTRef_all.csv,Paraquat,paraquat,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Paraquat,DNTRef_all.csv,Paraquat,paraquat,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Paraquat,DNTRef_all.csv,Paraquat,paraquat,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Paraquat,DNTRef_all.csv,Paraquat,paraquat,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Paraquat,DNTRef_all.csv,Paraquat,paraquat,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Valproate,DNTRef_all.csv,Valproate,valproate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Valproate,DNTRef_all.csv,Valproate,valproate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Valproate,DNTRef_all.csv,Valproate,valproate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Valproate,DNTRef_all.csv,Valproate,valproate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-16::Valproate,DNTRef_all.csv,Valproate,valproate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Manganese,DNTRef_all.csv,Manganese,manganese,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Manganese,DNTRef_all.csv,Manganese,manganese,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Manganese,DNTRef_all.csv,Manganese,manganese,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Manganese,DNTRef_all.csv,Manganese,manganese,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Manganese,DNTRef_all.csv,Manganese,manganese,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Paraquat,DNTRef_all.csv,Paraquat,paraquat,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Paraquat,DNTRef_all.csv,Paraquat,paraquat,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Paraquat,DNTRef_all.csv,Paraquat,paraquat,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Paraquat,DNTRef_all.csv,Paraquat,paraquat,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Paraquat,DNTRef_all.csv,Paraquat,paraquat,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Valproate,DNTRef_all.csv,Valproate,valproate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Valproate,DNTRef_all.csv,Valproate,valproate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Valproate,DNTRef_all.csv,Valproate,valproate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Valproate,DNTRef_all.csv,Valproate,valproate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-17::Valproate,DNTRef_all.csv,Valproate,valproate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Manganese,DNTRef_all.csv,Manganese,manganese,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Manganese,DNTRef_all.csv,Manganese,manganese,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Manganese,DNTRef_all.csv,Manganese,manganese,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Manganese,DNTRef_all.csv,Manganese,manganese,fixed_sentinel,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Manganese,DNTRef_all.csv,Manganese,manganese,random,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Paraquat,DNTRef_all.csv,Paraquat,paraquat,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Paraquat,DNTRef_all.csv,Paraquat,paraquat,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Paraquat,DNTRef_all.csv,Paraquat,paraquat,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Paraquat,DNTRef_all.csv,Paraquat,paraquat,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Paraquat,DNTRef_all.csv,Paraquat,paraquat,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Arsenate,DNTRef_all.csv,Sodium Arsenate,sodium arsenate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,risk_sensitive,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,max_variance,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,maximin,COMPLETE,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Sodium Fluoride,DNTRef_all.csv,Sodium Fluoride,sodium fluoride,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Valproate,DNTRef_all.csv,Valproate,valproate,risk_sensitive,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Valproate,DNTRef_all.csv,Valproate,valproate,max_variance,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Valproate,DNTRef_all.csv,Valproate,valproate,maximin,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Valproate,DNTRef_all.csv,Valproate,valproate,fixed_sentinel,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
+TIP::DNTRef_all.csv::MW1112-18::Valproate,DNTRef_all.csv,Valproate,valproate,random,ABSTAIN,4,12,32,24,96,4,0.0,1.0,0,0,True
