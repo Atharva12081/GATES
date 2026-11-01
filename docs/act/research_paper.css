@@ -1,0 +1,221 @@
+@page {
+  size: A4;
+  margin: 18mm 17mm 19mm 17mm;
+}
+
+:root {
+  --ink: #17212b;
+  --navy: #173f4f;
+  --teal: #0f7f76;
+  --muted: #5d6976;
+  --line: #b9c8d0;
+  --wash: #eef4f5;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: "Charter", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  color: var(--ink);
+  font-size: 10.2pt;
+  line-height: 1.43;
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  color: var(--navy);
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 27pt;
+  line-height: 1.08;
+  letter-spacing: -0.5pt;
+  margin: 8mm 0 4mm;
+  max-width: 175mm;
+}
+
+h1 + p {
+  color: var(--muted);
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  margin-bottom: 8mm;
+}
+
+h2, h3, h4 {
+  color: var(--navy);
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  break-after: avoid;
+}
+
+h2 {
+  font-size: 16pt;
+  line-height: 1.2;
+  margin: 8mm 0 3mm;
+  padding-top: 1.5mm;
+  border-top: 0.45pt solid var(--line);
+}
+
+h3 { font-size: 12.5pt; margin: 5mm 0 2mm; }
+h4 { font-size: 10.5pt; margin: 4mm 0 1.5mm; }
+
+p { margin: 0 0 3.2mm; orphans: 3; widows: 3; }
+
+a { color: var(--teal); text-decoration: none; }
+
+nav#TOC {
+  background: var(--wash);
+  border-left: 3px solid var(--teal);
+  padding: 4mm 6mm;
+  margin: 4mm 0 8mm;
+  break-inside: avoid;
+}
+
+nav#TOC > ul {
+  columns: 2;
+  column-gap: 10mm;
+  margin: 0;
+}
+
+nav#TOC ul { padding-left: 5mm; }
+nav#TOC li { margin: 0.6mm 0; }
+
+blockquote {
+  margin: 4mm 0;
+  padding: 3mm 5mm;
+  background: var(--wash);
+  border-left: 3px solid var(--teal);
+  color: #263846;
+  break-inside: avoid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4mm 0 6mm;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 8.4pt;
+  line-height: 1.3;
+  break-inside: avoid;
+}
+
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+
+th {
+  color: var(--navy);
+  background: #e7eff2;
+  border-top: 0.8pt solid #6e8995;
+  border-bottom: 0.8pt solid #6e8995;
+  padding: 2mm 1.7mm;
+  text-align: left;
+}
+
+td {
+  border-bottom: 0.35pt solid #c8d3d9;
+  padding: 1.7mm;
+  vertical-align: top;
+}
+
+td:not(:first-child), th:not(:first-child) { text-align: right; }
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 164mm;
+  object-fit: contain;
+  margin: 4mm auto 2mm;
+  break-inside: avoid;
+}
+
+p:has(> img) {
+  break-inside: avoid;
+  text-align: center;
+  color: var(--muted);
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 8.2pt;
+}
+
+figure { margin: 4mm 0 6mm; break-inside: avoid; }
+figcaption { color: var(--muted); font-size: 8.2pt; }
+
+code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 8.6pt;
+  background: #f1f4f5;
+  padding: 0.2mm 0.7mm;
+}
+
+pre {
+  background: #f1f4f5;
+  border-left: 3px solid var(--navy);
+  padding: 3mm 4mm;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  font-size: 8pt;
+  break-inside: avoid;
+}
+
+ol, ul { margin: 2mm 0 4mm; padding-left: 6mm; }
+li { margin: 1mm 0; }
+
+.abstract {
+  background: #f7f9fa;
+  border-top: 1.2pt solid var(--navy);
+  border-bottom: 0.5pt solid var(--line);
+  padding: 4mm 6mm;
+  margin: 4mm 0 7mm;
+}
+
+.abstract p { margin: 0; }
+
+.keywords {
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  color: var(--muted);
+  font-size: 8.8pt;
+  margin-bottom: 7mm;
+}
+
+.callout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3mm;
+  margin: 5mm 0 7mm;
+  break-inside: avoid;
+}
+
+.metric {
+  border: 0.6pt solid var(--line);
+  border-top: 2.5pt solid var(--teal);
+  padding: 3mm;
+  min-height: 22mm;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+}
+
+.metric strong {
+  display: block;
+  color: var(--navy);
+  font-size: 18pt;
+  line-height: 1.1;
+}
+
+.metric span { color: var(--muted); font-size: 8.2pt; }
+
+.page-break { break-before: page; }
+
+.caption {
+  color: var(--muted);
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 8.2pt;
+  line-height: 1.35;
+  margin: 0 4mm 5mm;
+}
+
+hr { border: 0; border-top: 0.5pt solid var(--line); margin: 6mm 0; }
+
+@media print {
+  a { color: inherit; }
+}
