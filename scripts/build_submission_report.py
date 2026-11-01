@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+from matplotlib.path import Path as MplPath
 from pypdf import PdfReader, PdfWriter
 from reportlab.pdfgen import canvas
 from scipy.stats import beta
@@ -58,16 +59,24 @@ def save(fig: plt.Figure, name: str) -> None:
 
 
 def system_diagram() -> None:
-    fig, ax = plt.subplots(figsize=(12.4, 4.0))
-    ax.set_xlim(0, 12.4)
-    ax.set_ylim(0, 4)
+    fig, ax = plt.subplots(figsize=(13.6, 4.3))
+    ax.set_xlim(0, 13.6)
+    ax.set_ylim(0, 4.3)
     ax.axis("off")
     boxes = [
-        (0.2, 1.2, 2.0, 1.5, "1  Eligible data", "Current-day doses\n+ vehicle anchor", BLUE),
-        (2.7, 1.2, 2.0, 1.5, "2  Predict", "Robust prior\n+ posterior covariance", TEAL),
-        (5.2, 1.2, 2.0, 1.5, "3  Acquire", "Conditional maximum\nvariance per unit cost", ORANGE),
-        (7.7, 1.2, 2.0, 1.5, "4  Protect", "Conformal effect band\n+ group-shift refusal", GREEN),
-        (10.2, 1.2, 2.0, 1.5, "5  Act", "COMPLETE or ABSTAIN\nSTOP remains locked", RED),
+        (0.15, 1.45, 2.3, 1.55, "1  Eligible data", "Current-day doses\nplus vehicle anchor", BLUE),
+        (2.9, 1.45, 2.3, 1.55, "2  Predict", "Robust prior\nand posterior covariance", TEAL),
+        (5.65, 1.45, 2.3, 1.55, "3  Acquire", "Conditional variance\nper measurement cost", ORANGE),
+        (
+            8.4,
+            1.45,
+            2.3,
+            1.55,
+            "4  Protect",
+            "Conformal effect band\nand shift-based refusal",
+            GREEN,
+        ),
+        (11.15, 1.45, 2.3, 1.55, "5  Act", "COMPLETE or ABSTAIN\nSTOP remains locked", RED),
     ]
     for x, y, w, h, title, body, color in boxes:
         ax.add_patch(
@@ -81,36 +90,43 @@ def system_diagram() -> None:
                 facecolor="white",
             )
         )
-        ax.text(x + 0.16, y + 1.08, title, fontsize=11.5, weight="bold", color=color)
-        ax.text(x + 0.16, y + 0.68, body, fontsize=9.5, va="top", linespacing=1.35)
-    for x in [2.25, 4.75, 7.25, 9.75]:
+        ax.text(x + 0.2, y + 1.13, title, fontsize=11.3, weight="bold", color=color)
+        ax.text(x + 0.2, y + 0.69, body, fontsize=9.1, va="top", linespacing=1.36)
+    for current, following in zip(boxes[:-1], boxes[1:], strict=True):
+        start_x = current[0] + current[2] + 0.05
+        end_x = following[0] - 0.05
         ax.add_patch(
             FancyArrowPatch(
-                (x, 1.95), (x + 0.4, 1.95), arrowstyle="-|>", mutation_scale=13, lw=1.6, color=NAVY
+                (start_x, 2.22),
+                (end_x, 2.22),
+                arrowstyle="-|>",
+                mutation_scale=13,
+                lw=1.6,
+                color=NAVY,
             )
         )
+    feedback_path = MplPath(
+        [(12.3, 1.38), (11.1, 0.55), (2.4, 0.55), (1.3, 1.38)],
+        [MplPath.MOVETO, MplPath.CURVE4, MplPath.CURVE4, MplPath.CURVE4],
+    )
     ax.add_patch(
         FancyArrowPatch(
-            (11.2, 1.15),
-            (1.2, 0.78),
-            connectionstyle="arc3,rad=-0.12",
+            path=feedback_path,
             arrowstyle="-|>",
-            mutation_scale=14,
+            mutation_scale=13,
             lw=1.8,
             color=GREY,
         )
     )
     ax.text(
-        6.2,
-        0.18,
-        "Prospective shadow mode: recommendations are logged while complete plates continue",
+        6.8,
+        0.22,
+        "Prospective shadow mode: log recommendations while complete plates continue",
         ha="center",
-        fontsize=10.5,
+        fontsize=9.8,
         color=GREY,
     )
-    ax.set_title(
-        "GATES-ACT converts adaptive measurement into a fail-closed laboratory workflow", pad=10
-    )
+    ax.set_title("GATES-ACT fail-closed adaptive measurement workflow", pad=8, fontsize=15)
     save(fig, "01_system_architecture.png")
 
 

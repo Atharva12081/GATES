@@ -1,9 +1,9 @@
 # GATES ACT Adaptive Measurement for Longitudinal Neural Assays
 
 **A group-disjoint evaluation of uncertainty-guided acquisition under explicit risk limits**  
-Atharva Parande  
-Technical Report 2026 01  
-1 November 2026
+Atharva Parande<br>
+Technical Report<br>
+Submitted 1 November 2026
 
 <div class="abstract">
 
